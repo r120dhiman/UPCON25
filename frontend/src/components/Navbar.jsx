@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -24,7 +24,14 @@ function Navbar() {
         { title: "Organizing Committee", path: "/committee/organizing" }
       ]
     },
-    { title: "Speakers", path: "/speakers", type: "direct" },
+    { 
+      title: "Speakers", 
+      type: "dropdown",
+      subLinks: [
+        { title: "Keynote Speakers", path: "/speakers/keynote" },
+        { title: "Tutorial speakers", path: "/speakers/tutorial" }
+      ]
+    },
     { 
       title: "Program", 
       type: "dropdown",
@@ -43,7 +50,27 @@ function Navbar() {
         { title: "Guidelines", path: "/guidelines" }
       ]
     },
+    { 
+      title: "Awards", 
+      type: "dropdown",
+      subLinks: [
+        { title: "Best Paper Awards", path: "/awards/bestPaper" },
+        { title: "Student Travel Awards", path: "/awards/studentTravel" },
+        { title: "Best Poster Award", path: "/awards/bestPoster" },
+        { title: "Outstanding Doctoral Thesis Award", path: "/awards/outstandingDoctoralThesis" }
+      ]
+    },
     { title: "Sponsors", path: "/sponsors", type: "direct" },
+    { 
+      title: "History", 
+      type: "dropdown",
+      subLinks: [
+        { title: "UPCON 2024", path: "/2024" },
+        { title: "UPCON 2023", path: "/2023" },
+        { title: "UPCON 2022", path: "/2022" },
+        { title: "UPCON 2021", path: "/2021" }
+      ]
+    },
     { title: "Contact", path: "/contact", type: "direct" },
   ]
 
@@ -51,12 +78,30 @@ function Navbar() {
     setActiveDropdown(activeDropdown === index ? null : index)
   }
 
+  const dropdownRefs = useRef({});
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (activeDropdown !== null) {
+        const activeRef = dropdownRefs.current[activeDropdown];
+        if (activeRef && !activeRef.contains(event.target)) {
+          setActiveDropdown(null);
+        }
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [activeDropdown]);
+
   const DesktopNavItem = ({ link, index }) => {
     if (link.type === "direct") {
       return (
         <a
           href={link.path}
-          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
+          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-md font-semibold transition-all duration-200"
         >
           {link.title}
         </a>
@@ -64,13 +109,13 @@ function Navbar() {
     }
 
     return (
-      <div className="relative">
+      <div className="relative" ref={el => dropdownRefs.current[index] = el}>
       <button
         onClick={() => handleDropdown(index)}
-        className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center cursor-pointer"
+        className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-md font-semibold transition-all duration-200 flex items-center cursor-pointer"
       >
         {link.title}
-        <svg className={`w-4 h-4 ml-0.5 transform transition-transform ${activeDropdown ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 24 24">
+        <svg className={`w-4 h-4 ml-0.5 transform transition-transform ${activeDropdown === index ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 24 24">
         <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
         </svg>
       </button>
@@ -81,7 +126,7 @@ function Navbar() {
           <a
             key={subLink.title}
             href={subLink.path}
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#054f89] hover:text-white"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#054f89] hover:text-white font-semibold"
           >
             {subLink.title}
           </a>
@@ -144,18 +189,18 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 lg:hidden">
               <h1 className="text-white font-bold text-xl">UPCON 25</h1>
             </div>
           </div>
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+          <div className="hidden lg:flex flex-1 justify-center">
+            <div className="flex items-baseline space-x-4 font-semibold">
               {navLinks.map((link, index) => (
                 <DesktopNavItem key={link.title} link={link} index={index} />
               ))}
             </div>
           </div>
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-[#076ab8] focus:outline-none"
@@ -177,7 +222,7 @@ function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden">
+        <div className="lg:hidden">
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           {navLinks.map((link, index) => (
             <MobileNavItem key={link.title} link={link} index={index} />
