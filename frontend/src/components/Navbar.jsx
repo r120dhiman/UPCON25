@@ -2,17 +2,119 @@ import { useState } from 'react'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [activeDropdown, setActiveDropdown] = useState(null)
 
   const navLinks = [
-    { title: "Home", path: "/" },
-    { title: "About", path: "/about" },
-    { title: "Schedule", path: "/schedule" },
-    { title: "Speakers", path: "/speakers" },
-    { title: "Tracks", path: "/tracks" },
-    { title: "Registration", path: "/registration" },
-    { title: "Sponsors", path: "/sponsors" },
-    { title: "Contact", path: "/contact" },
+    { title: "Home", path: "/", type: "direct" },
+    { 
+      title: "About", 
+      type: "dropdown",
+      subLinks: [
+        { title: "About Conference", path: "/about-conference" },
+        { title: "About Institute", path: "/about-institute" },
+        { title: "Previous UPCON", path: "https://sefet.in/" }
+      ]
+    },
+    { title: "Schedule", path: "/schedule", type: "direct" },
+    { 
+      title: "Tracks", 
+      type: "dropdown",
+      subLinks: [
+        { title: "Track 1", path: "/track-1" },
+        { title: "Track 2", path: "/track-2" },
+        { title: "Track 3", path: "/track-3" }
+      ]
+    },
+    { title: "Registration", path: "/registration", type: "direct" },
+    { 
+      title: "Authors", 
+      type: "dropdown",
+      subLinks: [
+        { title: "Paper Submission", path: "/paper-submission" },
+        { title: "Guidelines", path: "/guidelines" }
+      ]
+    },
+    { title: "Sponsors", path: "/sponsors", type: "direct" },
+    { title: "Contact", path: "/contact", type: "direct" },
   ]
+
+  const handleDropdown = (index) => {
+    setActiveDropdown(activeDropdown === index ? null : index)
+  }
+
+  const DesktopNavItem = ({ link, index }) => {
+    if (link.type === "direct") {
+      return (
+        <a
+          href={link.path}
+          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
+        >
+          {link.title}
+        </a>
+      )
+    }
+
+    return (
+      <div className="relative">
+      <button
+        onClick={() => handleDropdown(index)}
+        className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center"
+      >
+        {link.title}
+        <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+        </svg>
+      </button>
+      {activeDropdown === index && (
+        <div className="absolute z-50 left-0 mt-2 w-48 rounded-md shadow-lg bg-white">
+        <div className="py-1">
+          {link.subLinks.map((subLink) => (
+          <a
+            key={subLink.title}
+            href={subLink.path}
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#054f89] hover:text-white"
+          >
+            {subLink.title}
+          </a>
+          ))}
+        </div>
+        </div>
+      )}
+      </div>
+    )
+  }
+
+  const MobileNavItem = ({ link }) => {
+    if (link.type === "direct") {
+      return (
+        <a
+          href={link.path}
+          className="text-gray-300 hover:bg-[#076ab8] hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+        >
+          {link.title}
+        </a>
+      )
+    }
+
+    return (
+      <div>
+        <div className="text-gray-300 px-3 py-2 text-base font-medium">
+          {link.title}
+        </div>
+        <div className="pl-4">
+          {link.subLinks.map((subLink) => (
+            <a
+              key={subLink.title}
+              href={subLink.path}
+              className="text-gray-300 hover:bg-[#076ab8] hover:text-white block px-3 py-2 rounded-md text-sm"
+            >
+              {subLink.title}
+            </a>
+          ))}
+        </div>
+      </div>
+    )
+  }
 
   return (
     <nav className="bg-[#054f89] sticky w-full z-50">
@@ -25,14 +127,8 @@ function Navbar() {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.title}
-                  href={link.path}
-                  className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
-                >
-                  {link.title}
-                </a>
+              {navLinks.map((link, index) => (
+                <DesktopNavItem key={link.title} link={link} index={index} />
               ))}
             </div>
           </div>
@@ -61,13 +157,7 @@ function Navbar() {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
-              <a
-                key={link.title}
-                href={link.path}
-                className="text-gray-300 hover:bg-[#076ab8] hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-              >
-                {link.title}
-              </a>
+              <MobileNavItem key={link.title} link={link} />
             ))}
           </div>
         </div>
