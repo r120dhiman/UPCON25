@@ -15,12 +15,21 @@ function Navbar() {
         { title: "Previous UPCON", path: "https://sefet.in/" }
       ]
     },
-    { title: "Schedule", path: "/schedule", type: "direct" },
     { 
-      title: "Tracks", 
+      title: "Committee", 
       type: "dropdown",
       subLinks: [
-        { title: "Track 1", path: "/track-1" },
+        { title: "Technical Committee", path: "/committee/Technical" },
+        { title: "Advisory Committee", path: "/committee/advisory" },
+        { title: "Organizing Committee", path: "/committee/organizing" }
+      ]
+    },
+    { title: "Speakers", path: "/speakers", type: "direct" },
+    { 
+      title: "Program", 
+      type: "dropdown",
+      subLinks: [
+        { title: "Call for Papers", path: "/callforpapers" },
         { title: "Track 2", path: "/track-2" },
         { title: "Track 3", path: "/track-3" }
       ]
