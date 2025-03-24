@@ -3,9 +3,11 @@ import Footer from './components/Footer'
 import {BrowserRouter, Routes, Route} from 'react-router'
 import Homepage from './Pages/Homepage'
 import NotFound from './Pages/NotFound'
-import TechnicalCommunity from './Pages/TechnicalCommittee'
-import AdvisoryCommunity from './Pages/AdvisoryCommittee'
-import OrganisingCommunity from './Pages/OrganisingCommittee'
+import TechnicalCommittee from './Pages/TechnicalCommittee'
+import AdvisoryCommittee from './Pages/AdvisoryCommittee'
+import OrganisingCommittee from './Pages/OrganisingCommittee'
+import KeynoteSpeaker from './Pages/KeyNoteSpeakers'
+import TutorialSpeaker from './Pages/TutorialSpeakers'
 function App() {
   return (
     <>
@@ -14,9 +16,11 @@ function App() {
     <Routes>
       <Route path='/' element={<Homepage/>} />
       <Route path="*" element={<NotFound/>} />
-      <Route path="/committee/Technical" element={<TechnicalCommunity/>}/>
-      <Route path="/committee/advisory" element={<AdvisoryCommunity/>} />
-      <Route path="/committee/organizing" element={<OrganisingCommunity/>} />
+      <Route path="/committee/Technical" element={<TechnicalCommittee/>}/>
+      <Route path="/committee/advisory" element={<AdvisoryCommittee/>} />
+      <Route path="/committee/organizing" element={<OrganisingCommittee/>} />
+      <Route path="/speaker/keynote" element={<KeynoteSpeaker/>} />
+      <Route path="/speaker/tutorial" element={<TutorialSpeaker/>} />
     </Routes>
     </BrowserRouter>
       <Footer />
