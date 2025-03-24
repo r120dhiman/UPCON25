@@ -90,7 +90,7 @@ function Homepage() {
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition-all"
+              className="flex items-center gap-2 bg-blue-800 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition-all"
             >
               <FileDown className="w-5 h-5" /> {item.title}
             </motion.a>

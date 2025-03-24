@@ -58,10 +58,10 @@ function Navbar() {
       <div className="relative">
       <button
         onClick={() => handleDropdown(index)}
-        className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center"
+        className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center cursor-pointer"
       >
         {link.title}
-        <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24">
+        <svg className={`w-4 h-4 ml-0.5 transform transition-transform ${activeDropdown ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 24 24">
         <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
         </svg>
       </button>
@@ -84,7 +84,9 @@ function Navbar() {
     )
   }
 
-  const MobileNavItem = ({ link }) => {
+  const MobileNavItem = ({ link, index }) => {
+    const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
+  
     if (link.type === "direct") {
       return (
         <a
@@ -98,20 +100,32 @@ function Navbar() {
 
     return (
       <div>
-        <div className="text-gray-300 px-3 py-2 text-base font-medium">
+        <button
+          onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
+          className="w-full flex items-center text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-base font-medium cursor-pointer"
+        >
           {link.title}
-        </div>
-        <div className="pl-4">
-          {link.subLinks.map((subLink) => (
-            <a
-              key={subLink.title}
-              href={subLink.path}
-              className="text-gray-300 hover:bg-[#076ab8] hover:text-white block px-3 py-2 rounded-md text-sm"
-            >
-              {subLink.title}
-            </a>
-          ))}
-        </div>
+          <svg 
+            className={`w-4 h-4 ml-0.5 transform transition-transform ${isSubMenuOpen ? 'rotate-180' : ''}`} 
+            fill="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+          </svg>
+        </button>
+        {isSubMenuOpen && (
+          <div className="pl-4 bg-[#043d6a]">
+            {link.subLinks.map((subLink) => (
+              <a
+                key={subLink.title}
+                href={subLink.path}
+                className="text-gray-300 hover:bg-[#076ab8] hover:text-white block px-3 py-2 rounded-md text-sm"
+              >
+                {subLink.title}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     )
   }
@@ -155,12 +169,12 @@ function Navbar() {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navLinks.map((link) => (
-              <MobileNavItem key={link.title} link={link} />
-            ))}
-          </div>
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          {navLinks.map((link, index) => (
+            <MobileNavItem key={link.title} link={link} index={index} />
+          ))}
         </div>
+      </div>
       )}
     </nav>
   )
