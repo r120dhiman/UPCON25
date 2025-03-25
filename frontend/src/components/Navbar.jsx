@@ -17,14 +17,18 @@ function Navbar() {
       ]
     },
     {
-      title: "Committee",
-      type: "dropdown",
-      subLinks: [
-        { title: "Technical Committee", path: "/committee/Technical" },
-        { title: "Advisory Committee", path: "/committee/advisory" },
-        { title: "Organizing Committee", path: "/committee/organizing" }
+      "title": "Committee",
+      "type": "dropdown",
+      "subLinks": [
+        { "title": "Technical Committee", "path": "/committee/technical" },
+        { "title": "Advisory Committee", "path": "/committee/advisory" },
+        { "title": "Organizing Committee", "path": "/committee/organizing" },
+        { "title": "Publicity Committee", "path": "/committee/publicity" },
+        { "title": "Sponsorship Committee", "path": "/committee/sponsorship" },
+        { "title": "Plenary Committee", "path": "/committee/plenary" },
+        { "title": "Hospitality Committee", "path": "/committee/hospitality" }
       ]
-    },
+    },    
     {
       title: "Speakers",
       type: "dropdown",
@@ -55,14 +59,15 @@ function Navbar() {
         { title: "Guidelines", path: "/guidelines" }
       ]
     },
+    { title: "PHD Colloquim", path: "/phdColloquim", type: "direct" },
     {
-      title: "Awards",
-      type: "dropdown",
-      subLinks: [
-        { title: "Best Paper Awards", path: "/awards/bestPaper" },
-        { title: "Student Travel Awards", path: "/awards/studentTravel" },
-        { title: "Best Poster Award", path: "/awards/bestPoster" },
-        { title: "Outstanding Doctoral Thesis Award", path: "/awards/outstandingDoctoralThesis" }
+      "title": "Awards",
+      "type": "dropdown",
+      "subLinks": [
+        { "title": "Best PhD award", "path": "/awards/bestPhD" },
+        { "title": "Best Paper award", "path": "/awards/bestPaper" },
+        { "title": "Best Poster award", "path": "/awards/bestPoster" },
+        { "title": "Malviya Student Trouvel award", "path": "/awards/malviyaStudentTrouvel" }
       ]
     },
     { title: "Sponsors", path: "/sponsors", type: "direct" },
@@ -70,10 +75,10 @@ function Navbar() {
       title: "History",
       type: "dropdown",
       subLinks: [
-        { title: "UPCON 2024", path: "/2024" },
-        { title: "UPCON 2023", path: "/2023" },
-        { title: "UPCON 2022", path: "/2022" },
-        { title: "UPCON 2021", path: "/2021" }
+        { title: "UPCON 2024", path: "https://upcon.srmcem.ac.in/" },
+        { title: "UPCON 2023", path: "https://amity.edu/upcon2023/" },
+        { title: "UPCON 2022", path: "https://upcon2022.iiita.ac.in/" },
+        { title: "UPCON 2021", path: "http://upcon2021.in/" }
       ]
     },
     { title: "Contact", path: "/contact", type: "direct" },
@@ -106,7 +111,7 @@ function Navbar() {
       return (
         <Link
           to={link.path}
-          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-md font-semibold transition-all duration-200"
+          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-1.5 py-2 rounded-md text-md font-semibold transition-all duration-200"
         >
           {link.title}
         </Link>
@@ -117,7 +122,7 @@ function Navbar() {
       <div className="relative" ref={el => dropdownRefs.current[index] = el}>
         <button
           onClick={() => handleDropdown(index)}
-          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-md font-semibold transition-all duration-200 flex items-center cursor-pointer"
+          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-1.5 py-2 rounded-md text-md font-semibold transition-all duration-200 flex items-center cursor-pointer"
         >
           {link.title}
           <svg className={`w-4 h-4 ml-0.5 transform transition-transform ${activeDropdown === index ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 24 24">
@@ -222,7 +227,7 @@ function Navbar() {
               <h1 className="text-white font-bold text-xl">UPCON 25</h1>
             </div>
           </div>
-          <div className="hidden lg:flex flex-1 justify-center">
+          <div className="hidden lg:flex flex-1 justify-center items-center">
             <div className="flex items-baseline space-x-4 font-semibold">
               {navLinks.map((link, index) => (
                 <DesktopNavItem key={link.title} link={link} index={index} />
