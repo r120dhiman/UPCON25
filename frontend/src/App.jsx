@@ -11,16 +11,16 @@ import TutorialSpeaker from './Pages/TutorialSpeakers'
 function App() {
   return (
     <>
-      <Navbar />
     <BrowserRouter>
+    <Navbar />
     <Routes>
       <Route path='/' element={<Homepage/>} />
       <Route path="*" element={<NotFound/>} />
       <Route path="/committee/Technical" element={<TechnicalCommittee/>}/>
       <Route path="/committee/advisory" element={<AdvisoryCommittee/>} />
       <Route path="/committee/organizing" element={<OrganisingCommittee/>} />
-      <Route path="/speaker/keynote" element={<KeynoteSpeaker/>} />
-      <Route path="/speaker/tutorial" element={<TutorialSpeaker/>} />
+      <Route path="/speakers/keynote" element={<KeynoteSpeaker/>} />
+      <Route path="/speakers/tutorial" element={<TutorialSpeaker/>} />
     </Routes>
     </BrowserRouter>
       <Footer />

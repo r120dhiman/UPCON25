@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { Link } from 'react-router'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -6,8 +7,8 @@ function Navbar() {
 
   const navLinks = [
     { title: "Home", path: "/", type: "direct" },
-    { 
-      title: "About", 
+    {
+      title: "About",
       type: "dropdown",
       subLinks: [
         { title: "About Conference", path: "/about-conference" },
@@ -15,8 +16,8 @@ function Navbar() {
         { title: "Previous UPCON", path: "https://sefet.in/" }
       ]
     },
-    { 
-      title: "Committee", 
+    {
+      title: "Committee",
       type: "dropdown",
       subLinks: [
         { title: "Technical Committee", path: "/committee/Technical" },
@@ -24,34 +25,38 @@ function Navbar() {
         { title: "Organizing Committee", path: "/committee/organizing" }
       ]
     },
-    { 
-      title: "Speakers", 
+    {
+      title: "Speakers",
       type: "dropdown",
       subLinks: [
         { title: "Keynote Speakers", path: "/speakers/keynote" },
         { title: "Tutorial speakers", path: "/speakers/tutorial" }
       ]
     },
-    { 
-      title: "Program", 
+    {
+      title: "Program",
       type: "dropdown",
       subLinks: [
-        { title: "Call for Papers", path: "/callforpapers" },
-        { title: "Track 2", path: "/track-2" },
-        { title: "Track 3", path: "/track-3" }
+        { title: "Call For Papers", path: "/callforpapers" },
+        { title: "Call For Tutorials", path: "/callfortutorials" },
+        { title: "Call For Workshops", path: "/callforworkshops" },
+        { title: "Call For Special Sessions", path: "/callforspecialsessions" },
+        { title: "Accepted Proposals", path: "/acceptedproposals" },
+        { title: "Accepted Papers", path: "/acceptedpapers" },
+        { title: "Registered Papers", path: "/registeredpapers" }
       ]
     },
     { title: "Registration", path: "/registration", type: "direct" },
-    { 
-      title: "Authors", 
+    {
+      title: "Authors",
       type: "dropdown",
       subLinks: [
         { title: "Paper Submission", path: "/paper-submission" },
         { title: "Guidelines", path: "/guidelines" }
       ]
     },
-    { 
-      title: "Awards", 
+    {
+      title: "Awards",
       type: "dropdown",
       subLinks: [
         { title: "Best Paper Awards", path: "/awards/bestPaper" },
@@ -61,8 +66,8 @@ function Navbar() {
       ]
     },
     { title: "Sponsors", path: "/sponsors", type: "direct" },
-    { 
-      title: "History", 
+    {
+      title: "History",
       type: "dropdown",
       subLinks: [
         { title: "UPCON 2024", path: "/2024" },
@@ -99,48 +104,60 @@ function Navbar() {
   const DesktopNavItem = ({ link, index }) => {
     if (link.type === "direct") {
       return (
-        <a
-          href={link.path}
+        <Link
+          to={link.path}
           className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-md font-semibold transition-all duration-200"
         >
           {link.title}
-        </a>
+        </Link>
       )
     }
 
     return (
       <div className="relative" ref={el => dropdownRefs.current[index] = el}>
-      <button
-        onClick={() => handleDropdown(index)}
-        className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-md font-semibold transition-all duration-200 flex items-center cursor-pointer"
-      >
-        {link.title}
-        <svg className={`w-4 h-4 ml-0.5 transform transition-transform ${activeDropdown === index ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 24 24">
-        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-        </svg>
-      </button>
-      {activeDropdown === index && (
-        <div className="absolute z-50 left-0 mt-2 w-48 rounded-md shadow-lg bg-white">
-        <div className="py-1">
-          {link.subLinks.map((subLink) => (
-          <a
-            key={subLink.title}
-            href={subLink.path}
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#054f89] hover:text-white font-semibold"
-          >
-            {subLink.title}
-          </a>
-          ))}
-        </div>
-        </div>
-      )}
+        <button
+          onClick={() => handleDropdown(index)}
+          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-md font-semibold transition-all duration-200 flex items-center cursor-pointer"
+        >
+          {link.title}
+          <svg className={`w-4 h-4 ml-0.5 transform transition-transform ${activeDropdown === index ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+          </svg>
+        </button>
+        {activeDropdown === index && (
+          <div className="absolute z-50 left-0 mt-2 w-48 rounded-md shadow-lg bg-white">
+            <div className="py-1">
+              {link.subLinks.map((subLink) => (
+                subLink.path.startsWith('http') ? (
+                  <a
+                    key={subLink.title}
+                    href={subLink.path}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#054f89] hover:text-white font-semibold"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {subLink.title}
+                  </a>
+                ) : (
+                  <Link
+                    key={subLink.title}
+                    to={subLink.path}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#054f89] hover:text-white font-semibold"
+                  >
+                    {subLink.title}
+                  </Link>
+                )
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     )
   }
 
   const MobileNavItem = ({ link, index }) => {
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
-  
+
     if (link.type === "direct") {
       return (
         <a
@@ -159,24 +176,36 @@ function Navbar() {
           className="w-full flex items-center text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-base font-medium cursor-pointer"
         >
           {link.title}
-          <svg 
-            className={`w-4 h-4 ml-0.5 transform transition-transform ${isSubMenuOpen ? 'rotate-180' : ''}`} 
-            fill="currentColor" 
+          <svg
+            className={`w-4 h-4 ml-0.5 transform transition-transform ${isSubMenuOpen ? 'rotate-180' : ''}`}
+            fill="currentColor"
             viewBox="0 0 24 24"
           >
-            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
           </svg>
         </button>
         {isSubMenuOpen && (
           <div className="pl-4 bg-[#043d6a]">
             {link.subLinks.map((subLink) => (
-              <a
-                key={subLink.title}
-                href={subLink.path}
-                className="text-gray-300 hover:bg-[#076ab8] hover:text-white block px-3 py-2 rounded-md text-sm"
-              >
-                {subLink.title}
-              </a>
+              subLink.path.startsWith('http') ? (
+                <a
+                  key={subLink.title}
+                  href={subLink.path}
+                  className="text-gray-300 hover:bg-[#076ab8] hover:text-white block px-3 py-2 rounded-md text-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {subLink.title}
+                </a>
+              ) : (
+                <a
+                  key={subLink.title}
+                  href={subLink.path}
+                  className="text-gray-300 hover:bg-[#076ab8] hover:text-white block px-3 py-2 rounded-md text-sm"
+                >
+                  {subLink.title}
+                </a>
+              )
             ))}
           </div>
         )}
@@ -223,12 +252,12 @@ function Navbar() {
       </div>
       {isOpen && (
         <div className="lg:hidden">
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          {navLinks.map((link, index) => (
-            <MobileNavItem key={link.title} link={link} index={index} />
-          ))}
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {navLinks.map((link, index) => (
+              <MobileNavItem key={link.title} link={link} index={index} />
+            ))}
+          </div>
         </div>
-      </div>
       )}
     </nav>
   )
