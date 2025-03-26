@@ -12,6 +12,7 @@ import PlenaryCommittee from './Pages/PlenaryCommittee'
 import HospitalityCommittee from './Pages/HospitalityCommittee'
 import KeynoteSpeaker from './Pages/KeyNoteSpeakers'
 import TutorialSpeaker from './Pages/TutorialSpeakers'
+import PHDColloqium from './Pages/PHDColloqium'
 function App() {
   return (
     <>
@@ -29,6 +30,7 @@ function App() {
       <Route path="/committee/hospitality" element={<HospitalityCommittee/>} />
       <Route path="/speakers/keynote" element={<KeynoteSpeaker/>} />
       <Route path="/speakers/tutorial" element={<TutorialSpeaker/>} />
+      <Route path="/phdcolloqium" element={<PHDColloqium/>} />
     </Routes>
     </BrowserRouter>
       <Footer />

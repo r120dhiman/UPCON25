@@ -59,7 +59,7 @@ function Navbar() {
         { title: "Guidelines", path: "/guidelines" }
       ]
     },
-    { title: "PHD Colloquim", path: "/phdColloquim", type: "direct" },
+    { title: "PHD Colloquim", path: "/phdcolloqium", type: "direct" },
     {
       "title": "Awards",
       "type": "dropdown",
@@ -123,7 +123,7 @@ function Navbar() {
       <div className="relative" ref={el => dropdownRefs.current[index] = el}>
         <button
           onClick={() => handleDropdown(index)}
-          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-1.5 py-2 rounded-md text-md font-semibold transition-all duration-200 flex items-center cursor-pointer"
+          className="text-gray-300 hover:bg-[#076ab8] hover:text-white  py-2 rounded-md text-md font-semibold transition-all duration-200 flex items-center cursor-pointer"
         >
           {link.title}
           <svg className={`w-4 h-4 ml-0.5 transform transition-transform ${activeDropdown === index ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 24 24">

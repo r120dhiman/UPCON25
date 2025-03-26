@@ -41,8 +41,9 @@ function Homepage() {
   return (
     <>
       <div className="bg-[url(/BG-BHU.jpg)] bg-cover w-screen h-[80vh] flex flex-col justify-center items-center text-center">
+      <div className="main1 flex flex-col justify-center items-center bg-white/70 px-3 rounded-3xl py-3">
         <h2 className="text-4xl text-orange-500 font-semibold">IEEE UP SECTION INTERNATIONAL CONFERENCE</h2>
-        <h2 className="text-3xl pt-4">-----TOPIC OF IEEE-----</h2>
+        <h2 className="text-3xl pt-4 ">-----TOPIC OF IEEE-----</h2>
         <motion.h3
           className="text-3xl text-blue-500 flex items-center gap-6 mt-4"
           initial={{ opacity: 0, x: -50 }}
@@ -51,6 +52,7 @@ function Homepage() {
         >
           <Calendar /> Starting from <span className="text-2xl">DD/MM/YYYY</span>
         </motion.h3>
+        </div>
       </div>
       
       <div ref={sectionRef} className="bg-white my-10 gap-12 flex flex-col w-screen items-center">
