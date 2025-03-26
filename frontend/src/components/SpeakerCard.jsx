@@ -2,7 +2,7 @@ import React from "react";
 
 const SpeakerCard = ({ speakerData }) => {  
   return (
-    <div className="flex flex-col items-center px-3 py-4 bg-white rounded-lg hover:shadow-xl transition-shadow mx-auto cursor-default max-w-3/4">
+    <div className="flex flex-col backdrop-blur-3xl rounded-4xl items-center px-3 py-4 hover:shadow-xl transition-shadow mx-auto cursor-default max-w-3/4">
       <img 
         src={speakerData.imageUrl} 
         alt={speakerData.name} 
