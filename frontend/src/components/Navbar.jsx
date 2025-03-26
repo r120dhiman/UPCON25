@@ -8,15 +8,6 @@ function Navbar() {
   const navLinks = [
     { title: "Home", path: "/", type: "direct" },
     {
-      title: "About",
-      type: "dropdown",
-      subLinks: [
-        { title: "About Conference", path: "/about-conference" },
-        { title: "About Institute", path: "/about-institute" },
-        { title: "Previous UPCON", path: "https://sefet.in/" }
-      ]
-    },
-    {
       "title": "Committee",
       "type": "dropdown",
       "subLinks": [
@@ -28,7 +19,7 @@ function Navbar() {
         { "title": "Plenary Committee", "path": "/committee/plenary" },
         { "title": "Hospitality Committee", "path": "/committee/hospitality" }
       ]
-    },    
+    },
     {
       title: "Speakers",
       type: "dropdown",
@@ -41,13 +32,7 @@ function Navbar() {
       title: "Program",
       type: "dropdown",
       subLinks: [
-        { title: "Call For Papers", path: "/callforpapers" },
-        { title: "Call For Tutorials", path: "/callfortutorials" },
-        { title: "Call For Workshops", path: "/callforworkshops" },
-        { title: "Call For Special Sessions", path: "/callforspecialsessions" },
-        { title: "Accepted Proposals", path: "/acceptedproposals" },
-        { title: "Accepted Papers", path: "/acceptedpapers" },
-        { title: "Registered Papers", path: "/registeredpapers" }
+        { title: "Schedule-at-a-Glance", path: "/schedule" },
       ]
     },
     { title: "Registration", path: "/registration", type: "direct" },
@@ -56,7 +41,14 @@ function Navbar() {
       type: "dropdown",
       subLinks: [
         { title: "Paper Submission", path: "/paper-submission" },
-        { title: "Guidelines", path: "/guidelines" }
+        { title: "Guidelines", path: "/guidelines" },
+        { title: "Call For Papers", path: "/callforpapers" },
+        { title: "Call For Tutorials", path: "/callfortutorials" },
+        { title: "Call For Workshops", path: "/callforworkshops" },
+        { title: "Call For Special Sessions", path: "/callforspecialsessions" },
+        { title: "Accepted Proposals", path: "/acceptedproposals" },
+        { title: "Accepted Papers", path: "/acceptedpapers" },
+        { title: "Registered Papers", path: "/registeredpapers" }
       ]
     },
     { title: "PHD Colloquim", path: "/phdcolloqium", type: "direct" },
@@ -85,10 +77,6 @@ function Navbar() {
     { title: "Contact", path: "/contact", type: "direct" },
   ]
 
-  const handleDropdown = (index) => {
-    setActiveDropdown(activeDropdown === index ? null : index)
-  }
-
   const dropdownRefs = useRef({});
 
   useEffect(() => {
@@ -107,12 +95,13 @@ function Navbar() {
     };
   }, [activeDropdown]);
 
-  const DesktopNavItem = ({ link, index }) => {
+  const DesktopNavItem = ({ link }) => {
+    const [isHovered, setIsHovered] = useState(false);
     if (link.type === "direct") {
       return (
         <Link
           to={link.path}
-          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-1.5 py-2 rounded-md text-md font-semibold transition-all duration-200"
+          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-1.5 py-2 rounded-md text-md font-medium transition-all duration-200"
         >
           {link.title}
         </Link>
@@ -120,43 +109,53 @@ function Navbar() {
     }
 
     return (
-      <div className="relative" ref={el => dropdownRefs.current[index] = el}>
+      <div
+        className="relative"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <button
-          onClick={() => handleDropdown(index)}
-          className="text-gray-300 hover:bg-[#076ab8] hover:text-white  py-2 rounded-md text-md font-semibold transition-all duration-200 flex items-center cursor-pointer"
+          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-1 py-2 rounded-md text-md font-medium transition-all duration-200 flex items-center cursor-pointer"
         >
           {link.title}
-          <svg className={`w-4 h-4 ml-0.5 transform transition-transform ${activeDropdown === index ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 24 24">
+          <svg
+            className={`w-4 h-4 ml-0.5 transform transition-transform duration-200 ${isHovered ? 'rotate-180' : ''}`}
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
             <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
           </svg>
         </button>
-        {activeDropdown === index && (
-          <div className="absolute z-50 left-0 mt-2 w-48 rounded-md shadow-lg bg-white">
-            <div className="py-1">
-              {link.subLinks.map((subLink) => (
-                subLink.path.startsWith('http') ? (
-                  <a
-                    key={subLink.title}
-                    href={subLink.path}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#054f89] hover:text-white font-semibold"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {subLink.title}
-                  </a>
-                ) : (
-                  <Link
-                    key={subLink.title}
-                    to={subLink.path}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#054f89] hover:text-white font-semibold"
-                  >
-                    {subLink.title}
-                  </Link>
-                )
-              ))}
-            </div>
+        <div
+          className={`absolute z-50 left-0 mt-0 w-48 rounded-md shadow-lg bg-white transform transition-all duration-200 origin-top
+          ${isHovered
+              ? 'opacity-100 translate-y-0 visible'
+              : 'opacity-0 -translate-y-2 invisible'}`}
+        >
+          <div className="py-1">
+            {link.subLinks.map((subLink) => (
+              subLink.path.startsWith('http') ? (
+                <a
+                  key={subLink.title}
+                  href={subLink.path}
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#054f89] hover:text-white font-medium transition-colors duration-150"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {subLink.title}
+                </a>
+              ) : (
+                <Link
+                  key={subLink.title}
+                  to={subLink.path}
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#055089] hover:text-white font-medium transition-colors duration-150"
+                >
+                  {subLink.title}
+                </Link>
+              )
+            ))}
           </div>
-        )}
+        </div>
       </div>
     )
   }
