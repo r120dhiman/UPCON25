@@ -6,9 +6,8 @@ function PHDColloquium() {
   return (
     <div className="flex flex-col w-screen bg-gray-100 min-h-screen">
       
-      {/* Hero Section with Animated Background */}
       <motion.div 
-        className="upper relative h-[70vh] bg-[url(/phd.jpg)] bg-no-repeat bg-cover flex items-center justify-center"
+        className="upper relative h-[70vh] bg-[url(/phd.jpg)] object-center bg-no-repeat bg-cover flex items-center justify-center"
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 1.2 }}
