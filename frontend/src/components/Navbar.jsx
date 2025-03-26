@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router'
 
-function Navbar() {
+function Navbar({color , backdrop}) {
   const [isOpen, setIsOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState(null)
 
@@ -64,7 +64,7 @@ function Navbar() {
     },
     { title: "SPONSORS", path: "/sponsors", type: "direct" },
     {
-      title: "HISTORY",
+      title: "PREVIOUS UPCON's",
       type: "dropdown",
       subLinks: [
         { title: "UPCON 2024", path: "https://upcon.srmcem.ac.in/" },
@@ -219,8 +219,8 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-[#054f89] sticky w-full z-50">
-      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
+    <nav className={`${color?"bg-[#054f89]":"bg-black/40"} sticky w-full z-50 ${backdrop? "backdrop-blur-4xl":""}`}>
+      <div className="w-screen mx-auto ">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 lg:hidden">
