@@ -78,7 +78,8 @@ function Navbar() {
         { title: "UPCON 2024", path: "https://upcon.srmcem.ac.in/" },
         { title: "UPCON 2023", path: "https://amity.edu/upcon2023/" },
         { title: "UPCON 2022", path: "https://upcon2022.iiita.ac.in/" },
-        { title: "UPCON 2021", path: "http://upcon2021.in/" }
+        { title: "UPCON 2021", path: "http://upcon2021.in/" },
+        { title: "UPCON 2020", path: "https://www.mnnit.ac.in/upcon2020/" },
       ]
     },
     { title: "Contact", path: "/contact", type: "direct" },

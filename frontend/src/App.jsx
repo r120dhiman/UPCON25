@@ -6,6 +6,10 @@ import NotFound from './Pages/NotFound'
 import TechnicalCommittee from './Pages/TechnicalCommittee'
 import AdvisoryCommittee from './Pages/AdvisoryCommittee'
 import OrganisingCommittee from './Pages/OrganisingCommittee'
+import PublicityCommittee from './Pages/PublicityCommittee'
+import SponsorshipCommittee from './Pages/SponsorshipCommittee'
+import PlenaryCommittee from './Pages/PlenaryCommittee'
+import HospitalityCommittee from './Pages/HospitalityCommittee'
 import KeynoteSpeaker from './Pages/KeyNoteSpeakers'
 import TutorialSpeaker from './Pages/TutorialSpeakers'
 function App() {
@@ -19,6 +23,10 @@ function App() {
       <Route path="/committee/Technical" element={<TechnicalCommittee/>}/>
       <Route path="/committee/advisory" element={<AdvisoryCommittee/>} />
       <Route path="/committee/organizing" element={<OrganisingCommittee/>} />
+      <Route path="/committee/publicity" element={<PublicityCommittee/>} />
+      <Route path="/committee/sponsorship" element={<SponsorshipCommittee/>} />
+      <Route path="/committee/plenary" element={<PlenaryCommittee/>} />
+      <Route path="/committee/hospitality" element={<HospitalityCommittee/>} />
       <Route path="/speakers/keynote" element={<KeynoteSpeaker/>} />
       <Route path="/speakers/tutorial" element={<TutorialSpeaker/>} />
     </Routes>
