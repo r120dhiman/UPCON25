@@ -6,9 +6,9 @@ function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState(null)
 
   const navLinks = [
-    { title: "Home", path: "/", type: "direct" },
+    { title: "HOME", path: "/", type: "direct" },
     {
-      "title": "Committee",
+      "title": "COMMITTEE",
       "type": "dropdown",
       "subLinks": [
         { "title": "Technical Committee", "path": "/committee/technical" },
@@ -21,7 +21,7 @@ function Navbar() {
       ]
     },
     {
-      title: "Speakers",
+      title: "SPEAKERS",
       type: "dropdown",
       subLinks: [
         { title: "Keynote Speakers", path: "/speakers/keynote" },
@@ -29,15 +29,15 @@ function Navbar() {
       ]
     },
     {
-      title: "Program",
+      title: "PROGRAM",
       type: "dropdown",
       subLinks: [
         { title: "Schedule-at-a-Glance", path: "/schedule" },
       ]
     },
-    { title: "Registration", path: "/registration", type: "direct" },
+    { title: "REGISTRATION", path: "/registration", type: "direct" },
     {
-      title: "Authors",
+      title: "AUTHORS",
       type: "dropdown",
       subLinks: [
         { title: "Paper Submission", path: "/paper-submission" },
@@ -51,9 +51,9 @@ function Navbar() {
         { title: "Registered Papers", path: "/registeredpapers" }
       ]
     },
-    { title: "PHD Colloquim", path: "/phdcolloqium", type: "direct" },
+    { title: "PHD COLLOQUIM", path: "/phdcolloqium", type: "direct" },
     {
-      "title": "Awards",
+      "title": "AWARDS",
       "type": "dropdown",
       "subLinks": [
         { "title": "Best PhD award", "path": "/awards/bestPhD" },
@@ -62,9 +62,9 @@ function Navbar() {
         { "title": "Malviya Student Trouvel award", "path": "/awards/malviyaStudentTrouvel" }
       ]
     },
-    { title: "Sponsors", path: "/sponsors", type: "direct" },
+    { title: "SPONSORS", path: "/sponsors", type: "direct" },
     {
-      title: "History",
+      title: "HISTORY",
       type: "dropdown",
       subLinks: [
         { title: "UPCON 2024", path: "https://upcon.srmcem.ac.in/" },
@@ -74,7 +74,7 @@ function Navbar() {
         { title: "UPCON 2020", path: "https://www.mnnit.ac.in/upcon2020/" },
       ]
     },
-    { title: "Contact", path: "/contact", type: "direct" },
+    { title: "CONTACT", path: "/contact", type: "direct" },
   ]
 
   const dropdownRefs = useRef({});
@@ -101,7 +101,7 @@ function Navbar() {
       return (
         <Link
           to={link.path}
-          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-1.5 py-2 rounded-md text-md font-medium transition-all duration-200"
+          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-0.5 py-2 rounded-md text-md font-medium transition-all duration-200"
         >
           {link.title}
         </Link>
@@ -220,7 +220,7 @@ function Navbar() {
 
   return (
     <nav className="bg-[#054f89] sticky w-full z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 lg:hidden">
