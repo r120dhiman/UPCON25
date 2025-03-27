@@ -3,6 +3,8 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import Navbar from '../components/Navbar'
+import Card from "../components/Brochure_Card";
+import SponsorsSection from "../components/Sponsers";
 
 function Homepage() {
   const cardRef = useRef(null);
@@ -15,7 +17,7 @@ function Homepage() {
     );
   }, []);
   return (
-    <div className='flex flex-col bg-fixed bg-[url(/BG-BHU.jpg)]  h-screen' >
+    <div className='flex flex-col bg-fixed bg-[url(/BG-BHU.jpg)] ' >
       <div className="upper flex flex-row justify-between items-center px-16 pb-2
         backdrop-blur-md rounded-2xl shadow-lg border border-white/20">
   <img src="/UPCON.png" alt="UPCON logo" className="w-24 h-24 " />
@@ -27,7 +29,8 @@ function Homepage() {
   </p>
 </div>
 <Navbar color={false} backdrop={true}/>
-<div className="w-screen flex flex-row justify-between items-center backdrop-blur-xs px-16 py-10">
+<div className="main w-screen backdrop-blur-xs  ">
+<div className="w-screen flex flex-row justify-between items-center  px-16 py-10">
   
   {/* Left Section - About Content */}
   <motion.div
@@ -74,6 +77,13 @@ function Homepage() {
   
 </div>
 
+</div>
+<div className="cards flex flex-row justify-evenly items-center flex-wrap my-8">
+  <Card title={"Rohit"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
+  <Card title={"Rohit"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
+  <Card title={"Rohit"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
+</div>
+<SponsorsSection/>
 </div>
 
 
