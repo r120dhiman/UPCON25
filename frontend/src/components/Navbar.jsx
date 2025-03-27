@@ -101,7 +101,7 @@ function Navbar({color , backdrop}) {
       return (
         <Link
           to={link.path}
-          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-0.5 py-2 rounded-md text-md font-medium transition-all duration-200"
+          className={`text-gray-50 hover:text-white px-0.5 py-2 rounded-md text-md font-medium transition-all duration-200 ${color?"hover:bg-[#076ab8]":"hover:bg-gray-600/40"}`}
         >
           {link.title}
         </Link>
@@ -115,7 +115,7 @@ function Navbar({color , backdrop}) {
         onMouseLeave={() => setIsHovered(false)}
       >
         <button
-          className="text-gray-300 hover:bg-[#076ab8] hover:text-white px-1 py-2 rounded-md text-md font-medium transition-all duration-200 flex items-center cursor-pointer"
+          className={`text-gray-50 hover:text-white px-1 py-2 rounded-md text-md font-medium transition-all duration-200 flex items-center cursor-pointer ${color?"hover:bg-[#076ab8]":"hover:bg-gray-600/40"}`}
         >
           {link.title}
           <svg
@@ -138,7 +138,7 @@ function Navbar({color , backdrop}) {
                 <a
                   key={subLink.title}
                   href={subLink.path}
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#054f89] hover:text-white font-medium transition-colors duration-150"
+                  className={`block px-4 py-2 text-sm text-gray-700 hover:text-white font-medium transition-colors duration-150 ${color?"hover:bg-[#054f89]":"hover:bg-gray-600/50"}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -148,7 +148,7 @@ function Navbar({color , backdrop}) {
                 <Link
                   key={subLink.title}
                   to={subLink.path}
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#055089] hover:text-white font-medium transition-colors duration-150"
+                  className={`block px-4 py-2 text-sm text-gray-700 hover:text-white font-medium transition-colors duration-150 ${color?"hover:bg-[#055089]":"hover:bg-gray-600/50"}`}
                 >
                   {subLink.title}
                 </Link>
@@ -190,7 +190,7 @@ function Navbar({color , backdrop}) {
           </svg>
         </button>
         {isSubMenuOpen && (
-          <div className="pl-4 bg-[#043d6a]">
+          <div className={`pl-4 ${color?"bg-[#043d6a]":"bg-gray-600/50"}`}>
             {link.subLinks.map((subLink) => (
               subLink.path.startsWith('http') ? (
                 <a

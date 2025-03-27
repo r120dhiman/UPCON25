@@ -17,7 +17,7 @@ function TutorialSpeaker() {
           backgroundImage: "url('/sp.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: '0.75'
+          opacity: '0.8'
         }}
       />
 
