@@ -37,7 +37,7 @@ function Navbar({color , backdrop}) {
     },
     { title: "REGISTRATION", path: "/registration", type: "direct" },
     {
-      title: "AUTHORS",
+      title: "AUTHORS' CENTRE",
       type: "dropdown",
       subLinks: [
         { title: "Paper Submission", path: "/paper-submission" },
@@ -101,7 +101,7 @@ function Navbar({color , backdrop}) {
       return (
         <Link
           to={link.path}
-          className={`text-gray-50 hover:text-white px-0.5 py-2 rounded-md text-md font-medium transition-all duration-200 ${color?"hover:bg-[#076ab8]":"hover:bg-gray-600/40"}`}
+          className={`text-gray-50 hover:text-[#ffffe0] px-0.5 py-2 rounded-md text-md font-medium transition-all duration-200 ${color?"hover:bg-[#442542]":"hover:bg-gray-600/40"}`}
         >
           {link.title}
         </Link>
@@ -115,7 +115,7 @@ function Navbar({color , backdrop}) {
         onMouseLeave={() => setIsHovered(false)}
       >
         <button
-          className={`text-gray-50 hover:text-white px-1 py-2 rounded-md text-md font-medium transition-all duration-200 flex items-center cursor-pointer ${color?"hover:bg-[#076ab8]":"hover:bg-gray-600/40"}`}
+          className={`text-gray-50 hover:text-[#ffffe0] px-1 py-2 rounded-md text-md font-medium transition-all duration-200 flex items-center cursor-pointer ${color?"hover:bg-[#442542]":"hover:bg-gray-600/40"}`}
         >
           {link.title}
           <svg
@@ -138,7 +138,7 @@ function Navbar({color , backdrop}) {
                 <a
                   key={subLink.title}
                   href={subLink.path}
-                  className={`block px-4 py-2 text-sm text-gray-700 hover:text-white font-medium transition-colors duration-150 ${color?"hover:bg-[#054f89]":"hover:bg-gray-600/50"}`}
+                  className={`block px-4 py-2 text-sm text-gray-700 hover:text-white font-medium transition-colors duration-150 ${color?"hover:bg-[#8C477E]":"hover:bg-gray-600/90"}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -148,7 +148,7 @@ function Navbar({color , backdrop}) {
                 <Link
                   key={subLink.title}
                   to={subLink.path}
-                  className={`block px-4 py-2 text-sm text-gray-700 hover:text-white font-medium transition-colors duration-150 ${color?"hover:bg-[#055089]":"hover:bg-gray-600/50"}`}
+                  className={`block px-4 py-2 text-sm text-gray-700 hover:text-white font-medium transition-colors duration-150 ${color?"hover:bg-[#8C477E]":"hover:bg-gray-600/90"}`}
                 >
                   {subLink.title}
                 </Link>
@@ -167,7 +167,7 @@ function Navbar({color , backdrop}) {
       return (
         <a
           href={link.path}
-          className="text-gray-300 hover:bg-[#076ab8] hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          className="text-gray-300 hover:bg-[#442542] hover:text-white block px-3 py-2 rounded-md text-base font-medium"
         >
           {link.title}
         </a>
@@ -178,7 +178,7 @@ function Navbar({color , backdrop}) {
       <div>
         <button
           onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
-          className="w-full flex items-center text-gray-300 hover:bg-[#076ab8] hover:text-white px-3 py-2 rounded-md text-base font-medium cursor-pointer"
+          className="w-full flex items-center text-gray-300 hover:bg-[#442542] hover:text-white px-3 py-2 rounded-md text-base font-medium cursor-pointer"
         >
           {link.title}
           <svg
@@ -190,13 +190,13 @@ function Navbar({color , backdrop}) {
           </svg>
         </button>
         {isSubMenuOpen && (
-          <div className={`pl-4 ${color?"bg-[#043d6a]":"bg-gray-600/50"}`}>
+          <div className={`pl-4 ${color?"bg-[#442542]":"bg-gray-600/50"}`}>
             {link.subLinks.map((subLink) => (
               subLink.path.startsWith('http') ? (
                 <a
                   key={subLink.title}
                   href={subLink.path}
-                  className="text-gray-300 hover:bg-[#076ab8] hover:text-white block px-3 py-2 rounded-md text-sm"
+                  className="text-gray-300 hover:bg-[#5e365b] hover:text-white block px-3 py-2 rounded-md text-sm"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -206,7 +206,7 @@ function Navbar({color , backdrop}) {
                 <a
                   key={subLink.title}
                   href={subLink.path}
-                  className="text-gray-300 hover:bg-[#076ab8] hover:text-white block px-3 py-2 rounded-md text-sm"
+                  className="text-gray-300 hover:bg-[#5e365b] hover:text-white block px-3 py-2 rounded-md text-sm"
                 >
                   {subLink.title}
                 </a>
@@ -219,7 +219,7 @@ function Navbar({color , backdrop}) {
   }
 
   return (
-    <nav className={`${color?"bg-[#054f89]":"bg-black/40"} backdrop-blur-xs  sticky w-full z-50 ${backdrop? "backdrop-blur-4xl":""}`}>
+    <nav className={`${color?"bg-[#573054]":"bg-black/40"} backdrop-blur-xs  sticky w-full z-50 ${backdrop? "backdrop-blur-4xl":""}`}>
       <div className="w-screen mx-auto ">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -237,7 +237,7 @@ function Navbar({color , backdrop}) {
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-[#076ab8] focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-[#4e2a4b] focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
