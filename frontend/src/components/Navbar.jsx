@@ -219,7 +219,7 @@ function Navbar({color , backdrop}) {
   }
 
   return (
-    <nav className={`${color?"bg-[#573054]":"bg-black/40"} backdrop-blur-xs  sticky w-full z-50 ${backdrop? "backdrop-blur-4xl":""}`}>
+    <nav className={`${color?"bg-[#573054]":"bg-black/55"} backdrop-blur-xs  sticky w-full z-50 ${backdrop? "backdrop-blur-4xl":""}`}>
       <div className="w-screen mx-auto ">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">

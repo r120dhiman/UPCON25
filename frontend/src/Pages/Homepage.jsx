@@ -18,87 +18,97 @@ function Homepage() {
     );
   }, []);
   return (
-    <div className='flex flex-col bg-fixed bg-[url(/BG-BHU.jpg)] min-h-screen' >
-     <div className="upper flex flex-col md:flex-row justify-center md:justify-between items-center px-6 sm:px-12 md:px-16 pb-2
-  backdrop-blur-xs rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 gap-4 md:gap-8">
-  
-  <img src="/UPCON.png" alt="UPCON logo" 
-    className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 hover:scale-105 transition-transform duration-300" />
+    <div className='flex flex-col bg-fixed bg-gradient-to-br from-purple-50 to-blue-50 bg-[url(/BG-BHU.jpg)] bg-blend-overlay min-h-screen'>
+      <div className="upper flex flex-col md:flex-row justify-center md:justify-between items-center px-6 sm:px-12 md:px-16 pb-2 bg-white/30 backdrop-blur-md shadow-lg transition-all duration-300 gap-4 md:gap-8 border-b border-purple-100">
 
-  <img src="/Logos/IEEE.webp" alt="IEEE logo" 
-    className="h-24 sm:h-28 md:h-32 hover:scale-105 transition-transform duration-300" />
+        <img
+          src="/UPCON.png"
+          alt="UPCON logo"
+          className="w-32 h-32 sm:w-36 sm:h-36 md:w-44 md:h-44 hover:scale-105 transition-transform duration-300 pt-3"
+          style={{ clipPath: 'inset(0 0 27% 0)' }}
+        />
 
-  <img src="/Logos/IITBHU.png" alt="IIT BHU logo" 
-    className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 hover:scale-105 transition-transform duration-300" />
 
-</div>
-      <div className="upper flex flex-row justify-center items-center px-11 py-2
-      backdrop-blur-3xl gap-5 hover:backdrop-blur-2xl transition-all duration-300">
-        <h1 className="text-4xl text-[#62614a]  font-extrabold  drop-shadow-xl hover:scale-105 transition-transform">
+        <img src="/Logos/IEEE.webp" alt="IEEE logo"
+          className="h-24 sm:h-28 md:h-32 hover:scale-105 transition-transform duration-300" />
+
+        <img src="/Logos/IITBHU.png" alt="IIT BHU logo"
+          className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 hover:scale-105 transition-transform duration-300" />
+
+      </div>
+      <div className="upper flex flex-row justify-center items-center px-2 py-4 gap-4 transition-all duration-300 bg-gradient-to-r from-purple-100/50 to-blue-100/50 backdrop-blur-md shadow-md">
+        <h1 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent drop-shadow-lg hover:scale-105 transition-transform">
           UPCON 2025
         </h1>
-        <p className="text-xl text-[#62614a] font-semibold bg-blue/20 px-4 py-2 rounded-lg  hover:bg-blue/30 transition-all duration-300">
-          From 13 Dec. To 15 Dec.
-        </p>
+        <div className="flex flex-col items-center gap-2 rounded-2xl p-2 transition-all duration-300 hover:scale-105">
+          <p className="text-xl md:text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            13-15 December'25
+          </p>
+        </div>
       </div>
-      <Navbar color={false} backdrop={true} />
-      <div className="main w-screen backdrop-blur-xs">
-      <div className="w-screen flex flex-col lg:flex-row justify-between items-center px-6 sm:px-12 py-10 gap-8">
-  {/* Text Section */}
-  <motion.div
-    ref={cardRef}
-    className="bg-white/50 backdrop-blur-3xl rounded-3xl shadow-lg p-6 sm:p-8 max-w-full lg:max-w-[60%] transition-all hover:bg-white/60"
-    whileHover={{
-      y: -10,
-      scale: 1.02,
-      boxShadow: "0px 20px 50px rgba(0, 0, 0, 0.3)",
-    }}
-    onHoverEnd={() => {
-      gsap.to(cardRef.current, {
-        y: 0,
-        scale: 1,
-        boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.1)",
-        duration: 0.5,
-        ease: "power2.out",
-      });
-    }}
-  >
-    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-800 mb-4 hover:text-blue-900 transition-colors">
-      About UPCON 2025
-    </h1>
-    <article className="text-base sm:text-lg text-black text-justify leading-relaxed font-semibold italic hover:text-gray-900 transition-colors">
-      The 11th "IEEE Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON-2023)" will be held at IIT BHU, Varanasi, India from 13-15 December 2025. UPCON is the top notch International conference covering broad topics in the areas of Electrical, Computer, and Electronics Engineering. 
-      <br /><br />
-      UPCON conference is organized annually at various locations in Uttar Pradesh (UP). Prior to this, first ten series of UPCON conferences were organized at GCET, Greater Noida (2014), Indian Institute of Information Technology Allahabad (2015), IIT BHU Varanasi (2016), GLA University Mathura (2017), MMMUT Gorakhpur (2018), AMU Aligarh (2019), MNNIT Allahabad (2020), Tula’s Institute Dehradun (2021), IIIT Allahabad (2022), Amity University (2023), and SRMCEM (2024).
-      <br /><br />
-      The conference is technically and financially sponsored by IEEE UP Section. There are multiple tracks in the conference covering almost all areas of Electrical, Computer & Electronics Engineering. Conference Proceedings will be abstracted and indexed by IEEE Xplore.
-    </article>
-  </motion.div>
-
-  {/* Image Section */}
-  <div className="relative w-72 sm:w-96 lg:w-[450px] h-72 sm:h-96 lg:h-[450px] flex items-center justify-center">
-    <div className="absolute inset-0 bg-gradient-to-r from-blue-300 to-purple-400 rounded-full opacity-50 blur-3xl"></div>
-    <div className="relative w-full h-full bg-[url(/About.jpg)] bg-cover bg-center rounded-full shadow-2xl border-4 border-white transform transition-all duration-500 hover:scale-105 hover:rotate-2 hover:shadow-[0_15px_30px_rgba(0,0,0,0.3)]">
-      <div className="absolute -top-4 left-4 w-full h-full rounded-full bg-white/10 blur-lg"></div>
-    </div>
-  </div>
-</div>
-    
-
-
-      <div className="flex justify-center">
-        <button className="w-1/2 bg-gradient-to-r text-white font-bold py-4 text-xl mt-8 from-[#9e1792] to-[#b70ca9] transition-all duration-300 shadow-lg rounded-full hover:shadow-2xl hover:scale-105 hover:from-[#b70ca9] hover:to-[#9e1792] cursor-pointer">
-          Paper Submission Template
-        </button>
+      <div className="sticky top-0 z-50">
+        <Navbar color={false} backdrop={true} />
       </div>
-      <div className="cards flex flex-row justify-evenly items-center flex-wrap my-8 gap-6">
-        <Card title={"Call for Papers"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
-        <Card title={"Call for Proposals"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
-        <Card title={"Call for Tutorials"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
-        <Card title={"Important Dates"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
-      </div>
-      <SponsorsSection />
-      <TourismGallery />
+      <div className="main w-screen backdrop-blur-sm bg-gradient-to-b from-transparent to-white/30">
+        <div className="w-screen flex flex-col lg:flex-row justify-between items-center px-6 sm:px-12 py-10 gap-8">
+          {/* Text Section */}
+          <motion.div
+            ref={cardRef}
+            className="bg-white/50 backdrop-blur-3xl rounded-3xl shadow-lg p-6 sm:p-8 max-w-full lg:max-w-[60%] transition-all hover:bg-white/60"
+            whileHover={{
+              y: -10,
+              scale: 1.02,
+              boxShadow: "0px 20px 50px rgba(0, 0, 0, 0.3)",
+            }}
+            onHoverEnd={() => {
+              gsap.to(cardRef.current, {
+                y: 0,
+                scale: 1,
+                boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.1)",
+                duration: 0.5,
+                ease: "power2.out",
+              });
+            }}
+          >
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-800 mb-4 hover:text-blue-900 transition-colors">
+              About UPCON 2025
+            </h1>
+            <article className="text-base sm:text-lg text-black text-justify leading-relaxed font-semibold italic hover:text-gray-900 transition-colors">
+              The 11th "IEEE Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON-2023)" will be held at IIT BHU, Varanasi, India from 13-15 December 2025. UPCON is the top notch International conference covering broad topics in the areas of Electrical, Computer, and Electronics Engineering.
+              <br /><br />
+              UPCON conference is organized annually at various locations in Uttar Pradesh (UP). Prior to this, first ten series of UPCON conferences were organized at GCET, Greater Noida (2014), Indian Institute of Information Technology Allahabad (2015), IIT BHU Varanasi (2016), GLA University Mathura (2017), MMMUT Gorakhpur (2018), AMU Aligarh (2019), MNNIT Allahabad (2020), Tula’s Institute Dehradun (2021), IIIT Allahabad (2022), Amity University (2023), and SRMCEM (2024).
+              <br /><br />
+              The conference is technically and financially sponsored by IEEE UP Section. There are multiple tracks in the conference covering almost all areas of Electrical, Computer & Electronics Engineering. Conference Proceedings will be abstracted and indexed by IEEE Xplore.
+            </article>
+          </motion.div>
+
+          {/* Image Section */}
+          <div className="relative w-72 sm:w-96 lg:w-[450px] h-72 sm:h-96 lg:h-[450px] flex items-center justify-center">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-300 to-purple-400 rounded-full opacity-50 blur-3xl"></div>
+            <div className="relative w-full h-full bg-[url(/About.jpg)] bg-cover bg-center rounded-full shadow-2xl border-4 border-white transform transition-all duration-500 hover:scale-105 hover:rotate-2 hover:shadow-[0_15px_30px_rgba(0,0,0,0.3)]">
+              <div className="absolute -top-4 left-4 w-full h-full rounded-full bg-white/10 blur-lg"></div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div className="flex justify-center my-12">
+          <button className="group relative w-1/2 bg-gradient-to-r from-purple-700 to-blue-700 text-white font-bold py-4 text-xl rounded-full 
+            shadow-[0_10px_20px_rgba(109,40,217,0.3)] hover:shadow-[0_20px_40px_rgba(109,40,217,0.4)] 
+            transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer">
+            <span className="relative z-10">Paper Submission Template</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </button>
+        </div>
+        <div className="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 py-12 bg-gradient-to-t from-white/30 to-transparent">
+          <Card title={"Call for Papers"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
+          <Card title={"Call for Proposals"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
+          <Card title={"Call for Tutorials"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
+          <Card title={"Important Dates"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
+        </div>
+        <SponsorsSection />
+        <TourismGallery />
       </div>
     </div>
 

@@ -8,7 +8,8 @@ const sponsors = [
   { name: "IEEE IES", logo: "/Logos/IEEE_IES.png" },
   { name: "IEEE PELS", logo: "/Logos/IEEE_PELS.png" },
   { name: "IEEE", logo: "/Logos/IEEE.webp" },
-  { name: "IIT BHU", logo: "/Logos/IITBHU.png" }
+  { name: "IIT BHU", logo: "/Logos/IITBHU.png" },
+  { name: "IEEE EPS", logo: "/Logos/eps-logo.png" },
 ];
 
 gsap.registerPlugin(ScrollTrigger);
@@ -37,10 +38,10 @@ const SponsorsSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full py-12 bg-gradient-to-br from-gray-100/50 to-gray-200/50 overflow-hidden">
+    <section className="relative w-full py-12 bg-gradient-to-br from-gray-100/70 to-gray-200/70 overflow-hidden">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-gray-800 mb-10 tracking-tight">
-          Trusted By Industry Leaders
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-gray-800 mb-10 tracking-tight font-stretch-semi-expanded">
+         SPONSORS
         </h2>
         
         <div 
