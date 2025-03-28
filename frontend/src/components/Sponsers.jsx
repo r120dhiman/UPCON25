@@ -37,9 +37,9 @@ const SponsorsSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full py-16 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+    <section className="relative w-full py-12 bg-gradient-to-br from-gray-100/50 to-gray-200/50 overflow-hidden">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-gray-800 mb-14 tracking-tight">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-gray-800 mb-10 tracking-tight">
           Trusted By Industry Leaders
         </h2>
         
@@ -51,7 +51,6 @@ const SponsorsSection = () => {
             ref={marqueeRef} 
             className="flex items-center justify-center w-[200%]"
           >
-            {/* First set of sponsors */}
             {sponsors.map((sponsor, index) => (
               <motion.div
                 key={`first-${index}`}
@@ -59,16 +58,17 @@ const SponsorsSection = () => {
                   scale: 1.05,
                   transition: { duration: 0.3 }
                 }}
-                className="mx-4 md:mx-6 lg:mx-9 flex items-center justify-center opacity-90 hover:opacity-100 transition-all duration-300"
+                className="mx-4 md:mx-6 lg:mx-8 flex items-center justify-center opacity-95 hover:opacity-100 transition-all duration-300"
               >
                 <img
                   src={sponsor.logo}
                   alt={`${sponsor.name} logo`}
-                  className="h-14 md:h-20 lg:h-24 w-auto transition-all duration-300"
+                  className="h-32 sm:h-36 md:h-40 lg:h-44 w-auto min-w-[120px] object-contain mix-blend-multiply filter contrast-125 brightness-95"
                 />
               </motion.div>
             ))}
-            {/* Second set of sponsors for seamless loop */}
+  
+            {/* Second set with same styles */}
             {sponsors.map((sponsor, index) => (
               <motion.div
                 key={`second-${index}`}
@@ -76,24 +76,24 @@ const SponsorsSection = () => {
                   scale: 1.05,
                   transition: { duration: 0.3 }
                 }}
-                className="mx-4 md:mx-6 lg:mx-9 flex items-center justify-center opacity-90 hover:opacity-100 transition-all duration-300"
+                className="mx-4 md:mx-6 lg:mx-8 flex items-center justify-center opacity-95 hover:opacity-100 transition-all duration-300"
               >
                 <img
                   src={sponsor.logo}
                   alt={`${sponsor.name} logo`}
-                  className="h-14 md:h-20 lg:h-24 w-auto transition-all duration-300"
+                  className="h-32 sm:h-36 md:h-40 lg:h-44 w-auto min-w-[120px] object-contain mix-blend-multiply filter contrast-125 brightness-95"
                 />
               </motion.div>
             ))}
           </div>
         </div>
       </div>
-
-      {/* Subtle gradient overlay */}
-      <div className="absolute top-0 left-0 w-14 h-full bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
-      <div className="absolute top-0 right-0 w-14 h-full bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
+  
+      {/* Subtle gradient overlay with reduced width */}
+      <div className="absolute top-0 left-0 w-10 h-full bg-gradient-to-r from-gray-100/80 to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-10 h-full bg-gradient-to-l from-gray-100/80 to-transparent z-10 pointer-events-none"></div>
     </section>
   );
-};
+}
 
 export default SponsorsSection;
