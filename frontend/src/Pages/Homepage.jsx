@@ -18,13 +18,20 @@ function Homepage() {
     );
   }, []);
   return (
-    <div className='flex flex-col bg-fixed bg-gradient-to-br from-purple-50 to-blue-50 bg-[url(/BG-BHU.jpg)] bg-blend-overlay min-h-screen'>
-      <div className="upper flex flex-col md:flex-row justify-center md:justify-between items-center px-6 sm:px-12 md:px-16 pb-2 bg-white/30 backdrop-blur-md shadow-lg transition-all duration-300 gap-4 md:gap-8 border-b border-purple-100">
+    <div className='flex flex-col min-h-screen relative'>
+      <div className="fixed inset-x-0 bottom-0 h-[80vh] -z-10">
+        <div
+          className="absolute inset-0 bg-[url(/new.jpg)] bg-bottom bg-no-repeat bg-contain 
+      brightness-100 bg-blend-overlay"
+        />
+      </div>
+
+      <div className="upper flex flex-col md:flex-row justify-center md:justify-between items-center px-6 sm:px-12 md:px-16 pb-2 shadow-lg transition-all duration-300 gap-4 md:gap-8 border-b border-purple-100">
 
         <img
           src="/UPCON.png"
           alt="UPCON logo"
-          className="w-32 h-32 sm:w-36 sm:h-36 md:w-44 md:h-44 hover:scale-105 transition-transform duration-300 pt-3"
+          className="w-32 h-32 sm:w-36 sm:h-36 md:w-44 md:h-44 hover:scale-105 transition-transform duration-300 pt-4"
           style={{ clipPath: 'inset(0 0 27% 0)' }}
         />
 
@@ -36,7 +43,7 @@ function Homepage() {
           className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 hover:scale-105 transition-transform duration-300" />
 
       </div>
-      <div className="upper flex flex-row justify-center items-center px-2 py-4 gap-4 transition-all duration-300 bg-gradient-to-r from-purple-100/50 to-blue-100/50 backdrop-blur-md shadow-md">
+      <div className="upper flex flex-row justify-center items-center px-2 py-4 gap-4 transition-all duration-300 bg-gradient-to-r from-purple-100/50 to-blue-100/50 shadow-md">
         <h1 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent drop-shadow-lg hover:scale-105 transition-transform">
           UPCON 2025
         </h1>
@@ -49,7 +56,7 @@ function Homepage() {
       <div className="sticky top-0 z-50">
         <Navbar color={false} backdrop={true} />
       </div>
-      <div className="main w-screen backdrop-blur-sm bg-gradient-to-b from-transparent to-white/30">
+      <div className="main w-screen">
         <div className="w-screen flex flex-col lg:flex-row justify-between items-center px-6 sm:px-12 py-10 gap-8">
           {/* Text Section */}
           <motion.div
@@ -73,7 +80,7 @@ function Homepage() {
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-800 mb-4 hover:text-blue-900 transition-colors">
               About UPCON 2025
             </h1>
-            <article className="text-base sm:text-lg text-black text-justify leading-relaxed font-semibold italic hover:text-gray-900 transition-colors">
+            <article className="text-base sm:text-lg text-black text-justify leading-relaxed font-medium italic hover:text-blue-900 transition-colors">
               The 11th "IEEE Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON-2023)" will be held at IIT BHU, Varanasi, India from 13-15 December 2025. UPCON is the top notch International conference covering broad topics in the areas of Electrical, Computer, and Electronics Engineering.
               <br /><br />
               UPCON conference is organized annually at various locations in Uttar Pradesh (UP). Prior to this, first ten series of UPCON conferences were organized at GCET, Greater Noida (2014), Indian Institute of Information Technology Allahabad (2015), IIT BHU Varanasi (2016), GLA University Mathura (2017), MMMUT Gorakhpur (2018), AMU Aligarh (2019), MNNIT Allahabad (2020), Tula’s Institute Dehradun (2021), IIIT Allahabad (2022), Amity University (2023), and SRMCEM (2024).
@@ -93,7 +100,7 @@ function Homepage() {
 
 
 
-        <div className="flex justify-center my-12">
+        <div className="flex justify-center mt-12 mb-10">
           <button className="group relative w-1/2 bg-gradient-to-r from-purple-700 to-blue-700 text-white font-bold py-4 text-xl rounded-full 
             shadow-[0_10px_20px_rgba(109,40,217,0.3)] hover:shadow-[0_20px_40px_rgba(109,40,217,0.4)] 
             transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer">
@@ -101,11 +108,40 @@ function Homepage() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
         </div>
-        <div className="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 py-12 bg-gradient-to-t from-white/30 to-transparent">
-          <Card title={"Call for Papers"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
-          <Card title={"Call for Proposals"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
-          <Card title={"Call for Tutorials"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
-          <Card title={"Important Dates"} logoImage={"/watermark.jpg"} speakerImage={"/watermark.jpg"} description={"lorem20"} />
+        <div className="w-full px-2 sm:px-4 lg:px-6 py-8 bg-gradient-to-b from-transparent to-white/10">
+          <div className="max-w-7xl w-full mx-auto">
+
+            <div className="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 self-center items-center justify-items-center">
+              <Card
+                title={"Call for Papers"}
+                logoImage={"/watermark.jpg"}
+                speakerImage={"/watermark.jpg"}
+                description={"lorem20"}
+                className="mx-auto max-w-sm w-full"
+              />
+              <Card
+                title={"Call for Proposals"}
+                logoImage={"/watermark.jpg"}
+                speakerImage={"/watermark.jpg"}
+                description={"lorem20"}
+                className="mx-auto max-w-sm w-full"
+              />
+              <Card
+                title={"Call for Tutorials"}
+                logoImage={"/watermark.jpg"}
+                speakerImage={"/watermark.jpg"}
+                description={"lorem20"}
+                className="mx-auto max-w-sm w-full"
+              />
+              <Card
+                title={"Important Dates"}
+                logoImage={"/watermark.jpg"}
+                speakerImage={"/watermark.jpg"}
+                description={"lorem20"}
+                className="mx-auto max-w-sm w-full"
+              />
+            </div>
+          </div>
         </div>
         <SponsorsSection />
         <TourismGallery />

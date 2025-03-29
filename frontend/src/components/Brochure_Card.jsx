@@ -58,7 +58,7 @@ const Card = ({
     <>
       <div 
         ref={cardRef} 
-        className="w-80 relative h-[500px] perspective-1000 cursor-pointer"
+        className="w-72 relative h-[500px] perspective-1000 cursor-pointer"
       >
         <div className="relative w-full h-full transition-transform duration-600 transform-style-3d">
           {/* Front of the Card */}
