@@ -223,8 +223,8 @@ function Navbar({color , backdrop}) {
       <div className="w-screen mx-auto ">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0 lg:hidden">
-              <h1 className="text-white font-bold text-xl">UPCON 25</h1>
+            <div className="flex-shrink-0 lg:hidden ml-2 mix-blend-lighten">
+              <img src='/UPCON.png' width={44}></img>
             </div>
           </div>
           <div className="hidden lg:flex flex-1 justify-center items-center">

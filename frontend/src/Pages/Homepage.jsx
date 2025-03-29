@@ -19,28 +19,28 @@ function Homepage() {
   }, []);
   return (
     <div className='flex flex-col min-h-screen relative'>
-      <div className="fixed inset-x-0 bottom-0 h-[80vh] -z-10">
+      <div className="fixed inset-x-0 bottom-0 h-[80vh] -z-10 bg-gradient-to-b from-white to-blue-700/40 via-[#97148c]/40 mix-blend-multiply">
         <div
-          className="absolute inset-0 bg-[url(/build.jpeg)] opacity-20 bg-bottom bg-no-repeat bg-contain 
-      brightness-100 bg-blend-overlay"
+          className="absolute inset-0 bg-[url(/build.jpg)] opacity-20 bg-bottom bg-no-repeat bg-contain 
+      brightness-100 mix-blend-multiply"
         />
       </div>
 
-      <div className="upper flex flex-row md:flex-row justify-center md:justify-between items-center px-6 sm:px-8 md:px-10 pb-2 shadow-lg transition-all duration-300 gap-2 md:gap-6 border-b border-purple-100 bg-gradient-to-r from-[#573054]/10 to-blue-900/10" >
+      <div className="upper flex flex-col sm:flex-row justify-center md:justify-between items-center px-6 sm:px-8 md:px-10 pb-2 shadow-lg transition-all duration-300 gap-2 md:gap-6 border-b border-purple-100 bg-gradient-to-r from-[#89107f]/20 via-white to-[#89107f]/20" >
 
         <img
           src="/UPCON.png"
           alt="UPCON logo"
-          className="w-32 h-32 sm:w-36 sm:h-36 md:w-44 md:h-44 hover:scale-105 transition-transform duration-300 pt-4"
+          className="w-28 sm:w-36 md:w-44 hover:scale-105 transition-transform duration-300 pt-4"
           style={{ clipPath: 'inset(0 0 27% 0)' }}
         />
 
 
         <img src="/Logos/IEEE.webp" alt="IEEE logo"
-          className="h-24 sm:h-28 md:h-32 hover:scale-105 transition-transform duration-300" />
+          className="h-20 sm:h-28 md:h-32 hover:scale-105 transition-transform duration-300" />
 
         <img src="/Logos/IITBHU.png" alt="IIT BHU logo"
-          className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 hover:scale-105 transition-transform duration-300" />
+          className="w-24 sm:w-32 md:w-36 hover:scale-105 transition-transform duration-300" />
 
       </div>
       <div className="upper flex flex-row justify-center items-center px-2 py-4 gap-4 transition-all duration-300 bg-gradient-to-r from-purple-100/50 to-blue-100/50 shadow-md">
