@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-[#573054] text-white w-full">
+    <footer className="bg-gradient-to-r from-[#573054]/80 to-blue-900/80  text-white w-full font-semibold">
       <div className="max-w-7xl mx-auto px-2 sm:px-5 lg:px-6 flex-col justify-between items-center">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 py-10 text-center">
           <div className="flex flex-col items-center">

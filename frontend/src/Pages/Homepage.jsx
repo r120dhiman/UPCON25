@@ -21,12 +21,12 @@ function Homepage() {
     <div className='flex flex-col min-h-screen relative'>
       <div className="fixed inset-x-0 bottom-0 h-[80vh] -z-10">
         <div
-          className="absolute inset-0 bg-[url(/new.jpg)] bg-bottom bg-no-repeat bg-contain 
+          className="absolute inset-0 bg-[url(/build.jpeg)] opacity-20 bg-bottom bg-no-repeat bg-contain 
       brightness-100 bg-blend-overlay"
         />
       </div>
 
-      <div className="upper flex flex-col md:flex-row justify-center md:justify-between items-center px-6 sm:px-12 md:px-16 pb-2 shadow-lg transition-all duration-300 gap-4 md:gap-8 border-b border-purple-100">
+      <div className="upper flex flex-row md:flex-row justify-center md:justify-between items-center px-6 sm:px-8 md:px-10 pb-2 shadow-lg transition-all duration-300 gap-2 md:gap-6 border-b border-purple-100 bg-gradient-to-r from-[#573054]/10 to-blue-900/10" >
 
         <img
           src="/UPCON.png"
@@ -101,9 +101,10 @@ function Homepage() {
 
 
         <div className="flex justify-center mt-12 mb-10">
-          <button className="group relative w-1/2 bg-gradient-to-r from-purple-700 to-blue-700 text-white font-bold py-4 text-xl rounded-full 
+          <button className="group relative w-1/2 bg-gradient-to-r from-[#5e365b] to-blue-700 text-white font-bold py-4 text-xl rounded-full 
             shadow-[0_10px_20px_rgba(109,40,217,0.3)] hover:shadow-[0_20px_40px_rgba(109,40,217,0.4)] 
             transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer">
+              
             <span className="relative z-10">Paper Submission Template</span>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
