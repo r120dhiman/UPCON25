@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
-import Navbar from '../components/Navbar'
+import Navbar from "../components/Navbar";
 import Card from "../components/Brochure_Card";
 import SponsorsSection from "../components/Sponsers";
 import TourismGallery from "../components/TourismGallery";
@@ -18,7 +18,7 @@ function Homepage() {
     );
   }, []);
   return (
-    <div className='flex flex-col min-h-screen relative'>
+    <div className="flex flex-col min-h-screen relative">
       <div className="fixed inset-x-0 bottom-0 h-[80vh] -z-10 bg-gradient-to-b from-white to-blue-700/40 via-[#97148c]/40 mix-blend-multiply">
         <div
           className="absolute inset-0 bg-[url(/build.jpg)] opacity-20 bg-bottom bg-no-repeat bg-contain 
@@ -26,33 +26,40 @@ function Homepage() {
         />
       </div>
 
-      <div className="upper flex flex-col sm:flex-row justify-center md:justify-between items-center px-6 sm:px-8 md:px-10 pb-2 shadow-lg transition-all duration-300 gap-2 md:gap-6 border-b border-purple-100 bg-gradient-to-r from-[#89107f]/20 via-white to-[#89107f]/20" >
-
+      <div className="upper flex flex-col sm:flex-row justify-center md:justify-between items-center px-6 sm:px-8 md:px-10 pb-2 shadow-lg transition-all duration-300 gap-2 md:gap-6 border-b border-purple-100 bg-gradient-to-r from-[#89107f]/20 via-white to-[#89107f]/20">
         <img
-          src="/UPCON.png"
+          src="/upcon-logo.png"
           alt="UPCON logo"
-          className="w-28 sm:w-36 md:w-44 hover:scale-105 transition-transform duration-300 pt-4"
-          style={{ clipPath: 'inset(0 0 27% 0)' }}
+          className="w-28 sm:w-36 md:w-52 my-auto hover:scale-105 transition-transform duration-300 pt-4"
+          // style={{ clipPath: "inset(0 0 27% 0)" }}
         />
 
+      <div className="IEEE_text flex flex-col gap-4">
 
-        <img src="/Logos/IEEE.webp" alt="IEEE logo"
-          className="h-20 sm:h-28 md:h-32 hover:scale-105 transition-transform duration-300" />
-
-        <img src="/Logos/IITBHU.png" alt="IIT BHU logo"
-          className="w-24 sm:w-32 md:w-36 hover:scale-105 transition-transform duration-300" />
-
-      </div>
-      <div className="upper flex flex-row justify-center items-center px-2 py-4 gap-4 transition-all duration-300 bg-gradient-to-r from-purple-100/50 to-blue-100/50 shadow-md">
-        <h1 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent drop-shadow-lg hover:scale-105 transition-transform">
+        <img
+          src="/Logos/IEEE.webp"
+          alt="IEEE logo"
+          className="h-20 sm:h-28 md:h-32 hover:scale-105 transition-transform duration-300"
+        />
+        <div className="upper flex flex-row justify-center items-center px-2 py-4 gap-4 transition-all duration-300 ">
+        <h1 className="text-3xl md:text-3xl lg:text-5xl font-extrabold bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent drop-shadow-lg hover:scale-105 transition-transform">
           UPCON 2025
         </h1>
         <div className="flex flex-col items-center gap-2 rounded-2xl p-2 transition-all duration-300 hover:scale-105">
-          <p className="text-xl md:text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+          <p className="text-xl md:text-xl lg:text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
             13-15 December'25
           </p>
         </div>
       </div>
+      </div>
+
+        <img
+          src="/Logos/IITBHU.png"
+          alt="IIT BHU logo"
+          className="w-24 sm:w-32 md:w-52 hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+      
       <div className="sticky top-0 z-50">
         <Navbar color={false} backdrop={true} />
       </div>
@@ -81,11 +88,29 @@ function Homepage() {
               About UPCON 2025
             </h1>
             <article className="text-base sm:text-lg text-black text-justify leading-relaxed font-medium italic hover:text-blue-900 transition-colors">
-              The 11th "IEEE Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON-2023)" will be held at IIT BHU, Varanasi, India from 13-15 December 2025. UPCON is the top notch International conference covering broad topics in the areas of Electrical, Computer, and Electronics Engineering.
-              <br /><br />
-              UPCON conference is organized annually at various locations in Uttar Pradesh (UP). Prior to this, first ten series of UPCON conferences were organized at GCET, Greater Noida (2014), Indian Institute of Information Technology Allahabad (2015), IIT BHU Varanasi (2016), GLA University Mathura (2017), MMMUT Gorakhpur (2018), AMU Aligarh (2019), MNNIT Allahabad (2020), Tula’s Institute Dehradun (2021), IIIT Allahabad (2022), Amity University (2023), and SRMCEM (2024).
-              <br /><br />
-              The conference is technically and financially sponsored by IEEE UP Section. There are multiple tracks in the conference covering almost all areas of Electrical, Computer & Electronics Engineering. Conference Proceedings will be abstracted and indexed by IEEE Xplore.
+              The 11th "IEEE Uttar Pradesh Section International Conference on
+              Electrical, Electronics and Computer Engineering (UPCON-2023)"
+              will be held at IIT BHU, Varanasi, India from 13-15 December 2025.
+              UPCON is the top notch International conference covering broad
+              topics in the areas of Electrical, Computer, and Electronics
+              Engineering.
+              <br />
+              <br />
+              UPCON conference is organized annually at various locations in
+              Uttar Pradesh (UP). Prior to this, first ten series of UPCON
+              conferences were organized at GCET, Greater Noida (2014), Indian
+              Institute of Information Technology Allahabad (2015), IIT BHU
+              Varanasi (2016), GLA University Mathura (2017), MMMUT Gorakhpur
+              (2018), AMU Aligarh (2019), MNNIT Allahabad (2020), Tula’s
+              Institute Dehradun (2021), IIIT Allahabad (2022), Amity University
+              (2023), and SRMCEM (2024).
+              <br />
+              <br />
+              The conference is technically and financially sponsored by IEEE UP
+              Section. There are multiple tracks in the conference covering
+              almost all areas of Electrical, Computer & Electronics
+              Engineering. Conference Proceedings will be abstracted and indexed
+              by IEEE Xplore.
             </article>
           </motion.div>
 
@@ -98,20 +123,18 @@ function Homepage() {
           </div>
         </div>
 
-
-
         <div className="flex justify-center mt-12 mb-10">
-          <button className="group relative w-1/2 bg-gradient-to-r from-[#5e365b] to-blue-700 text-white font-bold py-4 text-xl rounded-full 
+          <button
+            className="group relative w-1/2 bg-gradient-to-r from-[#5e365b] to-blue-700 text-white font-bold py-4 text-xl rounded-full 
             shadow-[0_10px_20px_rgba(109,40,217,0.3)] hover:shadow-[0_20px_40px_rgba(109,40,217,0.4)] 
-            transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer">
-              
+            transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer"
+          >
             <span className="relative z-10">Paper Submission Template</span>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
         </div>
         <div className="w-full px-2 sm:px-4 lg:px-6 py-8 bg-gradient-to-b from-transparent to-white/10">
           <div className="max-w-7xl w-full mx-auto">
-
             <div className="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 self-center items-center justify-items-center">
               <Card
                 title={"Call for Papers"}
@@ -148,8 +171,7 @@ function Homepage() {
         <TourismGallery />
       </div>
     </div>
-
-  )
+  );
 }
 
-export default Homepage
+export default Homepage;

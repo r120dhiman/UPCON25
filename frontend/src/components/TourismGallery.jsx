@@ -6,7 +6,13 @@ const attractions = [
   { name: "Ganga Ghats", image: "/ganga-ghats.jpg" },
   { name: "Vishwanath Temple", image: "/Kashi_Vishwanath.jpg" },
   { name: "Sarnath", image: "/sarnath.jpg" },
-  { name: "Ramnagar Fort", image: "/ramnagarfort.jpg" }
+  { name: "Ramnagar Fort", image: "/ramnagarfort.jpg" },
+  {name:"Tulsi Manas", image:"/tulsimanas.jpeg"},
+  {name:"The Lal Khan Tomb", image:"/lalKhanTomb.jpg"},
+  {name:"The Thai Temple", image:"/thaiTemple.webp"},
+  {name:"Alamgir Masjid", image:"/alamgir.jpg"},
+  {name:"Sarnath Museum", image:"/Sarnath_Museum_Front.jpg"},
+
 ];
 
 function TourismGallery() {
