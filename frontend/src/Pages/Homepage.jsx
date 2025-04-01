@@ -42,7 +42,7 @@ function Homepage() {
           className="h-20 sm:h-28 md:h-32 hover:scale-105 transition-transform duration-300"
         />
         <div className="upper flex flex-row justify-center items-center px-2 py-4 gap-4 transition-all duration-300 ">
-        <h1 className="text-3xl md:text-3xl lg:text-5xl font-extrabold bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent drop-shadow-lg hover:scale-105 transition-transform">
+        <h1 className="text-3xl md:text-3xl lg:text-5xl font-extrabold bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent</h1> drop-shadow-lg hover:scale-105 transition-transform">
           UPCON 2025
         </h1>
         <div className="flex flex-col items-center gap-2 rounded-2xl p-2 transition-all duration-300 hover:scale-105">
@@ -115,7 +115,7 @@ function Homepage() {
           </motion.div>
 
           {/* Image Section */}
-          <div className="relative w-72 sm:w-96 lg:w-[450px] h-72 sm:h-96 lg:h-[450px] flex items-center justify-center">
+          <div className="relative w-80 sm:w-[28rem] lg:w-[500px] h-80 sm:h-[28rem] lg:h-[500px] flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-300 to-purple-400 rounded-full opacity-50 blur-3xl"></div>
             <div className="relative w-full h-full bg-[url(/About.jpg)] bg-cover bg-center rounded-full shadow-2xl border-4 border-white transform transition-all duration-500 hover:scale-105 hover:rotate-2 hover:shadow-[0_15px_30px_rgba(0,0,0,0.3)]">
               <div className="absolute -top-4 left-4 w-full h-full rounded-full bg-white/10 blur-lg"></div>

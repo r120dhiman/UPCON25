@@ -89,7 +89,15 @@ function Navbar({color , backdrop}) {
       return (
         <Link
           to={link.path}
-          className={`text-gray-50 hover:text-[#ffffe0] px-0.5 py-2 rounded-md text-md font-medium transition-all duration-200 ${color?"hover:bg-[#442542]":"hover:bg-[#442542]/40"}`}
+          className={`text-gray-50 hover:text-white px-0.5 py-2 rounded-md text-md 
+            font-medium transition-all duration-300 relative
+            before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-b 
+            before:from-white/5 before:to-transparent before:opacity-0 before:transition-opacity
+            hover:before:opacity-100 
+            ${color 
+              ? "hover:bg-gradient-to-b hover:from-[#a44499] hover:to-[#5c2857] hover:shadow-lg hover:shadow-purple-800/20"
+              : "hover:bg-gradient-to-b hover:from-[#6e4169]/70 hover:to-[#542d50]/70 hover:shadow-lg hover:shadow-purple-900/20"
+            }`}
         >
           {link.title}
         </Link>
@@ -103,7 +111,12 @@ function Navbar({color , backdrop}) {
         onMouseLeave={() => setIsHovered(false)}
       >
         <button
-          className={`text-gray-50 hover:text-[#ffffe0] px-1 py-2 rounded-md text-md font-medium transition-all duration-200 flex items-center cursor-pointer ${color?"hover:bg-[#442542]":"hover:bg-[#442542]/40"}`}
+          className={`text-gray-50 hover:text-white px-1 py-2 rounded-md text-md 
+            font-medium transition-all duration-200 flex items-center cursor-pointer
+            ${color
+              ? "hover:bg-gradient-to-b hover:from-[#5e365b] hover:to-[#442542] hover:shadow-md"
+              : "hover:bg-gradient-to-b hover:from-[#5e365b]/60 hover:to-[#442542]/60 hover:shadow-md"
+            }`}
         >
           {link.title}
           <svg
@@ -115,8 +128,14 @@ function Navbar({color , backdrop}) {
           </svg>
         </button>
         <div
-          className={`absolute z-50 left-0 mt-0 w-48 rounded-md shadow-lg bg-white transform transition-all duration-200 origin-top
-          ${isHovered
+          className={`absolute z-50 left-0 mt-0 w-48 rounded-md 
+            shadow-xl shadow-purple-700/20
+            bg-gradient-to-b from-[#793570]/90 to-[#7c2a74]/90
+            backdrop-blur-xl transform transition-all duration-300 origin-top
+            border border-purple-400/10
+            before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-b 
+            before:from-white/10 before:to-transparent
+            ${isHovered
               ? 'opacity-100 translate-y-0 visible'
               : 'opacity-0 -translate-y-2 invisible'}`}
         >
@@ -126,7 +145,14 @@ function Navbar({color , backdrop}) {
                 <a
                   key={subLink.title}
                   href={subLink.path}
-                  className={`block px-4 py-2 text-sm text-gray-700 hover:text-white font-medium transition-colors duration-150 ${color?"hover:bg-[#8C477E]":"hover:bg-[#683765]"}`}
+                  className={`block px-4 py-2 text-sm text-gray-100 hover:text-white 
+                    font-medium transition-all duration-200 relative
+                    before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-b 
+                    before:from-white/5 before:to-transparent before:opacity-0 before:transition-opacity
+                    hover:before:opacity-100
+                    ${color
+                      ? "hover:bg-gradient-to-b hover:from-[#8C477E] hover:to-[#6e3960] hover:shadow-md"
+                      : "hover:bg-gradient-to-b hover:from-[#683765] hover:to-[#542d50] hover:shadow-md"}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -136,7 +162,14 @@ function Navbar({color , backdrop}) {
                 <Link
                   key={subLink.title}
                   to={subLink.path}
-                  className={`block px-4 py-2 text-sm text-gray-700 hover:text-white font-medium transition-colors duration-150 ${color?"hover:bg-[#8C477E]":"hover:bg-[#683765]"}`}
+                  className={`block px-4 py-2 text-sm text-gray-100 hover:text-white 
+                    font-medium transition-all duration-200 relative
+                    before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-b 
+                    before:from-white/5 before:to-transparent before:opacity-0 before:transition-opacity
+                    hover:before:opacity-100
+                    ${color
+                      ? "hover:bg-gradient-to-b hover:from-[#8C477E] hover:to-[#6e3960] hover:shadow-md"
+                      : "hover:bg-gradient-to-b hover:from-[#683765] hover:to-[#542d50] hover:shadow-md"}`}
                 >
                   {subLink.title}
                 </Link>
@@ -207,7 +240,12 @@ function Navbar({color , backdrop}) {
   }
 
   return (
-    <nav className={`${color?"bg-[#573054]/95":"bg-[#573054]/75"} backdrop-blur-xs  sticky w-full z-50 ${backdrop? "backdrop-blur-4xl":""}`}>
+    <nav className={`${color ? "bg-gradient-to-b from-[#57254f]/85 to-[#682761]/85" : "bg-gradient-to-b from-[#57254f]/80 to-[#682761]/80"} 
+  backdrop-blur-md sticky w-full z-50 
+  ${backdrop ? "backdrop-blur-4xl" : ""} 
+  shadow-lg shadow-purple-900/30
+  border-b border-purple-400/10
+  transition-all duration-300`}>
       <div className="w-screen mx-auto ">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">

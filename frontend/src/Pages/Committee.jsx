@@ -60,56 +60,56 @@ const Committee = () => {
       {
         name: "Prof. S.N. Singh",
         title: "(Director, AVB-IIITM Gwalior)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/snsingh.jpg",
       },
       {
         name: "Prof. J. Ramkumar",
         title: "(IIT Kanpur)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/jramk.jpeg",
       },
       {
         name: "Prof. S.C. Srivastava",
         title: "(IIT Kanpur)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/scsri.jpg",
       },
       {
         name: "Prof. Asheesh Kumar Singh",
         title: "(MNNIT Allahabad)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/aks.jpg",
       },
     ],
     "Honorary General Chairs": [
       {
         name: "Prof. Yogesh Singh Chauhan",
         title: "(IIT Kanpur)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/yogesh-singh-chauhan.jpg",
       },
       {
         name: "Prof. R. Mohanty",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/rmohan.jpg",
       },
       {
         name: "Prof. Mohd Rihan",
         title: "(AMU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/mohdrihan.jpg",
       },
       {
         name: "Prof. Akshay Rathoore",
         title: "(SIT, Singapore)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/aksrath.jpg",
       },
     ],
     "General Chairs": [
       {
         name: "Prof. R.K. Singh",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/rksingh.png",
       },
       {
         name: "Prof. V.N. Lal",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/vnlal.png",
       },
     ],
     "General Co-Chairs": [
