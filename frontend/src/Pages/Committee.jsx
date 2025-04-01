@@ -87,7 +87,7 @@ const Committee = () => {
       {
         name: "Prof. R. Mohanty",
         title: "(IIT BHU)",
-        image: "/committee/rmohan.jpg",
+        image: "/Speakers/Avatar.jpeg",
       },
       {
         name: "Prof. Mohd Rihan",
@@ -116,54 +116,54 @@ const Committee = () => {
       {
         name: "Prof. Satish Kumar Singh",
         title: "(IIIT Allahabad)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/skus.png",
       },
       {
-        name: "Prof. Varun Kakran",
+        name: "Prof. Varun Kakar",
         title: "(BTKIT, Dwarkahat)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/varunkk.jpg",
       },
       {
         name: "Prof. Devender Singh",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/deveku.jpg",
       },
       {
         name: "Prof. Kishore P. Sarawadekar",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/kishorep.jpg",
       },
     ],
     "Conference Secretary": [
       {
         name: "Prof. M.K. Verma",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/mkverma.jpg",
       },
       {
         name: "Prof. Sandip Ghosh",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/sandipgh.jpeg",
       },
       {
         name: "Prof. R.K. Mohanty",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/rmohan.jpg",
       },
       {
         name: "Dr. Somak Bhattacharya",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/somakbh.jpg",
       },
       {
         name: "Dr. Avirup Maulik",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/avirup.jpg",
       },
       {
         name: "Dr. Shivam Verma",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/shivamvm.png",
       },
       {
         name: "Dr. Atul Kumar",
@@ -173,19 +173,19 @@ const Committee = () => {
       {
         name: "Dr. Mayank Swarnkar",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/mayanksw.jpg",
       },
       {
         name: "Dr. R. Kalpana",
         title: "(NIT Calicut)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/rkalpana.jpg",
       },
     ],
     "Finance Chair": [
       {
         name: "Dr. V.N. Lal",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/vnlal.png",
       },
     ],
     "Publication Chair": [
@@ -197,22 +197,22 @@ const Committee = () => {
       {
         name: "Dr. Anubrata Das",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/anubrata.jpg",
       },
       {
         name: "Dr. Subho Paul",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/subhopaul.jpg",
       },
       {
         name: "Dr. Arup Kumar Das",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/arupkudas.jpg",
       },
       {
-        name: "Dr. Ranjita Patel",
+        name: "Dr. Ranjeeta Patel",
         title: "(KIIT Bhubaneswar)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/ranjeeta.jpg",
       },
     ],
     "Sponsorship Chair": [
