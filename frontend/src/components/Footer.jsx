@@ -28,10 +28,10 @@ function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center justify-start">
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/about-conference" className="text-gray-300 hover:text-[#ffffe0] text-sm">About Conference</a></li>
+              <li><a href="/" className="text-gray-300 hover:text-[#ffffe0] text-sm">Home</a></li>
               <li><a href="/registration" className="text-gray-300 hover:text-[#ffffe0] text-sm">Registration</a></li>
               <li><a href="/paper-submission" className="text-gray-300 hover:text-[#ffffe0] text-sm">Paper Submission</a></li>
               <li><a href="/contact" className="text-gray-300 hover:text-[#ffffe0] text-sm">Contact Us</a></li>

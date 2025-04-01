@@ -7,19 +7,7 @@ function Navbar({color , backdrop}) {
 
   const navLinks = [
     { title: "HOME", path: "/", type: "direct" },
-    {
-      "title": "COMMITTEE",
-      "type": "dropdown",
-      "subLinks": [
-        { "title": "Technical Committee", "path": "/committee/technical" },
-        { "title": "Advisory Committee", "path": "/committee/advisory" },
-        { "title": "Organizing Committee", "path": "/committee/organizing" },
-        { "title": "Publicity Committee", "path": "/committee/publicity" },
-        { "title": "Sponsorship Committee", "path": "/committee/sponsorship" },
-        { "title": "Plenary Committee", "path": "/committee/plenary" },
-        { "title": "Hospitality Committee", "path": "/committee/hospitality" }
-      ]
-    },
+    { title: "COMMITTEE", path: "/committee", type: "direct" },
     {
       title: "SPEAKERS",
       type: "dropdown",
@@ -51,7 +39,7 @@ function Navbar({color , backdrop}) {
         { title: "Registered Papers", path: "/registeredpapers" }
       ]
     },
-    { title: "PHD COLLOQUIM", path: "/phdcolloqium", type: "direct" },
+    { title: "PHD COLLOQUIUM", path: "/phdcolloquium", type: "direct" },
     {
       "title": "AWARDS",
       "type": "dropdown",
@@ -101,7 +89,7 @@ function Navbar({color , backdrop}) {
       return (
         <Link
           to={link.path}
-          className={`text-gray-50 hover:text-[#ffffe0] px-0.5 py-2 rounded-md text-md font-medium transition-all duration-200 ${color?"hover:bg-[#442542]":"hover:bg-gray-600/40"}`}
+          className={`text-gray-50 hover:text-[#ffffe0] px-0.5 py-2 rounded-md text-md font-medium transition-all duration-200 ${color?"hover:bg-[#442542]":"hover:bg-[#442542]/40"}`}
         >
           {link.title}
         </Link>
@@ -115,7 +103,7 @@ function Navbar({color , backdrop}) {
         onMouseLeave={() => setIsHovered(false)}
       >
         <button
-          className={`text-gray-50 hover:text-[#ffffe0] px-1 py-2 rounded-md text-md font-medium transition-all duration-200 flex items-center cursor-pointer ${color?"hover:bg-[#442542]":"hover:bg-gray-600/40"}`}
+          className={`text-gray-50 hover:text-[#ffffe0] px-1 py-2 rounded-md text-md font-medium transition-all duration-200 flex items-center cursor-pointer ${color?"hover:bg-[#442542]":"hover:bg-[#442542]/40"}`}
         >
           {link.title}
           <svg
@@ -138,7 +126,7 @@ function Navbar({color , backdrop}) {
                 <a
                   key={subLink.title}
                   href={subLink.path}
-                  className={`block px-4 py-2 text-sm text-gray-700 hover:text-white font-medium transition-colors duration-150 ${color?"hover:bg-[#8C477E]":"hover:bg-gray-600/90"}`}
+                  className={`block px-4 py-2 text-sm text-gray-700 hover:text-white font-medium transition-colors duration-150 ${color?"hover:bg-[#8C477E]":"hover:bg-[#683765]"}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -148,7 +136,7 @@ function Navbar({color , backdrop}) {
                 <Link
                   key={subLink.title}
                   to={subLink.path}
-                  className={`block px-4 py-2 text-sm text-gray-700 hover:text-white font-medium transition-colors duration-150 ${color?"hover:bg-[#8C477E]":"hover:bg-gray-600/90"}`}
+                  className={`block px-4 py-2 text-sm text-gray-700 hover:text-white font-medium transition-colors duration-150 ${color?"hover:bg-[#8C477E]":"hover:bg-[#683765]"}`}
                 >
                   {subLink.title}
                 </Link>
@@ -219,7 +207,7 @@ function Navbar({color , backdrop}) {
   }
 
   return (
-    <nav className={`${color?"bg-[#573054]":"bg-black/55"} backdrop-blur-xs  sticky w-full z-50 ${backdrop? "backdrop-blur-4xl":""}`}>
+    <nav className={`${color?"bg-[#573054]/95":"bg-[#573054]/75"} backdrop-blur-xs  sticky w-full z-50 ${backdrop? "backdrop-blur-4xl":""}`}>
       <div className="w-screen mx-auto ">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
