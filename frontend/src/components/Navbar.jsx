@@ -25,12 +25,12 @@ function Navbar({color , backdrop}) {
     },
     { title: "REGISTRATION", path: "/registration", type: "direct" },
     {
-      title: "AUTHORS' CENTRE",
+      title: "AUTHORS' CENTRAL",
       type: "dropdown",
       subLinks: [
-        { title: "Paper Submission", path: "/paper-submission" },
-        { title: "Guidelines", path: "/guidelines" },
         { title: "Call For Papers", path: "/callforpapers" },
+        // { title: "Paper Submission", path: "/paper-submission" },
+        // { title: "Guidelines", path: "/guidelines" },
         { title: "Call For Tutorials", path: "/callfortutorials" },
         { title: "Call For Workshops", path: "/callforworkshops" },
         { title: "Call For Special Sessions", path: "/callforspecialsessions" },

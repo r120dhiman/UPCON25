@@ -88,8 +88,8 @@ function Homepage() {
               About UPCON 2025
             </h1>
             <article className="text-base sm:text-lg text-black text-justify leading-relaxed font-medium italic hover:text-blue-900 transition-colors">
-              The 11th "IEEE Uttar Pradesh Section International Conference on
-              Electrical, Electronics and Computer Engineering (UPCON-2023)"
+              The 12th "IEEE Uttar Pradesh Section International Conference on
+              Electrical, Electronics and Computer Engineering (UPCON-2025)"
               will be held at IIT BHU, Varanasi, India from 13-15 December 2025.
               UPCON is the top notch International conference covering broad
               topics in the areas of Electrical, Computer, and Electronics
