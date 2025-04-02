@@ -1,19 +1,21 @@
 import React from "react";
 
-const SpeakerCard = ({ speakerData }) => {  
+const SpeakerCard = ({ speakerData }) => {
   return (
-    <div className="flex flex-col backdrop-blur-3xl rounded-4xl items-center px-3 py-4 hover:shadow-xl transition-shadow mx-auto cursor-default max-w-3/4">
-      <img 
-        src={speakerData.imageUrl} 
-        alt={speakerData.name} 
-        className="w-44 rounded-full h-44 object-cover mb-4" 
-      />
-      <div className="text-center w-full">
-        <h2 className="text-xl font-bold text-[#054f89] mb-2">{speakerData.name}</h2>
-        <p className="text-gray-700 text-sm mb-2.5">{speakerData.institution}</p>
-        <p className="text-gray-800 font-semibold text-sm">
-          Talk : {speakerData.talkTitle}
-        </p>
+    <div className="relative flex flex-col items-center p-6 bg-white/30 backdrop-blur-xl border border-white/20 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 mx-auto max-w-sm w-full min-h-[22rem] cursor-default">
+      <div className="w-32 h-32 bg-gradient-to-r from-blue-500 to-indigo-500 p-1 rounded-full">
+        <img 
+          src={speakerData.imageUrl} 
+          alt={speakerData.name} 
+          className="w-full h-full object-cover rounded-full border-4 border-white shadow-md" 
+        />
+      </div>
+      <div className="text-center w-full mt-4">
+        <h2 className="text-2xl font-bold text-gray-900">{speakerData.name}</h2>
+        <p className="text-gray-600 text-sm mt-1">{speakerData.institution}</p>
+        <div className="mt-3 px-4 py-2 bg-indigo-500 text-white rounded-lg text-sm font-medium">
+          Talk: {speakerData.talkTitle}
+        </div>
       </div>
     </div>
   );
