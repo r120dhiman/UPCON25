@@ -85,9 +85,9 @@ const Committee = () => {
         image: "/committee/yogesh-singh-chauhan.jpg",
       },
       {
-        name: "Prof. R. Mohanty",
+        name: "Prof. R. Mahanty",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/rmy.png",
       },
       {
         name: "Prof. Mohd Rihan",
@@ -168,7 +168,7 @@ const Committee = () => {
       {
         name: "Dr. Atul Kumar",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
       },
       {
         name: "Dr. Mayank Swarnkar",
@@ -192,7 +192,7 @@ const Committee = () => {
       {
         name: "Dr. Jason Matthew",
         title: "(NIT Warangal)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
       },
       {
         name: "Dr. Anubrata Das",
@@ -219,173 +219,173 @@ const Committee = () => {
       {
         name: "Dr. Shyam Kamal",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/shyamka.jpg",
       },
       {
         name: "Dr. Avirup Maulik",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/avirup.jpg",
       },
       {
         name: "Dr. Dipti Saxena",
         title: "(MNIT Jaipur)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/diptisx.png",
       },
       {
         name: "Dr. Ritesh Keshari",
         title: "(VNIT Nagpur)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/riteshks.jpg",
       },
     ],
     "Hospitality Chair": [
       {
         name: "Dr. Naveen Yalla",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/naveeny.jpeg",
       },
       {
         name: "Dr. N.K. Swami Naidu",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/nksn.jpg",
       },
       {
         name: "Dr. Prasenjit Chanak",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/prasan.jpg",
       },
     ],
     "Plenary Chair": [
       {
         name: "Dr. R.K. Saket",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/rksaket.jpg",
       },
       {
         name: "Dr. S.R. Mohanty",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/rmh.png",
       },
       {
         name: "Dr. S.K. Singh",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/sksingh.jpg",
       },
       {
         name: "Dr. J.C. Pandey",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/jcpan.jpg",
       },
       {
         name: "Dr. Sunanda Sinha",
-        title: "(NIT Jaipur)",
-        image: "/Speakers/Avatar.jpeg",
+        title: "(MNIT Jaipur)",
+        image: "/committee/sunanda.png",
       },
     ],
-    WIE: [
+    "WIE": [
       {
         name: "Dr. Kalpana Chaudhury",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/kalcha.jpg",
       },
       {
         name: "Dr. Ravita Lamba",
         title: "(IIT Roorkee)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/ravitala.jpg",
       },
     ],
-    SYP: [
+    "SYP": [
       {
         name: "Dr. Kaushik Basu",
         title: "(IISC Bangalore)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/kaushikba.jpg",
       },
     ],
     "International Advisory Committee": [
       {
         name: "Dr. Brij N. Singh",
         title: "(John Deere)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/brijn.jpeg",
       },
       {
         name: "Dr. Sanjit Swivedi",
         title: "(Danfoss)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
       },
       {
         name: "Dr. Victor Veliadis",
         title: "(NCSU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/victorve.jpg",
       },
       {
         name: "Dr. Danan Dou",
         title: "(John Deere)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/danon.jpeg",
       },
       {
         name: "Dr. Subhashish Bhattacharya",
         title: "(NCSU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/shbh.jpg",
       },
     ],
     "National Advisory Committee": [
       {
         name: "Dr. Bhim Singh",
         title: "(IIT Delhi)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/bhimsingh.png",
       },
       {
         name: "Dr. Santanu Kumar Mishra",
         title: "(IIT Delhi)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/santanukm.jpeg",
       },
       {
         name: "Dr. B.K. Panigrahi",
         title: "(IIT Delhi)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/bkpanigrahi.jpg",
       },
       {
         name: "Dr. Siddhartha Mukhopadhyay",
         title: "(IIT Kharagpur)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/siddmu.jpg",
       },
       {
         name: "Dr. Subhashis Basu",
         title: "(IIT Kharagpur)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/subhbasu.jpeg",
       },
       {
         name: "Pankaj Achutan",
         title: "(NAL, Bangalore)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/pankac.png",
       },
     ],
     "Web Management": [
       {
         name: "Dr. Chinamaya KA",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/chinmaya.jpg",
       },
       {
         name: "Dr. Anubrata Das",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/anubrata.jpg",
       },
       {
         name: "Saksham Agrawal",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/saksham.jpeg",
       },
       {
         name: "Rohit Kumar",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "/committee/rohitkumar.jpeg",
       },
     ],
     "PhD Colloquium Chair": [
       {
         name: "Dr. R.K. Mishra",
         title: "(IIT BHU)",
-        image: "/Speakers/Avatar.jpeg",
+        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
       },
     ],
   };

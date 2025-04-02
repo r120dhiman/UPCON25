@@ -151,7 +151,7 @@ function Navbar({color , backdrop}) {
                     before:from-white/5 before:to-transparent before:opacity-0 before:transition-opacity
                     hover:before:opacity-100
                     ${color
-                      ? "hover:bg-gradient-to-b hover:from-[#8C477E] hover:to-[#6e3960] hover:shadow-md"
+                      ? "hover:bg-gradient-to-b hover:from-[#683765] hover:to-[#542d50] hover:shadow-md"
                       : "hover:bg-gradient-to-b hover:from-[#683765] hover:to-[#542d50] hover:shadow-md"}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -168,7 +168,7 @@ function Navbar({color , backdrop}) {
                     before:from-white/5 before:to-transparent before:opacity-0 before:transition-opacity
                     hover:before:opacity-100
                     ${color
-                      ? "hover:bg-gradient-to-b hover:from-[#8C477E] hover:to-[#6e3960] hover:shadow-md"
+                      ? "hover:bg-gradient-to-b hover:from-[#683765] hover:to-[#542d50] hover:shadow-md"
                       : "hover:bg-gradient-to-b hover:from-[#683765] hover:to-[#542d50] hover:shadow-md"}`}
                 >
                   {subLink.title}
