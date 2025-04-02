@@ -48,7 +48,7 @@ function KeynoteSpeaker() {
      {
     imageUrl: "/Speakers/Akshay.png",
     name: "Dr. Askhay Rathore",
-    institution: "IIT BHU, Varanasi India",
+    institution: "Singapore Institute of Technology, Singapore",
     talkTitle: "Will be updated soon...",
   },
      {
@@ -72,7 +72,7 @@ function KeynoteSpeaker() {
      {
     imageUrl: "/Speakers/Sanjeet.jpg",
     name: "Dr. Sanjeet Dwivedi",
-    institution: "Danfoss Power Solutions, USA",
+    institution: "Siemens Gamesa Renewable Energy A/S Denmark",
     talkTitle: "Will be updated soon...",
   },
      {

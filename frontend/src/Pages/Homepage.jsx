@@ -101,8 +101,7 @@ function Homepage() {
               conferences were organized at GCET, Greater Noida (2014), Indian
               Institute of Information Technology Allahabad (2015), IIT BHU
               Varanasi (2016), GLA University Mathura (2017), MMMUT Gorakhpur
-              (2018), AMU Aligarh (2019), MNNIT Allahabad (2020), Tula’s
-              Institute Dehradun (2021), IIIT Allahabad (2022), Amity University
+              (2018), AMU Aligarh (2019), MNNIT Allahabad (2020), BTKIT Dwarahat(2021), IIIT Allahabad (2022), Amity University
               (2023), and SRMCEM (2024).
               <br />
               <br />

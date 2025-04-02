@@ -56,7 +56,7 @@ const Committee = () => {
         image: "/committee/amitpatra.jpg",
       },
     ],
-    "Patron": [
+    "Patrons": [
       {
         name: "Prof. S.N. Singh",
         title: "(Director, AVB-IIITM Gwalior)",
@@ -91,7 +91,7 @@ const Committee = () => {
       },
       {
         name: "Prof. Mohd Rihan",
-        title: "(AMU)",
+        title: "(Aligharh Muslim University)",
         image: "/committee/mohdrihan.jpg",
       },
       {
@@ -120,7 +120,7 @@ const Committee = () => {
       },
       {
         name: "Prof. Varun Kakar",
-        title: "(BTKIT, Dwarkahat)",
+        title: "(BTKIT, Dwarahat)",
         image: "/committee/varunkk.jpg",
       },
       {
@@ -145,11 +145,11 @@ const Committee = () => {
         title: "(IIT BHU)",
         image: "/committee/sandipgh.jpeg",
       },
-      {
-        name: "Prof. R.K. Mohanty",
-        title: "(IIT BHU)",
-        image: "/committee/rmohan.jpg",
-      },
+      // {
+      //   name: "Prof. R.K. Mohanty",
+      //   title: "(IIT BHU)",
+      //   image: "/committee/rmohan.jpg",
+      // },
       {
         name: "Dr. Somak Bhattacharya",
         title: "(IIT BHU)",
@@ -168,7 +168,7 @@ const Committee = () => {
       {
         name: "Dr. Atul Kumar",
         title: "(IIT BHU)",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+        image: "/committee/Atul.jpg",
       },
       {
         name: "Dr. Mayank Swarnkar",
@@ -190,9 +190,9 @@ const Committee = () => {
     ],
     "Publication Chair": [
       {
-        name: "Dr. Jason Matthew",
-        title: "(NIT Warangal)",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+        name: "Dr. Jaison Mathew",
+        title: "(GEC Thrissur)",
+        image: "/committee/Jaison.png",
       },
       {
         name: "Dr. Anubrata Das",
@@ -307,13 +307,13 @@ const Committee = () => {
         image: "/committee/brijn.jpeg",
       },
       {
-        name: "Dr. Sanjit Swivedi",
-        title: "(Danfoss)",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+        name: "Dr. Sanjeet Dwivedi",
+        title: "(Siemens Gamesa Renewable Energy A/S Denmark)",
+        image: "/committee/Sanjeet.jpg",
       },
       {
         name: "Dr. Victor Veliadis",
-        title: "(NCSU)",
+        title: "(North Carolina State University)",
         image: "/committee/victorve.jpg",
       },
       {
@@ -323,7 +323,7 @@ const Committee = () => {
       },
       {
         name: "Dr. Subhashish Bhattacharya",
-        title: "(NCSU)",
+        title: "(North Carolina State University)",
         image: "/committee/shbh.jpg",
       },
     ],
@@ -385,7 +385,7 @@ const Committee = () => {
       {
         name: "Dr. R.K. Mishra",
         title: "(IIT BHU)",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+        image: "/committee/Rk.jpeg",
       },
     ],
   };
