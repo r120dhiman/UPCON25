@@ -1,37 +1,36 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
+import { Link } from 'react-router';
 
 const Card = ({ 
   title, 
-  description, 
+   path,
   speakerImage, 
   logoImage 
 }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const cardRef = useRef(null);
+
   const frontRef = useRef(null);
-  const backRef = useRef(null);
 
-  useEffect(() => {
-    const card = cardRef.current;
-    const front = frontRef.current;
-    const back = backRef.current;
+  // useEffect(() => {
+  //   const card = cardRef.current;
+  //   const front = frontRef.current;
+  //   const back = backRef.current;
 
-    gsap.set(back, { rotationY: -180 });
+  //   gsap.set(back, { rotationY: -180 });
 
-    const flipTimeline = gsap.timeline({ paused: true });
-    flipTimeline
-      .to(front, { rotationY: 180, duration: 0.6, ease: "power1.inOut" })
-      .to(back, { rotationY: 0, duration: 0.6, ease: "power1.inOut" }, 0);
+  //   const flipTimeline = gsap.timeline({ paused: true });
+  //   flipTimeline
+  //     .to(front, { rotationY: 180, duration: 0.6, ease: "power1.inOut" })
+  //     .to(back, { rotationY: 0, duration: 0.6, ease: "power1.inOut" }, 0);
 
-    card.addEventListener('mouseenter', () => flipTimeline.play());
-    card.addEventListener('mouseleave', () => flipTimeline.reverse());
+  //   card.addEventListener('mouseenter', () => flipTimeline.play());
+  //   card.addEventListener('mouseleave', () => flipTimeline.reverse());
 
-    return () => {
-      card.removeEventListener('mouseenter', () => flipTimeline.play());
-      card.removeEventListener('mouseleave', () => flipTimeline.reverse());
-    };
-  }, []);
+  //   return () => {
+  //     card.removeEventListener('mouseenter', () => flipTimeline.play());
+  //     card.removeEventListener('mouseleave', () => flipTimeline.reverse());
+  //   };
+  // }, []);
  
   // useEffect(() => {
   //   const handleKeyDown = (event) => {
@@ -56,8 +55,9 @@ const Card = ({
 
   return (
     <>
-      <div 
-        ref={cardRef} 
+    <Link to={path} className="cursor-pointer">
+      <div  
+
         className="w-72 relative h-[500px] perspective-1000 cursor-pointer"
       >
         <div className="relative w-full h-full transition-transform duration-600 transform-style-3d">
@@ -87,7 +87,7 @@ const Card = ({
           </div>
 
           {/* Back of the Card */}
-          <div 
+          {/* <div 
             ref={backRef}
             className="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-xl shadow-2xl p-6"
           >
@@ -106,9 +106,9 @@ const Card = ({
                 Register Now
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
-      </div>
+      </div></Link>
 
       {/* Modal */}
       {/* {isModalOpen && (

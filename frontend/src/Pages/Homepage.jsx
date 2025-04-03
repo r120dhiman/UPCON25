@@ -128,7 +128,7 @@ function Homepage() {
             shadow-[0_10px_20px_rgba(109,40,217,0.3)] hover:shadow-[0_20px_40px_rgba(109,40,217,0.4)] 
             transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer"
           >
-            <span className="relative z-10">Paper Submission Template</span>
+            <a href="/UPCON.pdf" target="blank" ><span className="relative z-10">Flyer for UPCON 2025</span></a>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
         </div>
@@ -139,7 +139,7 @@ function Homepage() {
                 title={"Call for Papers"}
                 logoImage={"/watermark.jpg"}
                 speakerImage={"/watermark.jpg"}
-                description={"lorem20"}
+                path={"/callforpapers"}
                 className="mx-auto max-w-sm w-full"
               />
               <Card
@@ -153,7 +153,7 @@ function Homepage() {
                 title={"Call for Tutorials"}
                 logoImage={"/watermark.jpg"}
                 speakerImage={"/watermark.jpg"}
-                description={"lorem20"}
+                path={"/callfortutorials"}
                 className="mx-auto max-w-sm w-full"
               />
               <Card

@@ -15,40 +15,66 @@ const Registration = () => {
   ];
 
   return (
-    <>  
-         <h1
+    <div className="max-w-7xl mx-auto px-4 py-8">
+      <h1
         className="text-4xl sm:text-5xl py-3 font-extrabold text-center mb-10 bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent drop-shadow-lg"
       >
         Registration Details
       </h1>
-    <div className="overflow-x-auto p-4">
-      <table className="min-w-full border-collapse border border-gray-300 text-sm md:text-base">
-        <thead>
-          <tr className="bg-[#5e365b]/20">
-            <th className="border p-2">Category</th>
-            <th className="border p-2">Early Bird (IEEE)</th>
-            <th className="border p-2">Early Bird (Non-IEEE)</th>
-            <th className="border p-2">Standard (IEEE)</th>
-            <th className="border p-2">Standard (Non-IEEE)</th>
-          </tr>
-        </thead>
-        <tbody>
-          {pricingData.map((item, index) => (
-            <tr key={index} className="odd:bg-white even:bg-[#5e365b]/20">
-              <td className="border p-2 font-semibold">{item.category}</td>
-              <td className="border p-2">{item.earlyBird[0]}</td>
-              <td className="border p-2">{item.earlyBird[1]}</td>
-              <td className="border p-2">{item.standard[0]}</td>
-              <td className="border p-2">{item.standard[1]}</td>
+      <div className="overflow-x-auto p-6 rounded-lg">
+        <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Important Dates</h2>
+        <table className="min-w-full border border-gray-200 text-sm md:text-base text-center shadow-lg rounded-lg overflow-hidden">
+          <thead className="bg-gradient-to-r from-[#5e365b] to-blue-700 text-white">
+            <tr>
+              <th className="border p-4 font-semibold">Event</th>
+              <th className="border p-4 font-semibold">Date</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-      <p className="text-center text-red-600 mt-2 text-sm">
-        Rates are inclusive of GST 18%. <br /> One full author registration can register up to 2 papers.
-      </p>
+          </thead>
+          <tbody>
+            <tr className="odd:bg-gray-100 even:bg-gray-50 hover:bg-gray-200 transition">
+              <td className="border p-4 font-medium">Registration Opening</td>
+              <td className="border p-4">September 1, 2025</td>
+            </tr>
+            <tr className="odd:bg-gray-100 even:bg-gray-50 hover:bg-gray-200 transition">
+              <td className="border p-4 font-medium">Early Bird Closing</td>
+              <td className="border p-4">September 30, 2025</td>
+            </tr>
+            {/* <tr className="odd:bg-gray-100 even:bg-gray-50 hover:bg-gray-200 transition">
+              <td className="border p-4 font-medium">Standard Registration Closing</td>
+              <td className="border p-4">15th April 2025</td>
+            </tr> */}
+          </tbody>
+        </table>
+      </div>
+      <div className="overflow-x-auto p-6 bg-white shadow-md rounded-lg mt-8">
+        <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Registration Pricing</h2>
+        <table className="min-w-full border border-gray-200 text-sm md:text-base text-center shadow-lg rounded-lg overflow-hidden">
+          <thead className="bg-gradient-to-r from-[#5e365b] to-blue-700 text-white">
+            <tr>
+              <th className="border p-4">Category</th>
+              <th className="border p-4">Early Bird (IEEE)</th>
+              <th className="border p-4">Early Bird (Non-IEEE)</th>
+              <th className="border p-4">Standard (IEEE)</th>
+              <th className="border p-4">Standard (Non-IEEE)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pricingData.map((item, index) => (
+              <tr key={index} className="odd:bg-gray-100 even:bg-gray-50 hover:bg-gray-200 transition">
+                <td className="border p-4 font-semibold">{item.category}</td>
+                <td className="border p-4">{item.earlyBird[0]}</td>
+                <td className="border p-4">{item.earlyBird[1]}</td>
+                <td className="border p-4">{item.standard[0]}</td>
+                <td className="border p-4">{item.standard[1]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <p className="text-center text-red-600 mt-4 text-sm font-medium">
+          Rates are inclusive of GST 18%. <br /> One full author registration can register up to 2 papers.
+        </p>
+      </div>
     </div>
-    </>
   );
 };
 
