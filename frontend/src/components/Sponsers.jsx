@@ -61,16 +61,20 @@ const SponsorsSection = () => {
                 }}
                 className="mx-4 md:mx-6 lg:mx-8 flex items-center justify-center opacity-95 hover:opacity-100 transition-all duration-300"
               >
+                <div className="complete ">
                 <img
                   src={sponsor.logo}
                   alt={`${sponsor.name} logo`}
                   className="h-32 sm:h-36 md:h-40 lg:h-44 w-auto min-w-[120px] object-contain mix-blend-multiply filter contrast-125 brightness-95"
                 />
+                <p className="text-center ">UP Chapter</p>
+                </div>
               </motion.div>
             ))}
   
             {/* Second set with same styles */}
             {sponsors.map((sponsor, index) => (
+
               <motion.div
                 key={`second-${index}`}
                 whileHover={{ 
@@ -79,11 +83,14 @@ const SponsorsSection = () => {
                 }}
                 className="mx-4 md:mx-6 lg:mx-8 flex items-center justify-center opacity-95 hover:opacity-100 transition-all duration-300"
               >
+                <div className="complete">
                 <img
                   src={sponsor.logo}
                   alt={`${sponsor.name} logo`}
                   className="h-32 sm:h-36 md:h-40 lg:h-44 w-auto min-w-[120px] object-contain mix-blend-multiply filter contrast-125 brightness-95"
                 />
+                <p className="text-center ">UP Chapter</p>
+                </div>
               </motion.div>
             ))}
           </div>

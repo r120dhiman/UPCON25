@@ -33,26 +33,26 @@ const Card = ({
     };
   }, []);
  
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === 'Escape' && isModalOpen) {
-        setIsModalOpen(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleKeyDown = (event) => {
+  //     if (event.key === 'Escape' && isModalOpen) {
+  //       setIsModalOpen(false);
+  //     }
+  //   };
 
-    if (isModalOpen) {
-      document.addEventListener('keydown', handleKeyDown);
-      // Prevent background scrolling
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
+  //   if (isModalOpen) {
+  //     document.addEventListener('keydown', handleKeyDown);
+  //     // Prevent background scrolling
+  //     document.body.style.overflow = 'hidden';
+  //   } else {
+  //     document.body.style.overflow = 'unset';
+  //   }
 
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = 'unset';
-    };
-  }, [isModalOpen]);
+  //   return () => {
+  //     document.removeEventListener('keydown', handleKeyDown);
+  //     document.body.style.overflow = 'unset';
+  //   };
+  // }, [isModalOpen]);
 
   return (
     <>
@@ -100,7 +100,7 @@ const Card = ({
                 <p className="text-sm text-gray-600">{description}</p>
               </div>
               <button 
-                onClick={() => setIsModalOpen(true)} 
+                // onClick={() => setIsModalOpen(true)} 
                 className="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition"
               >
                 Register Now
@@ -111,7 +111,7 @@ const Card = ({
       </div>
 
       {/* Modal */}
-      {isModalOpen && (
+      {/* {isModalOpen && (
         <div 
           className=" inset-0  bg-opacity-90 flex items-center justify-center z-[9999] overflow-hidden"
           onClick={(e) => {
@@ -126,7 +126,7 @@ const Card = ({
             // Prevent modal from closing when clicking inside it
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close Button with improved styling */}
+            {/* Close Button with improved styling 
             <button 
               onClick={() => setIsModalOpen(false)} 
               className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl font-light w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 transition"
@@ -141,6 +141,7 @@ const Card = ({
           </div>
         </div>
       )}
+       */}
     </>
   );
 };
