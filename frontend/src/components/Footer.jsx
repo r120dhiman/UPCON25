@@ -4,7 +4,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-2 sm:px-5 lg:px-6 flex-col justify-between items-center">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 py-10 text-center">
           <div className="flex flex-col items-center">
-            <h3 className="text-lg font-semibold mb-4">UPCON 25</h3>
+            <h3 className="text-lg md:text-md font-semibold mb-4">UPCON 25</h3>
             <p className="text-gray-200 text-sm mb-4 hover:text-[#ffffe0]">
               IEEE Conference IIT BHU 2025
             </p>
@@ -29,37 +29,41 @@ function Footer() {
 
           {/* Quick Links */}
           <div className="flex flex-col items-center justify-start">
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="/" className="text-gray-300 hover:text-[#ffffe0] text-sm">Home</a></li>
               <li><a href="/registration" className="text-gray-300 hover:text-[#ffffe0] text-sm">Registration</a></li>
-              <li><a href="/paper-submission" className="text-gray-300 hover:text-[#ffffe0] text-sm">Paper Submission</a></li>
+              <li><a href="/callforpapers" className="text-gray-300 hover:text-[#ffffe0] text-sm">Call For Papers</a></li>
               <li><a href="/contact" className="text-gray-300 hover:text-[#ffffe0] text-sm">Contact Us</a></li>
             </ul>
           </div>
 
           <div className="flex flex-col items-center">
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-4">Contact Us</h3>
             <div className="space-y-2">
               <p className="text-gray-300 text-sm flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                 </svg>
-                upcon25@example.com
+                upcon25@iitbhu.ac.in
               </p>
-              {/* <p className="text-gray-300 text-sm flex items-center">
+              <p className="text-gray-300 text-sm flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                 </svg>
-                +91 XXXXXXXXX
-              </p> */}
+                <p className="text-gray-300 text-sm flex items-center">
+                
+                helpupcon25@iitbhu.ac.in
+              </p>
+              </p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-300 py-3">
-          <p className="text-center text-gray-300 text-sm">
+          <p className="text-center text-gray-300 text-sm md:text-md">
             &copy; {new Date().getFullYear()} UPCON 25. All rights reserved.
           </p>
         </div>

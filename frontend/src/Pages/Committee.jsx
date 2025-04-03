@@ -210,6 +210,11 @@ const Committee = () => {
         image: "/committee/arupkudas.jpg",
       },
       {
+        name: " Dr. Chirodip Bakil",
+        title: "(IIT Kharagpur)",
+        image: "/committee/chirodeep.jpeg",
+      },
+      {
         name: "Dr. Ranjeeta Patel",
         title: "(KIIT Bhubaneswar)",
         image: "/committee/ranjeeta.jpg",

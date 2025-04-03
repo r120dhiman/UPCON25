@@ -85,10 +85,16 @@ function Navbar({color , backdrop}) {
 
   const DesktopNavItem = ({ link }) => {
     const [isHovered, setIsHovered] = useState(false);
+
+    const handleClick = () => {
+      window.scrollTo(0, 0);
+    };
+
     if (link.type === "direct") {
       return (
         <Link
           to={link.path}
+          onClick={handleClick}
           className={`text-gray-50 hover:text-white px-0.5 py-2 rounded-md text-md 
             font-medium transition-all duration-300 relative
             before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-b 
@@ -145,6 +151,7 @@ function Navbar({color , backdrop}) {
                 <a
                   key={subLink.title}
                   href={subLink.path}
+                  onClick={handleClick}
                   className={`block px-4 py-2 text-sm text-gray-100 hover:text-white 
                     font-medium transition-all duration-200 relative
                     before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-b 
@@ -162,6 +169,7 @@ function Navbar({color , backdrop}) {
                 <Link
                   key={subLink.title}
                   to={subLink.path}
+                  onClick={handleClick}
                   className={`block px-4 py-2 text-sm text-gray-100 hover:text-white 
                     font-medium transition-all duration-200 relative
                     before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-b 
@@ -183,11 +191,16 @@ function Navbar({color , backdrop}) {
 
   const MobileNavItem = ({ link, index }) => {
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
+    
+    const handleClick = () => {
+      window.scrollTo(0, 0);
+    };
 
     if (link.type === "direct") {
       return (
         <a
           href={link.path}
+          onClick={handleClick}
           className="text-gray-300 hover:bg-[#442542] hover:text-white block px-3 py-2 rounded-md text-base font-medium"
         >
           {link.title}
@@ -217,6 +230,7 @@ function Navbar({color , backdrop}) {
                 <a
                   key={subLink.title}
                   href={subLink.path}
+                  onClick={handleClick}
                   className="text-gray-300 hover:bg-[#5e365b] hover:text-white block px-3 py-2 rounded-md text-sm"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -227,6 +241,7 @@ function Navbar({color , backdrop}) {
                 <a
                   key={subLink.title}
                   href={subLink.path}
+                  onClick={handleClick}
                   className="text-gray-300 hover:bg-[#5e365b] hover:text-white block px-3 py-2 rounded-md text-sm"
                 >
                   {subLink.title}
