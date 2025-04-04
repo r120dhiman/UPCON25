@@ -229,6 +229,11 @@ const Committee = () => {
         title: "(IIT Kanpur)",
         image: "/committee/Rag.jpg",
       },
+      {
+        name: "Dr. Manoj Kumar Debnath",
+        title: "(SOA University)",
+        image: "/committee/Manoj.jpeg",
+      },
     ],
     "Sponsorship Chairs": [
       {
@@ -251,11 +256,7 @@ const Committee = () => {
         title: "(VNIT Nagpur)",
         image: "/committee/riteshks.jpg",
       },
-      {
-        name: "Dr. Manoj Kumar Debnath",
-        title: "(SOA University)",
-        image: "/committee/Manoj.jpeg",
-      },
+      
     ],
     "Hospitality Chairs": [
       {
