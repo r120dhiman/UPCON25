@@ -11,7 +11,7 @@ function KeynoteSpeaker() {
   },
      {
     imageUrl: "/Speakers/Pericles.jpeg",
-    name: "Dr. PericleZencheta",
+    name: "Dr. Pericle Zanchetta",
     institution: "University of Pavia, Italy",
     talkTitle: "Will be updated soon...",
   },
