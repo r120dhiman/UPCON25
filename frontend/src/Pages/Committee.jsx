@@ -134,7 +134,7 @@ const Committee = () => {
         image: "/committee/kishorep.jpg",
       },
     ],
-    "Conference Secretary": [
+    "Conference Secretaries": [
       {
         name: "Prof. M.K. Verma",
         title: "(IIT BHU)",
@@ -175,11 +175,11 @@ const Committee = () => {
         title: "(IIT BHU)",
         image: "/committee/mayanksw.jpg",
       },
-      {
-        name: "Dr. R. Kalpana",
-        title: "(NIT Calicut)",
-        image: "/committee/rkalpana.jpg",
-      },
+      // {
+      //   name: "Dr. R. Kalpana",
+      //   title: "(NIT Calicut)",
+      //   image: "/committee/rkalpana.jpg",
+      // },
     ],
     "Finance Chair": [
       {
@@ -188,7 +188,7 @@ const Committee = () => {
         image: "/committee/vnlal.png",
       },
     ],
-    "Publication Chair": [
+    "Publication Chairs/Technical Program Committee": [
       {
         name: "Dr. Jaison Mathew",
         title: "(GEC Thrissur)",
@@ -215,12 +215,22 @@ const Committee = () => {
         image: "/committee/chirodeep.jpeg",
       },
       {
-        name: "Dr. Ranjeeta Patel",
-        title: "(KIIT Bhubaneswar)",
-        image: "/committee/ranjeeta.jpg",
+        name: "Dr. Asha Rani",
+        title: "(NIT  Silchar)",
+        image: "/committee/asha_Rani.jpg",
+      },
+      {
+        name: "Dr.Phaneendra Babu Bobba",
+        title: "(GRIET Hyderabad)",
+        image: "/committee/Phaneendra.jpeg",
+      },
+      {
+        name: "Dr. Raghvendra Kumar Chaudhary",
+        title: "(IIT Kanpur)",
+        image: "/committee/Rag.jpg",
       },
     ],
-    "Sponsorship Chair": [
+    "Sponsorship Chairs": [
       {
         name: "Dr. Shyam Kamal",
         title: "(IIT BHU)",
@@ -241,8 +251,13 @@ const Committee = () => {
         title: "(VNIT Nagpur)",
         image: "/committee/riteshks.jpg",
       },
+      {
+        name: "Dr. Manoj Kumar Debnath",
+        title: "(SOA University)",
+        image: "/committee/Manoj.jpeg",
+      },
     ],
-    "Hospitality Chair": [
+    "Hospitality Chairs": [
       {
         name: "Dr. Naveen Yalla",
         title: "(IIT BHU)",
@@ -259,7 +274,7 @@ const Committee = () => {
         image: "/committee/prasan.jpg",
       },
     ],
-    "Plenary Chair": [
+    "Plenary Chairs": [
       {
         name: "Dr. R.K. Saket",
         title: "(IIT BHU)",
@@ -285,8 +300,23 @@ const Committee = () => {
         title: "(MNIT Jaipur)",
         image: "/committee/sunanda.png",
       },
+      {
+        name: "Dr. Akhilesh Tiwari",
+        title: "(IIIT Allahabad)",
+        image: "/committee/akh.jpeg",
+      },
+      {
+        name: "Dr. Avadhesh Kumar",
+        title: "(Galgotias University)",
+        image: "/committee/av.jpeg",
+      },
+      {
+        name: "Dr. Prabhakar Tiwari",
+        title: "(MMMUT Gorakhpur)",
+        image: "/committee/pr.jpeg",
+      },
     ],
-    "WIE": [
+    "WIE Chairs": [
       {
         name: "Dr. Kalpana Chaudhury",
         title: "(IIT BHU)",
@@ -298,7 +328,7 @@ const Committee = () => {
         image: "/committee/ravitala.jpg",
       },
     ],
-    "SYP": [
+    "SYP Chair": [
       {
         name: "Dr. Kaushik Basu",
         title: "(IISC Bangalore)",
@@ -357,6 +387,11 @@ const Committee = () => {
         name: "Dr. Subhashis Basu",
         title: "(IIT Kharagpur)",
         image: "/committee/subhbasu.jpeg",
+      },
+      {
+        name: "Dr. K. V. Srivastava",
+        title: "(IIT Kanpur)",
+        image: "/committee/KV.jpg",
       },
       {
         name: "Pankaj Achutan",
