@@ -97,7 +97,7 @@ function Homepage() {
               <br />
               <br />
               UPCON conference is organized annually at various locations in
-              Uttar Pradesh (UP). Prior to this, first ten series of UPCON
+              Uttar Pradesh (UP). Prior to this, first eleven series of UPCON
               conferences were organized at GCET, Greater Noida (2014), Indian
               Institute of Information Technology Allahabad (2015), IIT BHU
               Varanasi (2016), GLA University Mathura (2017), MMMUT Gorakhpur
