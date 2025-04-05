@@ -67,7 +67,8 @@ const SponsorsSection = () => {
                   alt={`${sponsor.name} logo`}
                   className="h-32 sm:h-36 md:h-40 lg:h-44 w-auto min-w-[120px] object-contain mix-blend-multiply filter contrast-125 brightness-95"
                 />
-                <p className="text-center ">UP Chapter</p>
+                {sponsor.name!=="IIT BHU" &&
+                <p className="text-center ">UP Chapter</p>}
                 </div>
               </motion.div>
             ))}
@@ -89,7 +90,8 @@ const SponsorsSection = () => {
                   alt={`${sponsor.name} logo`}
                   className="h-32 sm:h-36 md:h-40 lg:h-44 w-auto min-w-[120px] object-contain mix-blend-multiply filter contrast-125 brightness-95"
                 />
-                <p className="text-center ">UP Chapter</p>
+                 {sponsor.name!=="IIT BHU" &&
+                <p className="text-center ">UP Chapter</p>}
                 </div>
               </motion.div>
             ))}

@@ -95,7 +95,7 @@ const Committee = () => {
         image: "/committee/mohdrihan.jpg",
       },
       {
-        name: "Prof. Akshay Rathoore",
+        name: "Prof. Akshay Rathore",
         title: "(SIT, Singapore)",
         image: "/committee/aksrath.jpg",
       },
