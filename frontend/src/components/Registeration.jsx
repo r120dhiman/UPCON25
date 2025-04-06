@@ -15,7 +15,13 @@ const Registration = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-8 min-h-screen relative">
+      <div className="fixed inset-x-0 bottom-0 h-[80vh] -z-10 bg-gradient-to-b from-white to-blue-700/15 mix-blend-multiply">
+        <div
+          className="absolute inset-0 bg-[url(/build.jpg)] opacity-10 bg-bottom bg-no-repeat bg-contain 
+      brightness-100 mix-blend-multiply"
+        />
+      </div>
       <h1
         className="text-4xl sm:text-5xl py-3 font-extrabold text-center mb-10 bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent drop-shadow-lg"
       >
@@ -46,7 +52,7 @@ const Registration = () => {
           </tbody>
         </table>
       </div>
-      <div className="overflow-x-auto p-6 bg-white shadow-md rounded-lg mt-8">
+      <div className="overflow-x-auto p-6 rounded-lg mt-8">
         <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Registration Pricing</h2>
         <table className="min-w-full border border-gray-200 text-sm md:text-base text-center shadow-lg rounded-lg overflow-hidden">
           <thead className="bg-gradient-to-r from-[#5e365b] to-blue-700 text-white">
@@ -70,7 +76,7 @@ const Registration = () => {
             ))}
           </tbody>
         </table>
-        <p className="text-center text-red-600 mt-4 text-sm font-medium">
+        <p className="text-center text-red-700 mt-6 text-sm md:text-md font-normal italic">
           Rates are inclusive of GST 18%. <br /> One full author registration can register up to 2 papers.
         </p>
       </div>

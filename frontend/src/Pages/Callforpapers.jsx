@@ -4,21 +4,21 @@ const Callforpapers = () => {
   return (
     <div className="relative flex flex-col justify-center items-center min-h-screen p-4">
       {/* Background Gradient and Watermark */}
-      <div className="fixed inset-x-0 bottom-0 h-[80vh] -z-10 bg-gradient-to-b from-white to-blue-700/40 via-[#97148c]/40 mix-blend-multiply">
+      <div className="fixed inset-x-0 bottom-0 h-[80vh] -z-10 bg-gradient-to-b from-white/20 to-blue-700/20 via-[#97148c]/20 mix-blend-multiply">
         <div
-          className="absolute inset-0 bg-[url(/build.jpg)] opacity-20 bg-bottom bg-no-repeat bg-contain 
+          className="absolute inset-0 bg-[url(/build.jpg)] opacity-15 bg-bottom bg-no-repeat bg-contain 
           brightness-100 mix-blend-multiply"
         />
       </div>
 
       {/* Content Section */}
-      <h1 className='text-5xl font-bold  p-auto mb-10 w-screen text-center py-4  bg-gradient-to-r from-purple-600 to-blue-600 text-white'>Call For Papers </h1>
+      <h1 className='text-5xl font-bold  p-auto mb-10 w-screen text-center py-4  bg-gradient-to-r from-[#82127c] to-blue-700 text-white'>Call For Papers </h1>
       <div className="content flex text-lg italic flex-col items-center px-6 sm:px-8 md:px-10 pb-2 shadow-lg transition-all duration-300 gap-2 md:gap-6 border-b border-purple-100 bg-gradient-to-r from-[#89107f]/20 via-white to-[#89107f]/20">
       The 12th UPCON (UPCON 2025) will be held at IIT BHU, Varanasi, India, from December 13 to December 15, 2025.  UPCON 2025 will feature both industry-driven and application-oriented technical sessions. The conference will bring together practicing engineers, researchers, and other professionals to have interactive and multidisciplinary discussions on the latest advances in energy conversion. The extended version of all the accepted papers would be further considered for publication in IEEE Transactions on Industry Application/Industry Application Magazine. 
 
 UPCON 2025 authors are encouraged to participate as reviewers for the double-blind peer review process.
       </div>
-      <div className="bg-white/50 mt-20 backdrop-blur-3xl shadow-lg rounded-3xl p-8 w-full max-w-5xl">
+      <div className="bg-white/50 mt-16 backdrop-blur-3xl shadow-lg rounded-3xl p-8 w-full max-w-5xl">
         <h2 className="text-3xl sm:text-4xl underline font-extrabold mb-6 text-center bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent">
           IMPORTANT DATES
         </h2>
@@ -78,11 +78,11 @@ UPCON 2025 authors are encouraged to participate as reviewers for the double-bli
       </div> */}
 
 
-<div className="mt-20  rounded-3xl p-8 w-full max-w-5xl">
+<div className="mt-14  rounded-3xl p-8 w-full max-w-5xl">
         <h2 className="text-3xl sm:text-4xl underline font-extrabold mb-6 text-center bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent">
         Template For Digest Submission
         </h2>
-        <div className="temp2 flex flex-row justify-center items-center gap-10">
+        <div className="temp2 flex md:flex-row flex-col justify-center items-center gap-10">
   <button
     type="button"
     className="group relative bg-gradient-to-r from-[#5e365b] to-blue-700 text-white font-bold py-3 px-6 text-lg rounded-full 
