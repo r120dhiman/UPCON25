@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router'
 
-function Navbar({color , backdrop}) {
+function Navbar({ color, backdrop }) {
   const [isOpen, setIsOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState(null)
 
@@ -100,7 +100,7 @@ function Navbar({color , backdrop}) {
             before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-b 
             before:from-white/5 before:to-transparent before:opacity-0 before:transition-opacity
             hover:before:opacity-100 
-            ${color 
+            ${color
               ? "hover:bg-gradient-to-b hover:from-[#a44499] hover:to-[#5c2857] hover:shadow-lg hover:shadow-purple-800/20"
               : "hover:bg-gradient-to-b hover:from-[#6e4169]/70 hover:to-[#542d50]/70 hover:shadow-lg hover:shadow-purple-900/20"
             }`}
@@ -191,7 +191,7 @@ function Navbar({color , backdrop}) {
 
   const MobileNavItem = ({ link, index }) => {
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
-    
+
     const handleClick = () => {
       window.scrollTo(0, 0);
     };
@@ -224,7 +224,7 @@ function Navbar({color , backdrop}) {
           </svg>
         </button>
         {isSubMenuOpen && (
-          <div className={`pl-4 ${color?"bg-[#442542]":"bg-gray-600/50"}`}>
+          <div className={`pl-4 ${color ? "bg-[#442542]" : "bg-gray-600/50"}`}>
             {link.subLinks.map((subLink) => (
               subLink.path.startsWith('http') ? (
                 <a
@@ -265,7 +265,9 @@ function Navbar({color , backdrop}) {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 lg:hidden ml-2 mix-blend-lighten">
-              <img src='/UPCON.png' width={44}></img>
+              <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+                <img src='/UPCON.png' width={44}></img>
+              </Link>
             </div>
           </div>
           <div className="hidden lg:flex flex-1 justify-center items-center">

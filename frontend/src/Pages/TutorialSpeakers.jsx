@@ -10,16 +10,13 @@ function TutorialSpeaker() {
   };
 
   return (
-    <div className='relative'>
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: "url('/sp.jpg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: '0.8'
-        }}
-      />
+    <div className='min-h-screen relative'>
+      <div className="fixed inset-x-0 bottom-0 h-[80vh] -z-10 bg-gradient-to-b from-white/50 to-blue-600/20 mix-blend-multiply">
+        <div
+          className="absolute inset-0 bg-[url(/build.jpg)] opacity-10 bg-bottom bg-no-repeat bg-contain 
+      brightness-110 mix-blend-multiply"
+        />
+      </div>
 
       <div className='container mx-auto px-3 py-6 relative z-10'>
         <h1 className='text-2xl md:text-4xl text-center font-semibold mb-12 backdrop-blur-3xl mx-auto bg-[#8C477E]/20 rounded-2xl'>TUTORIAL SPEAKERS</h1>
