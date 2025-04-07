@@ -9,6 +9,7 @@ import TutorialSpeaker from "./Pages/TutorialSpeakers";
 import PHDColloqium from "./Pages/PHDColloqium";
 import Registration from "./components/Registeration";
 import Callforpapers from "./Pages/Callforpapers";
+import Contact from "./Pages/Contact";
 
 function Layout() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function Layout() {
         <Route path="/phdcolloquium" element={<PHDColloqium />} />
         <Route path="/registration" element={<Registration/>} />
         <Route path="/callforpapers" element={<Callforpapers />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>
