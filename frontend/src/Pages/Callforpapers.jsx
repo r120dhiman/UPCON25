@@ -110,29 +110,10 @@ const Callforpapers = () => {
             <span>&nbsp;</span>
             <button
               className="absolute top-0 right-0 text-gray-700 hover:text-red-600  transition-colors"
-              onClick={() => {
-                const el = techRef.current;
-                if (!el) return;
-                
-                const height = el.offsetHeight;
-                gsap.set(el, { height });
-                gsap.to(el, {
-                  opacity: 0,
-                  height: 0,
-                  duration: 0.7,
-                  ease: 'power2.inOut',
-                  onComplete: () => {
-                    setTechnicalTracks(false);
-                    if (templatesRef.current) {
-                      gsap.to(window, {
-                        scrollTo: { y: templatesRef.current.offsetTop - 100 },
-                        duration: 1,
-                        ease: 'power2.inOut'
-                      });
-                    }
-                  }
-                });
-              }}
+             onClick={() => {
+               setTechnicalTracks(false);g
+             }
+             }
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
