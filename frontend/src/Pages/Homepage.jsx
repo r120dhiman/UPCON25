@@ -170,7 +170,6 @@ function Homepage() {
         <SponsorsSection />
         <TourismGallery />
       </div>
-      <Tech/>
     </div>
   );
 }
