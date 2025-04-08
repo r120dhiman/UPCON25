@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Card from "../components/Brochure_Card";
 import SponsorsSection from "../components/Sponsers";
 import TourismGallery from "../components/TourismGallery";
+import Tech from "../components/Technical";
 
 function Homepage() {
   const cardRef = useRef(null);
@@ -143,10 +144,10 @@ function Homepage() {
                 className="mx-auto max-w-sm w-full"
               />
               <Card
-                title={"Call for Proposals"}
+                title={"Schedule at a Glance"}
                 logoImage={"/watermark.jpg"}
                 speakerImage={"/watermark.jpg"}
-                description={"lorem20"}
+                path={"/schedule"}
                 className="mx-auto max-w-sm w-full"
               />
               <Card
@@ -160,7 +161,7 @@ function Homepage() {
                 title={"Important Dates"}
                 logoImage={"/watermark.jpg"}
                 speakerImage={"/watermark.jpg"}
-                description={"lorem20"}
+                path={"/registration"}
                 className="mx-auto max-w-sm w-full"
               />
             </div>
@@ -169,6 +170,7 @@ function Homepage() {
         <SponsorsSection />
         <TourismGallery />
       </div>
+      <Tech/>
     </div>
   );
 }
