@@ -33,7 +33,7 @@ const Tech = () => {
         {
           opacity: 1,
           x: 0,
-          duration: 0.5,
+          duration: 0.00001,
           delay: index * 0.05,
           scrollTrigger: {
             trigger: item,
@@ -75,8 +75,7 @@ const Tech = () => {
     >
       <div className="max-w-5xl mx-auto">
         <p className="text-lg mb-6 leading-relaxed">
-          The conference is technically and financially sponsored by IEEE UP Section. There are multiple tracks in the
-          conference covering almost all areas of Electrical, Computer & Electronics Engineering.
+        The conference seeks technical papers on any subject pertaining to the scope of the conference. The topics of interest include but are not limited to the following:
         </p>
 
         <div className="mt-10">
@@ -88,6 +87,7 @@ const Tech = () => {
               <li
                 key={index}
                 ref={(el) => (listItemsRef.current[index] = el)}
+                                className="bg-white shadow-md rounded-md px-4 py-3 border-l-4 border-blue-600 hover:bg-blue-50 transition"
               >
                 {topic}
               </li>
