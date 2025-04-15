@@ -59,7 +59,7 @@ function Footer() {
               </p>
               <p className="text-gray-300 text-sm flex items-center">
                 <p className="text-gray-300 text-sm flex items-center">
-                <a href="https://forms.gle/3Zx4Rw2yTpna6RFi9" target="blank">Ask your query</a>
+                <a href="https://forms.gle/3Zx4Rw2yTpna6RFi9" target="blank">Ask your query by clicking here</a>
               </p>
               </p>
             </div>

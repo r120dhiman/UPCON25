@@ -44,10 +44,10 @@ function Navbar({ color, backdrop }) {
       "title": "AWARDS",
       "type": "dropdown",
       "subLinks": [
-        { "title": "Best PhD award", "path": "/awards/bestPhD" },
-        { "title": "Best Paper award", "path": "/awards/bestPaper" },
-        { "title": "Best Poster award", "path": "/awards/bestPoster" },
-        { "title": "Malviya Student Trouvel award", "path": "/awards/malviyaStudentTrouvel" }
+        { "title": "Best PhD Award", "path": "/awards/bestPhD" },
+        { "title": "Best Paper Award", "path": "/awards/bestPaper" },
+        { "title": "Best Poster Award", "path": "/awards/bestPoster" },
+        { "title": "Malviya Student Travel Award", "path": "/awards/malviyaStudentTrouvel" }
       ]
     },
     { title: "SPONSORS", path: "/sponsors", type: "direct" },

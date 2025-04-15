@@ -75,6 +75,28 @@ const Callforpapers = () => {
           </tbody>
         </table>
       </div>
+      <div className="mt-10 w-full max-w-5xl px-6">
+  <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/60 backdrop-blur-md shadow-lg border-l-4 border-blue-600">
+    <div className="mt-1 text-blue-600">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+      </svg>
+    </div>
+    <div className="text-gray-800 text-base sm:text-lg leading-relaxed">
+      <p className="font-semibold text-blue-800 mb-1">Note on Peer Review System:</p>
+      <p>
+      The Microsoft CMT service is used for managing the peer-reviewing process for this conference. This service is provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+      </p>
+    </div>
+  </div>
+</div>
 
       <div ref={templatesRef} className="mt-14 rounded-3xl p-8 w-full max-w-5xl">
         <h2 className="text-3xl sm:text-4xl underline font-extrabold mb-6 text-center bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent">
