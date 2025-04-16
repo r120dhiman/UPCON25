@@ -11,6 +11,7 @@ import Registration from "./components/Registeration";
 import Callforpapers from "./Pages/Callforpapers";
 import Contact from "./Pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
+import { Analytics } from "@vercel/analytics/react"
 
 function Layout() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function Layout() {
     <>
       {showNavbar && <div className="sticky top-0 z-50"><Navbar color={true} backdrop={false} /> </div>}
       <ScrollToTop />
+      <Analytics/>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="*" element={<NotFound />} />
