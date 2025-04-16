@@ -97,7 +97,12 @@ const Callforpapers = () => {
     </div>
   </div>
 </div>
-
+<button type="button" className="group relative bg-gradient-to-r mt-5 from-[#5e365b] to-blue-700 text-white font-bold py-3 px-6 text-5xl rounded-full shadow-[0_10px_20px_rgba(109,40,217,0.3)] hover:shadow-[0_20px_40px_rgba(109,40,217,0.4)] transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer">
+            <a href="https://cmt3.research.microsoft.com/UPCON2025" className="relative z-10" target='blank'>
+               Digest Submission Portal
+            </a>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </button>
       <div ref={templatesRef} className="mt-14 rounded-3xl p-8 w-full max-w-5xl">
         <h2 className="text-3xl sm:text-4xl underline font-extrabold mb-6 text-center bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent">
           Template For Digest Submission
@@ -116,6 +121,7 @@ const Callforpapers = () => {
             </a>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
+         
 
         </div>
       </div>

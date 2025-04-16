@@ -64,8 +64,9 @@ const Tech = () => {
     'Energy management and trading in modern power systems',
     'Robust control, decentralized control, and networked control systems',
     'Non-linear control',
-    'Condition monitoring, high-voltage, and insulation engineering',
-    'FACTS, HVDC, MTDC systems',
+    'Condition monitoring, high-voltage,insulation engineering, FACTS, HVDC and MTDC systems',
+    'Devices, FPGA, VLSI and Embedded systems',
+    'Signal Processing'
   ];
 
   return (
