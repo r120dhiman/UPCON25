@@ -85,7 +85,7 @@ Conference Tracks
             <div
               key={index}
             //   ref={(el) => (listItemsRef.current[index] = el)}
-              className="bg-gradient-to-r from-white to-gray-50 p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-blue-600 hover:scale-102"
+              className="bg-gradient-to-r from-white to-gray-50 p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-fuchsia-800 hover:scale-102"
             >
               <span className="font-medium text-gray-800">{topic}</span>
             </div>
