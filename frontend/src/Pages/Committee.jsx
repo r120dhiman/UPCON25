@@ -107,7 +107,7 @@ const Committee = () => {
         image: "/committee/rksingh.png",
       },
       {
-        name: "Prof. V.N. Lal",
+        name: "Dr. V.N. Lal",
         title: "(IIT BHU)",
         image: "/committee/vnlal.png",
       },
@@ -145,11 +145,6 @@ const Committee = () => {
         title: "(IIT BHU)",
         image: "/committee/sandipgh.jpeg",
       },
-      // {
-      //   name: "Prof. R.K. Mohanty",
-      //   title: "(IIT BHU)",
-      //   image: "/committee/rmohan.jpg",
-      // },
       {
         name: "Dr. Somak Bhattacharya",
         title: "(IIT BHU)",
@@ -175,11 +170,6 @@ const Committee = () => {
         title: "(IIT BHU)",
         image: "/committee/mayanksw.jpg",
       },
-      // {
-      //   name: "Dr. R. Kalpana",
-      //   title: "(NIT Calicut)",
-      //   image: "/committee/rkalpana.jpg",
-      // },
     ],
     "Finance Chair": [
       {
@@ -190,7 +180,7 @@ const Committee = () => {
     ],
     "Publication Chairs/Technical Program Committee": [
       {
-        name: "Dr. Jaison Mathew",
+        name: "Prof. Jaison Mathew",
         title: "(GEC Thrissur)",
         image: "/committee/Jaison.png",
       },
@@ -220,7 +210,7 @@ const Committee = () => {
         image: "/committee/asha_Rani.jpg",
       },
       {
-        name: "Dr.Phaneendra Babu Bobba",
+        name: "Prof. Phaneendra Babu Bobba",
         title: "(GRIET Hyderabad)",
         image: "/committee/Phaneendra.jpeg",
       },
@@ -277,17 +267,17 @@ const Committee = () => {
     ],
     "Plenary Chairs": [
       {
-        name: "Dr. R.K. Saket",
+        name: "Prof. R.K. Saket",
         title: "(IIT BHU)",
         image: "/committee/rksaket.jpg",
       },
       {
-        name: "Dr. S.R. Mohanty",
+        name: "Prof. S.R. Mohanty",
         title: "(IIT BHU)",
         image: "/committee/rmh.png",
       },
       {
-        name: "Dr. S.K. Singh",
+        name: "Prof. S.K. Singh",
         title: "(IIT BHU)",
         image: "/committee/sksingh.jpg",
       },
@@ -307,7 +297,7 @@ const Committee = () => {
         image: "/committee/akh.jpeg",
       },
       {
-        name: "Dr. Avadhesh Kumar",
+        name: "Prof. Avadhesh Kumar",
         title: "(Galgotias University)",
         image: "/committee/av.jpeg",
       },
@@ -319,7 +309,7 @@ const Committee = () => {
     ],
     "WIE Chairs": [
       {
-        name: "Dr. Kalpana Chaudhury",
+        name: "Prof. Kalpana Chaudhary",
         title: "(IIT BHU)",
         image: "/committee/kalcha.jpg",
       },
@@ -348,7 +338,7 @@ const Committee = () => {
         image: "/committee/Sanjeet.jpg",
       },
       {
-        name: "Dr. Victor Veliadis",
+        name: "Prof. Victor Veliadis",
         title: "(North Carolina State University)",
         image: "/committee/victorve.jpg",
       },
@@ -358,44 +348,44 @@ const Committee = () => {
         image: "/committee/danon.jpeg",
       },
       {
-        name: "Dr. Subhashish Bhattacharya",
+        name: "Prof. Subhashish Bhattacharya",
         title: "(North Carolina State University)",
         image: "/committee/shbh.jpg",
       },
     ],
     "National Advisory Committee": [
       {
-        name: "Dr. Bhim Singh",
+        name: "Prof. Bhim Singh",
         title: "(IIT Delhi)",
         image: "/committee/bhimsingh.png",
       },
       {
-        name: "Dr. Santanu Kumar Mishra",
+        name: "Prof. Santanu Kumar Mishra",
         title: "(IIT Delhi)",
         image: "/committee/santanukm.jpeg",
       },
       {
-        name: "Dr. B.K. Panigrahi",
+        name: "Prof. B.K. Panigrahi",
         title: "(IIT Delhi)",
         image: "/committee/bkpanigrahi.jpg",
       },
       {
-        name: "Dr. Siddhartha Mukhopadhyay",
+        name: "Prof. Siddhartha Mukhopadhyay",
         title: "(IIT Kharagpur)",
         image: "/committee/siddmu.jpg",
       },
       {
-        name: "Dr. Subhashis Basu",
+        name: "Prof. Subhashis Basu",
         title: "(IIT Kharagpur)",
         image: "/committee/subhbasu.jpeg",
       },
       {
-        name: "Dr. K. V. Srivastava",
+        name: "Prof. K. V. Srivastava",
         title: "(IIT Kanpur)",
         image: "/committee/KV.jpg",
       },
       {
-        name: "Pankaj Achutan",
+        name: "Dr. Pankaj Achutan",
         title: "(NAL, Bangalore)",
         image: "/committee/pankac.png",
       },
@@ -424,7 +414,7 @@ const Committee = () => {
     ],
     "PhD Colloquium Chair": [
       {
-        name: "Dr. R.K. Mishra",
+        name: "Prof. R.K. Mishra",
         title: "(IIT BHU)",
         image: "/committee/Rk.jpeg",
       },
