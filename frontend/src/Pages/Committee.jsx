@@ -56,7 +56,7 @@ const Committee = () => {
         image: "/committee/amitpatra.jpg",
       },
     ],
-    "Patrons": [
+    "Steering Committee": [
       {
         name: "Prof. S.N. Singh",
         title: "(Director, AVB-IIITM Gwalior)",
@@ -77,8 +77,6 @@ const Committee = () => {
         title: "(MNNIT Allahabad)",
         image: "/committee/aks.jpg",
       },
-    ],
-    "Honorary General Chairs": [
       {
         name: "Prof. Yogesh Singh Chauhan",
         title: "(IIT Kanpur)",
@@ -106,11 +104,11 @@ const Committee = () => {
         title: "(IIT BHU)",
         image: "/committee/rksingh.png",
       },
-      {
-        name: "Dr. V.N. Lal",
-        title: "(IIT BHU)",
-        image: "/committee/vnlal.png",
-      },
+      // {
+      //   name: "Dr. V.N. Lal",
+      //   title: "(IIT BHU)",
+      //   image: "/committee/vnlal.png",
+      // },
     ],
     "General Co-Chairs": [
       {
