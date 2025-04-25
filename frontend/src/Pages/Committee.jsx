@@ -98,7 +98,7 @@ const Committee = () => {
         image: "/committee/aksrath.jpg",
       },
     ],
-    "General Chairs": [
+    "General Chair": [
       {
         name: "Prof. R.K. Singh",
         title: "(IIT BHU)",
