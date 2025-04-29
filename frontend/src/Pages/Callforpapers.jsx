@@ -48,7 +48,7 @@ const Callforpapers = () => {
       </h1>
 
       <div ref={contentRef} className="content flex text-lg italic flex-col items-center px-6 sm:px-8 md:px-10 pb-2 shadow-lg transition-all duration-300 gap-2 md:gap-6 border-b border-purple-100 bg-gradient-to-r from-[#89107f]/20 via-white to-[#89107f]/20">
-        The 12th UPCON (UPCON 2025) will be held at IIT BHU, Varanasi, India, from December 13 to December 15, 2025. UPCON 2025 will feature both industry-driven and application-oriented technical sessions. The conference will bring together practicing engineers, researchers, and other professionals to have interactive and multidisciplinary discussions on the latest advances in energy conversion. The extended version of all the accepted papers would be further considered for publication in IEEE Transactions on Industry Application/Industry Application Magazine. UPCON 2025 authors are encouraged to participate as reviewers for the double-blind peer review process.
+        The 12th UPCON (UPCON 2025) will be held at IIT BHU, Varanasi, India, from December 13 to December 15, 2025. UPCON 2025 will feature both industry-driven and application-oriented technical sessions. The conference will bring together practicing engineers, researchers, and other professionals to have interactive and multidisciplinary discussions on the latest advances in energy conversion. The extended version of the accepted papers would be further considered for publication in IEEE Transactions on Industry Application/Industry Application Magazine. UPCON 2025 authors are encouraged to participate as reviewers for the double-blind peer review process.
       </div>
       <div ref={headingRef}>
 
