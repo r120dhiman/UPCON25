@@ -43,6 +43,10 @@ const Callforpapers = () => {
         <div className="absolute inset-0 bg-[url(/build.jpg)] opacity-15 bg-bottom bg-no-repeat bg-contain brightness-100 mix-blend-multiply" />
       </div>
 
+      <div className="bg-red-100 border-4 border-red-600 text-red-900 font-bold text-xl text-center p-6 w-full max-w-4xl mx-auto mb-6 rounded-lg shadow-lg">
+        🚨 The maximum limit for digest submission is <u>5 pages</u>! 🚨
+      </div>
+
       <h1 ref={headingRef} className="text-5xl font-bold mb-10 w-screen text-center py-4 bg-gradient-to-r from-[#82127c] to-blue-700 text-white">
         Call For Papers
       </h1>
@@ -96,6 +100,9 @@ const Callforpapers = () => {
             </p>
           </div>
         </div>
+      </div>
+       <div className="bg-red-100 border-4 border-red-600 text-red-900 font-bold text-xl text-center p-2 mt-5 w-full max-w-4xl mx-auto mb-6 rounded-lg shadow-lg">
+        🚨 The maximum limit for digest submission is <u>5 pages</u>! 🚨
       </div>
       <button type="button" className="group relative bg-gradient-to-r mt-10 from-[#5e365b] to-blue-700 text-white font-bold py-4 px-12 text-3xl md:text-5xl rounded-full shadow-[0_10px_20px_rgba(109,40,217,0.3)] hover:shadow-[0_20px_40px_rgba(109,40,217,0.4)] transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer">
         <a href="https://cmt3.research.microsoft.com/UPCON2025" className="relative z-10" target='blank'>

@@ -1,8 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Tech = () => {
   const sectionRef = useRef(null);
@@ -11,6 +8,7 @@ const Tech = () => {
   useEffect(() => {
     const section = sectionRef.current;
 
+    // Animate section on load
     gsap.fromTo(
       section,
       { opacity: 0, y: 50 },
@@ -18,31 +16,23 @@ const Tech = () => {
         opacity: 1,
         y: 0,
         duration: 1,
-        scrollTrigger: {
-          trigger: section,
-          start: 'top 50%',
-          toggleActions: 'play reverse play reverse',
-        },
+        delay: 0.5, // Add slight delay after page load
       }
     );
 
-    listItemsRef.current.forEach((item, index) => {
-      gsap.fromTo(
-        item,
-        { opacity: 0, x: -20 },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.00001,
-          delay: index * 0.05,
-          scrollTrigger: {
-            trigger: item,
-            start: 'top 90%',
-            toggleActions: 'play reverse play reverse',
-          },
-        }
-      );
-    });
+    // Animate list items sequentially on load
+    const items = document.querySelectorAll('.topic-item');
+    gsap.fromTo(
+      items,
+      { opacity: 0, x: -20 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.3,
+        stagger: 0.1, // Add stagger effect between items
+        delay: 0.8, // Start after section animation
+      }
+    );
   }, []);
 
   const topics = [
@@ -65,27 +55,27 @@ const Tech = () => {
     'Non-linear control',
     'Condition monitoring, high-voltage,insulation engineering, FACTS, HVDC and MTDC systems',
     'Devices, FPGA, VLSI and Embedded systems',
-    'Signal Processing'
+    'Signal Processing',
   ];
 
   return (
     <section ref={sectionRef} className="py-12 px-4 w-full max-w-6xl mx-auto">
       <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-[#82127c] to-blue-700 text-white py-4 rounded-xl shadow-lg">
-Conference Tracks
+        Conference Tracks
       </h2>
-      
+
       <div className="bg-white/60 backdrop-blur-sm rounded-xl shadow-xl p-8">
         <p className="text-lg mb-8 leading-relaxed text-gray-700 text-center">
-          The conference seeks technical papers on any subject pertaining to the scope of the conference. 
-          The topics of interest include but are not limited to the following:
+          The conference seeks technical papers on any subject pertaining to the
+          scope of the conference. The topics of interest include but are not
+          limited to the following:
         </p>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {topics.map((topic, index) => (
             <div
               key={index}
-            //   ref={(el) => (listItemsRef.current[index] = el)}
-              className="bg-gradient-to-r from-white to-gray-50 p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-fuchsia-800 hover:scale-102"
+              className="topic-item bg-gradient-to-r from-white to-gray-50 p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-fuchsia-800 hover:scale-102"
             >
               <span className="font-medium text-gray-800">{topic}</span>
             </div>
