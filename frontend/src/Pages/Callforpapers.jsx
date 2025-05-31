@@ -3,6 +3,7 @@ import Tech from '../components/Technical';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import AlertRotator from '../components/Alert';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -43,9 +44,7 @@ const Callforpapers = () => {
         <div className="absolute inset-0 bg-[url(/build.jpg)] opacity-15 bg-bottom bg-no-repeat bg-contain brightness-100 mix-blend-multiply" />
       </div>
 
-      <div className="bg-red-100 border-4 border-red-600 text-red-900 font-bold text-xl text-center p-6 w-full max-w-4xl mx-auto mb-6 rounded-lg shadow-lg">
-        🚨 The maximum limit for digest submission is <u>5 pages</u>! 🚨
-      </div>
+      <AlertRotator/>
 
       <h1 ref={headingRef} className="text-5xl font-bold mb-10 w-screen text-center py-4 bg-gradient-to-r from-[#82127c] to-blue-700 text-white">
         Call For Papers
@@ -66,7 +65,7 @@ const Callforpapers = () => {
           <tbody>
             <tr>
               <td className="border-gray-300 px-6 py-4 text-center font-semibold">Digest Submission Deadline</td>
-              <td className="border-gray-300 px-6 py-4 text-center font-semibold text-fuchsia-800">May 31, 2025</td>
+              <td className="border-gray-300 px-6 py-4 text-center font-semibold text-fuchsia-800">June 15, 2025</td>
             </tr>
             <tr>
               <td className="border-gray-300 px-6 py-4 text-center font-semibold">Acceptance Notification</td>
