@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router'
+import AlertTicker from './Alert'
 
 function Navbar({ color, backdrop }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -256,9 +257,7 @@ function Navbar({ color, backdrop }) {
 
   return (
     <>
-      <div className="bg-yellow-400 text-black text-center py-2 text-2xl font-semibold">
-        Conference will be held only in <span className='font-extrabold text-red-700 underline underline-offset-2'>PHYSICAL MODE</span>
-      </div>
+     <AlertTicker/>
       <nav className={`${color ? "bg-gradient-to-b from-[#57254f]/85 to-[#682761]/85" : "bg-gradient-to-b from-[#57254f]/80 to-[#682761]/80"} 
   backdrop-blur-md sticky w-full z-50 
   ${backdrop ? "backdrop-blur-4xl" : ""} 

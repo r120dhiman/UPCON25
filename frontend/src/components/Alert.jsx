@@ -2,14 +2,14 @@ import React from "react";
 
 const AlertTicker = () => {
   const alerts = [
-    "🚨 Max limit for digest submission is 5 pages!",
+    "🚨 Conference will be held only in PHYSICAL MODE",
     "📅 The digest submission deadline has been extended to 15 June 2025!"
   ];
 
   return (
-    <div className="md:w-[60vw] w-full bg-red-100 border-4 border-red-600 text-red-900 font-bold text-xl overflow-hidden mb-6 shadow-lg">
+    <div className="bg-yellow-400 text-black text-center  text-2xl font-semibold">
       <div className="ticker">
-        <div className="ticker-content px-4 py-4">
+        <div className="ticker-content px-4 py-1">
           <div className="ticker-loop flex gap-16">
             {alerts.concat(alerts).map((text, index) => (
               <span key={index} className="px-8 flex-shrink-0">
