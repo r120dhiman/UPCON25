@@ -46,7 +46,7 @@ function PHDColloquium() {
         </h1>
         <article className="my-5 text-justify text-gray-800 leading-relaxed bg-white p-6 rounded-xl shadow-lg">
           <p>
-            UPCON 2025 will also provide a platform for budding PhD scholars who are pursuing cutting-edge research work at various Research Institutes or Universities within India and Abroad, in the broad area of Computer Vision and Image Processing.
+            UPCON 2025 will also provide a platform for budding PhD scholars who are pursuing cutting-edge research work at various Research Institutes or Universities within India and Abroad, in the broad area of Electrical, Electronics and Computer Engineering.
           </p>
           <p className="mt-4">
             This scheme is open for PhD scholars from Institutes of National importance like IITs, IIITs, NITs, and other Research Institutes or Universities.
