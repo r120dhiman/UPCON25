@@ -3,7 +3,7 @@ import React from "react";
 const AlertTicker = () => {
   const alerts = [
     "🚨 Conference will be held only in PHYSICAL MODE",
-    "📅 The digest submission deadline has been extended to 15 June 2025!"
+    "📅 The final deadline for digest submission has been extended to 31st July 2025!"
   ];
 
   return (

@@ -67,7 +67,7 @@ const Callforpapers = () => {
           <tbody>
             <tr>
               <td className="border-gray-300 px-6 py-4 text-center font-semibold">Digest Submission Deadline</td>
-              <td className="border-gray-300 px-6 py-4 text-center font-semibold text-fuchsia-800">June 15, 2025</td>
+              <td className="border-gray-300 px-6 py-4 text-center font-semibold text-fuchsia-800">July 31, 2025</td>
             </tr>
             <tr>
               <td className="border-gray-300 px-6 py-4 text-center font-semibold">Acceptance Notification</td>
