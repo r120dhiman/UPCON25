@@ -97,6 +97,11 @@ const Committee = () => {
         title: "(SIT, Singapore)",
         image: "/committee/aksrath.jpg",
       },
+      {
+        name: "Prof. Sanjay Kumar Singh",
+        title: "(IIT BHU)",
+        image: "/committee/sanjay.jpeg",
+      },
     ],
     "General Chair": [
       {
