@@ -71,7 +71,7 @@ const Callforpapers = () => {
             </tr>
             <tr>
               <td className="border-gray-300 px-6 py-4 text-center font-semibold">Acceptance Notification</td>
-              <td className="border-gray-300 px-6 py-4 text-center font-semibold text-blue-700">Aug 10, 2025</td>
+              <td className="border-gray-300 px-6 py-4 text-center font-semibold text-blue-700">Sep 15, 2025</td>
             </tr>
             <tr>
               <td className="border-gray-300 px-6 py-4 text-center font-semibold">Camera Ready Paper Submission</td>
