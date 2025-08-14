@@ -36,7 +36,7 @@ function PHDColloquium() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <a
-              href="https://forms.gle/your-placeholder-link"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-3 text-lg font-bold text-white bg-gray-800 hover:bg-amber-400 hover:text-black rounded-2xl px-6 py-3 transition-all duration-300 ease-in-out shadow-md"
@@ -82,7 +82,7 @@ function PHDColloquium() {
         </article>
         
           <motion.a
-            href="https://forms.gle/your-placeholder-link"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-6 right-6 bg-gradient-to-r from-black via-gray-900 to-green-600 hover:from-black hover:via-gray-800 hover:to-green-500 text-white font-bold py-3.5 px-7 rounded-full shadow-lg transition-all duration-300 ease-in-out animate-pulse"
