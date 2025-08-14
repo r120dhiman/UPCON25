@@ -19,7 +19,7 @@ const AlertTicker = () => {
           </div>
         </div>
       </div>
-      <style>
+      <style> 
         {`
           .ticker {
             width: 100%;
