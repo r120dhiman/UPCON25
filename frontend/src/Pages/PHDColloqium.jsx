@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { motion } from 'framer-motion';
-import '../components/PhDColloquium.css'; // Assuming you have a CSS file for additional styles
+
 function PHDColloquium() {
   return (
     <div className="flex flex-col w-screen bg-gray-100 min-h-screen">
@@ -10,13 +10,13 @@ function PHDColloquium() {
         className="upper relative h-[70vh] bg-[url(/phd.jpg)] object-center bg-no-repeat bg-cover flex items-center justify-center"
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
-        transition={{ duration: 1.2 }}
+        transition={{ duration: 0.6 }}
       >
         <motion.div 
           className="data absolute left-8 bottom-8 bg-white/30 backdrop-blur-md p-6 rounded-xl shadow-lg"
           initial={{ x: -50, opacity: 0 }} 
           animate={{ x: 0, opacity: 1 }} 
-          transition={{ delay: 0.5, duration: 0.8 }}
+          transition={{ duration: 0.6 }}
         >
           <p className="text-4xl font-extrabold text-gray-900">PhD Colloquium</p>
           <motion.div 
@@ -36,7 +36,7 @@ function PHDColloquium() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
+              href="https://forms.gle/your-placeholder-link"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-3 text-lg font-bold text-white bg-gray-800 hover:bg-amber-400 hover:text-black rounded-2xl px-6 py-3 transition-all duration-300 ease-in-out shadow-md"
@@ -51,9 +51,9 @@ function PHDColloquium() {
       {/* Content Section with Smooth Scroll Effect */}
       <motion.div 
         className="lower w-screen md:w-[70vw] mx-auto px-6"
-        initial={{ opacity: 0, y: 50 }} 
-        whileInView={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.8 }}
+        initial={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2 }}
       >
         <h1 className="text-4xl text-center font-bold my-10 text-gray-900">
           PhD Colloquium
@@ -70,9 +70,8 @@ function PHDColloquium() {
           {/* Animated Info Section */}
           <motion.div 
             className="mt-10 p-6 rounded-xl bg-gray-200 shadow-md"
-            initial={{ scale: 0.9 }} 
-            whileInView={{ scale: 1 }} 
-            transition={{ duration: 0.5 }}
+            initial={{ scale: 1 }}
+            transition={{ duration: 0 }}
           >
             <p className="text-2xl font-semibold text-gray-900">Few Points to be noted:</p>
             <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
@@ -81,24 +80,18 @@ function PHDColloquium() {
             </ul>
           </motion.div>
         </article>
-        {/* https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog */}
-          {/* <motion.a
+        
+          <motion.a
             href="https://forms.gle/your-placeholder-link"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-6 right-6 bg-gradient-to-r from-black via-gray-900 to-green-600 hover:from-black hover:via-gray-800 hover:to-green-500 text-white font-bold py-3.5 px-7 rounded-full shadow-lg transition-all duration-300 ease-in-out animate-pulse"
-            whileHover={{ scale: 1.08 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            whileHover={{ scale: 1.1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3, type: "spring", stiffness: 300 }}
           >
             PhD Colloquium Submission
-          </motion.a> */}
-          <motion.a
-             href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="animated-gradient-btn"
-    >
-        PhD Colloquium Submission
           </motion.a>
       </motion.div>
     </div>
