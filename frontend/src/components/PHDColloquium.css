@@ -1,0 +1,35 @@
+ .animated-gradient-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: linear-gradient(90deg, #000000, #1f2937, #16a34a, #1f2937, #000000);
+            background-size: 300% 100%;
+            color: white;
+            font-weight: bold;
+            padding: 14px 28px;
+            border-radius: 9999px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            animation: gradientFlow 3s ease-in-out infinite, pulse 2s ease-in-out infinite;
+            border: none;
+            cursor: pointer;
+        }
+
+        .animated-gradient-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 15px 35px rgba(22, 163, 74, 0.3);
+        }
+
+        @keyframes gradientFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
