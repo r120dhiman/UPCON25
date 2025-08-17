@@ -67,15 +67,15 @@ const Callforpapers = () => {
           <tbody>
             <tr>
               <td className="border-gray-300 px-6 py-4 text-center font-semibold">Digest Submission Deadline</td>
-              <td className="border-gray-300 px-6 py-4 text-center font-semibold text-fuchsia-800">July 31, 2025</td>
+              <td className="border-gray-300 px-6 py-4 text-center font-semibold text-fuchsia-800">Aug 31, 2025</td>
             </tr>
             <tr>
               <td className="border-gray-300 px-6 py-4 text-center font-semibold">Acceptance Notification</td>
-              <td className="border-gray-300 px-6 py-4 text-center font-semibold text-blue-700">Sep 15, 2025</td>
+              <td className="border-gray-300 px-6 py-4 text-center font-semibold text-blue-700">Sep 30, 2025</td>
             </tr>
             <tr>
               <td className="border-gray-300 px-6 py-4 text-center font-semibold">Camera Ready Paper Submission</td>
-              <td className="border-gray-300 px-6 py-4 text-center font-semibold text-fuchsia-800">Sep 10, 2025</td>
+              <td className="border-gray-300 px-6 py-4 text-center font-semibold text-fuchsia-800">Oct 15, 2025</td>
             </tr>
           </tbody>
         </table>
