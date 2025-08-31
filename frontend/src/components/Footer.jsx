@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 function Footer() {
   return (
     <footer className="bg-gradient-to-r from-[#573054]/80 to-blue-900/80  text-white w-full font-semibold">
@@ -31,10 +32,10 @@ function Footer() {
           <div className="flex flex-col items-center justify-start">
             <h3 className="text-lg md:text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="text-gray-300 hover:text-[#ffffe0] text-sm">Home</a></li>
-              <li><a href="/registration" className="text-gray-300 hover:text-[#ffffe0] text-sm">Registration</a></li>
-              <li><a href="/callforpapers" className="text-gray-300 hover:text-[#ffffe0] text-sm">Call For Papers</a></li>
-              <li><a href="/contact" className="text-gray-300 hover:text-[#ffffe0] text-sm">Contact Us</a></li>
+              <li><Link to="/" className="text-gray-300 hover:text-[#ffffe0] text-sm">Home</Link></li>
+              <li><Link to="/registration" className="text-gray-300 hover:text-[#ffffe0] text-sm">Registration</Link></li>
+              <li><Link to="/responses-closed" className="text-gray-300 hover:text-[#ffffe0] text-sm">Call For Papers</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-[#ffffe0] text-sm">Contact Us</Link></li>
             </ul>
           </div>
 
