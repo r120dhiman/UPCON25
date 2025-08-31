@@ -10,6 +10,7 @@ import PHDColloqium from "./Pages/PHDColloqium";
 import Registration from "./components/Registeration";
 import Callforpapers from "./Pages/Callforpapers";
 import Contact from "./Pages/Contact";
+import ResponsesClosed from "./Pages/ResponsesClosed";
 import ScrollToTop from "./components/ScrollToTop";
 import { Analytics } from "@vercel/analytics/react"
 
@@ -32,6 +33,7 @@ function Layout() {
         <Route path="/registration" element={<Registration/>} />
         <Route path="/callforpapers" element={<Callforpapers />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/responses-closed" element={<ResponsesClosed />} />
       </Routes>
       <Footer />
     </>
