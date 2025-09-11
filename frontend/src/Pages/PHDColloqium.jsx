@@ -62,6 +62,13 @@ function PHDColloquium() {
           <p>
             UPCON 2025 will also provide a platform for budding PhD scholars who are pursuing cutting-edge research work at various Research Institutes or Universities within India and Abroad, in the broad area of Electrical, Electronics and Computer Engineering.
           </p>
+           <div
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
+            target="_blank"
+            className="bg-gradient-to-r m-auto px-auto my-5 from-black w-fit via-gray-900 to-green-600 hover:from-black hover:via-gray-800 hover:to-green-500 text-white font-bold py-3.5 px-7 rounded-full shadow-lg "
+          >
+            PhD Colloquium Submission
+          </div>
           <p className="mt-4">
             This scheme is open for PhD scholars from Institutes of National importance like IITs, IIITs, NITs, and other Research Institutes or Universities.
             The final selection will be based on the technical relevance of the PhD problem to the conference theme and the quality of the proposed working model.
