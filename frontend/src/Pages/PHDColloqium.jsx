@@ -65,7 +65,7 @@ function PHDColloquium() {
            <div
             href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
             target="_blank"
-            className="bg-gradient-to-r m-auto px-auto my-5 from-black w-fit via-gray-900 to-green-600 hover:from-black hover:via-gray-800 hover:to-green-500 text-white font-bold py-3.5 px-7 rounded-full shadow-lg "
+            className="bg-gradient-to-r m-auto px-auto my-5 from-[#5e365b] w-fit to-blue-600 hover:from-black hover:to-blue-500 text-white font-bold py-3.5 px-7 rounded-full shadow-lg "
           >
             PhD Colloquium Submission
           </div>
@@ -92,7 +92,7 @@ function PHDColloquium() {
             href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
             target="_blank"
             rel="noopener noreferrer"
-            className="fixed bottom-6 right-6 bg-gradient-to-r from-black via-gray-900 to-green-600 hover:from-black hover:via-gray-800 hover:to-green-500 text-white font-bold py-3.5 px-7 rounded-full shadow-lg transition-all duration-300 ease-in-out animate-pulse"
+            className="fixed bottom-6 right-6 bg-gradient-to-r from-[#5e365b] to-blue-600 hover:from-black hover:to-blue-500 text-white font-bold py-3.5 px-7 rounded-full shadow-lg transition-all duration-300 ease-in-out animate-pulse"
             whileHover={{ scale: 1.1 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

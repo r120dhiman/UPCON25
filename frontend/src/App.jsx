@@ -12,6 +12,7 @@ import Callforpapers from "./Pages/Callforpapers";
 import Contact from "./Pages/Contact";
 import ResponsesClosed from "./Pages/ResponsesClosed";
 import ScrollToTop from "./components/ScrollToTop";
+import OurSuggestion from "./Pages/OurSuggestion";
 import { Analytics } from "@vercel/analytics/react"
 
 function Layout() {
@@ -34,6 +35,7 @@ function Layout() {
         <Route path="/callforpapers" element={<Callforpapers />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/responses-closed" element={<ResponsesClosed />} />
+        <Route path="/accomodation/our-suggestion" element={<OurSuggestion />} />
       </Routes>
       <Footer />
     </>
