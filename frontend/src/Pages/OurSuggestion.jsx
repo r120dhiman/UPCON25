@@ -31,6 +31,20 @@ const hotels = [
     mapLink: "https://maps.app.goo.gl/BKiozTKWA114oQgQ9",
     rating: 4
   },
+  {
+    name: "Hotel Castillo",
+    image: "/hotels/castillo.jpg",
+    bookLink: "https://www.makemytrip.com/hotels/hotel-details/?hotelId=201906041334385717&_uCurrency=INR&cc=IN&checkin=10162025&checkout=10172025&city=CTVNS&country=IN&filterData=STAR_RATING%7C4&guid=cb578a93-f015-47a1-9b48-12b3eb373a44&lat=25.31198&lng=82.98843&locusId=CTVNS&locusType=city&mmPoiTag=POI%7CBanaras%20Hindu%20University%7CPOI68412%7C25.2677203%7C82.9912582%7C&modifyDates=true&parentHostName=www.makemytrip.com&rank=9&roomStayQualifier=2e0e&searchText=Varanasi&seoDS=true&seoReq=1757568977062&mtkeys=undefined",
+    mapLink: "https://maps.app.goo.gl/RWnoCJ1GtEVsm49D6",
+    rating: 4
+  },
+  {
+    name: "Kashi Villa",
+    image: "/hotels/kashivila.jpg",
+    bookLink: "https://www.makemytrip.com/hotels/hotel-details/?hotelId=202408281010523048&_uCurrency=INR&cc=IN&checkin=10162025&checkout=10172025&city=CTVNS&country=IN&filterData=STAR_RATING%7C3&guid=cb578a93-f015-47a1-9b48-12b3eb373a44&lat=25.30822&lng=83.00105&locusId=CTVNS&locusType=city&mmAreaTag=Lanka%7CARLANK&modifyDates=true&parentHostName=www.makemytrip.com&rank=11&roomStayQualifier=2e0e&searchText=Varanasi&seoDS=true&seoReq=1757568977062&mtkeys=undefined",
+    mapLink: "https://maps.app.goo.gl/jznVuhSkWsABgqXz6",
+    rating: 3
+  },
 ];
 
 function OurSuggestion() {
@@ -97,7 +111,7 @@ function OurSuggestion() {
           {filteredHotels.map((hotel, idx) => (
             <div
               key={idx}
-              className="group bg-purple-50/80 backdrop-blur-2xl rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-[360px]"
+              className="group bg-purple-50/80 backdrop-blur-2xl rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-[360px] border-[2px] border-[#9d5097]"
             >
               <div className="relative w-full h-44 md:h-48 overflow-hidden">
                 <img
@@ -110,7 +124,7 @@ function OurSuggestion() {
 
               <div className="flex-1 p-5 flex flex-col justify-between">
                 <div className="space-y-2">
-                  <h3 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent">
+                  <h3 className="text-xl md:text-2xl font-extrabold bg-gradient-to-r from-[#5e365b] to-blue-700 bg-clip-text text-transparent">
                     {hotel.name}
                   </h3>
                   <div className="flex items-center justify-between">
@@ -134,7 +148,7 @@ function OurSuggestion() {
                   href={hotel.bookLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-block w-full text-center bg-gradient-to-r from-[#5e365b] to-blue-700 text-white font-semibold py-2.5 rounded-xl 
+                  className="mt-4 inline-block w-full text-center bg-gradient-to-r from-[#5e365b] to-blue-700 text-white font-semibold py-2.5 
             shadow-[0_8px_20px_rgba(109,40,217,0.25)] hover:shadow-[0_16px_32px_rgba(109,40,217,0.35)] transition-all duration-300 hover:scale-105"
                 >
                   Book Now
