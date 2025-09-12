@@ -65,7 +65,7 @@ function PHDColloquium() {
            <div
             href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
             target="_blank"
-            className="bg-gradient-to-r m-auto px-auto my-5 from-[#5e365b] w-fit to-blue-600 hover:from-black hover:to-blue-500 text-white font-bold py-3.5 px-7 rounded-full shadow-lg "
+            className="bg-gradient-to-r  m-auto px-auto my-5 from-[#5e365b] w-fit to-blue-600 hover:from-black hover:to-blue-500 text-white font-bold py-3.5 px-7 rounded-full shadow-lg text-[1rem]"
           >
             PhD Colloquium Submission
           </div>
@@ -74,6 +74,39 @@ function PHDColloquium() {
             The final selection will be based on the technical relevance of the PhD problem to the conference theme and the quality of the proposed working model.
           </p>
           
+          {/* Prize Table Section */}
+          {/* Submission Deadline Alert */}
+          <motion.div
+            className="mt-8 p-4 rounded-lg bg-red-100 border border-red-300 text-red-800 text-center font-semibold shadow-md"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            Last date of submission for PhD Colloquium is <span className="font-bold">31st October</span>.
+          </motion.div>
+          <motion.div
+            className="mt-10 p-6 rounded-xl bg-white shadow-lg"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4 text-center">Prizes</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              <div className="p-6 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-xl shadow-md">
+                <p className="text-xl font-bold">1st Prize</p>
+                <p className="text-3xl font-extrabold mt-2">₹10,000</p>
+              </div>
+              <div className="p-6 bg-gradient-to-r from-gray-400 to-gray-600 text-white rounded-xl shadow-md">
+                <p className="text-xl font-bold">2nd Prize</p>
+                <p className="text-3xl font-extrabold mt-2">₹5,000</p>
+              </div>
+              <div className="p-6 bg-gradient-to-r from-amber-600 to-amber-800 text-white rounded-xl shadow-md">
+                <p className="text-xl font-bold">3rd Prize</p>
+                <p className="text-3xl font-extrabold mt-2">₹3,000</p>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Animated Info Section */}
           <motion.div 
             className="mt-10 p-6 rounded-xl bg-gray-200 shadow-md"

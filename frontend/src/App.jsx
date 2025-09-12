@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router";
+import { BrowserRouter, Routes, Route, useLocation, Router } from "react-router";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Homepage from "./Pages/Homepage";
@@ -14,6 +14,7 @@ import ResponsesClosed from "./Pages/ResponsesClosed";
 import ScrollToTop from "./components/ScrollToTop";
 import OurSuggestion from "./Pages/OurSuggestion";
 import { Analytics } from "@vercel/analytics/react"
+import Sponsers from "./Pages/Sponsers";
 
 function Layout() {
   const location = useLocation();
@@ -34,6 +35,7 @@ function Layout() {
         <Route path="/registration" element={<Registration/>} />
         <Route path="/callforpapers" element={<Callforpapers />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/sponsors" element={<Sponsers />} />
         <Route path="/responses-closed" element={<ResponsesClosed />} />
         <Route path="/accomodation/our-suggestion" element={<OurSuggestion />} />
       </Routes>
