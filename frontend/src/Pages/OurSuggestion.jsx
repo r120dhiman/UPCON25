@@ -45,6 +45,27 @@ const hotels = [
     mapLink: "https://maps.app.goo.gl/jznVuhSkWsABgqXz6",
     rating: 3
   },
+  {
+    name: "Clarks Varanasi",
+    image: "/hotels/clarks.jpg",
+    bookLink: "https://www.makemytrip.com/hotels/hotel-details/?hotelId=201111151155398066&_uCurrency=INR&checkin=10162025&checkout=10172025&city=CTVNS&country=IN&filterData=STAR_RATING%7C5&lat=25.33653&lng=82.97791&locusId=CTVNS&locusType=city&rank=5&roomStayQualifier=2e0e&searchText=Varanasi&viewType=PREMIUM&mtkeys=undefined",
+    mapLink: "https://maps.app.goo.gl/Z1ySzdAWuSvvYVY7A",
+    rating: 5
+  },
+  {
+    name: "DoubleTree by Hilton Varanasi",
+    image: "/hotels/tree.jpg",
+    bookLink: "https://www.makemytrip.com/hotels/hotel-details/?hotelId=202310031734595338&_uCurrency=INR&checkin=10162025&checkout=10172025&city=CTVNS&country=IN&filterData=STAR_RATING%7C5&lat=25.35171&lng=82.99403&locusId=CTVNS&locusType=city&rank=2&roomStayQualifier=2e0e&searchText=Varanasi&viewType=PREMIUM&mtkeys=undefined",
+    mapLink: "https://maps.app.goo.gl/UVzoovFMNJLVBzz4A",
+    rating: 5
+  },
+  {
+    name: "Hotel Surya",
+    image: "/hotels/surya.jpg",
+    bookLink: "https://www.makemytrip.com/hotels/hotel-details/?hotelId=201109261356343104&_uCurrency=INR&checkin=10162025&checkout=10172025&city=CTVNS&country=IN&filterData=STAR_RATING%7C4&lat=25.33766&lng=82.98009&locusId=CTVNS&locusType=city&mmAreaTag=Lanka%7CARLANK&rank=22&roomStayQualifier=2e0e&searchText=Varanasi&mtkeys=undefined",
+    mapLink: "https://maps.app.goo.gl/MqsiCna48tXSsCtY9",
+    rating: 4
+  },
 ];
 
 function OurSuggestion() {
@@ -117,7 +138,7 @@ function OurSuggestion() {
                 <img
                   src={hotel.image}
                   alt={hotel.name}
-                  className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-300/0 to-purple-400/10" />
               </div>
