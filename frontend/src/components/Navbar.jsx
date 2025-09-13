@@ -32,26 +32,25 @@ function Navbar({ color, backdrop }) {
         { title: "Call For Papers", path: "/callforpapers" },
         // { title: "Paper Submission", path: "/paper-submission" },
         // { title: "Guidelines", path: "/guidelines" },
-        { title: "Call For Tutorials", path: "/callfortutorials" },
-        { title: "Call For Workshops", path: "/callforworkshops" },
-        { title: "Call For Special Sessions", path: "/callforspecialsessions" },
-        { title: "Accepted Proposals", path: "/acceptedproposals" },
-        { title: "Accepted Papers", path: "/acceptedpapers" },
-        { title: "Registered Papers", path: "/registeredpapers" }
+        // { title: "Call For Tutorials", path: "/callfortutorials" },
+        // { title: "Call For Workshops", path: "/callforworkshops" },
+        { title: "Camera Ready Person", path: "/callforspecialsessions" },
+        // { title: "Accepted Proposals", path: "/acceptedproposals" },
+        // { title: "Accepted Papers", path: "/acceptedpapers" },
+        // { title: "Registered Papers", path: "/registeredpapers" },
+        { title: "Malviya Student Travel Award", path: "/awards/malviyaStudentTrouvel" }
       ]
     },
     { title: "PHD COLLOQUIUM", path: "/phdcolloquium", type: "direct" },
+    { title: "SPONSORS", path: "/sponsors", type: "direct" },
     {
-      "title": "AWARDS",
-      "type": "dropdown",
-      "subLinks": [
-        { "title": "Best PhD Award", "path": "/awards/bestPhD" },
-        { "title": "Best Paper Award", "path": "/awards/bestPaper" },
-        { "title": "Best Poster Award", "path": "/awards/bestPoster" },
-        { "title": "Malviya Student Travel Award", "path": "/awards/malviyaStudentTrouvel" }
+      title: "ACCOMODATION",
+      type: "dropdown",
+      subLinks: [
+        { title: "Students", path: "/accomodation/student" },
+        { title: "Our Suggestion", path: "/accomodation/our-suggestion" }
       ]
     },
-    { title: "SPONSORS", path: "/sponsors", type: "direct" },
     {
       title: "PREVIOUS UPCON's",
       type: "dropdown",
@@ -96,7 +95,7 @@ function Navbar({ color, backdrop }) {
         <Link
           to={link.path}
           onClick={handleClick}
-          className={`text-gray-50 hover:text-white px-0.5 py-2 rounded-md text-md 
+          className={`text-gray-50 hover:text-white px-0.5 py-2 rounded-md text-sm
             font-medium transition-all duration-300 relative
             before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-b 
             before:from-white/5 before:to-transparent before:opacity-0 before:transition-opacity
@@ -118,7 +117,7 @@ function Navbar({ color, backdrop }) {
         onMouseLeave={() => setIsHovered(false)}
       >
         <button
-          className={`text-gray-50 hover:text-white px-1 py-2 rounded-md text-md 
+          className={`text-gray-50 hover:text-white px-1 py-2 rounded-md text-sm
             font-medium transition-all duration-200 flex items-center cursor-pointer
             ${color
               ? "hover:bg-gradient-to-b hover:from-[#5e365b] hover:to-[#442542] hover:shadow-md"

@@ -77,8 +77,24 @@ const Registration = () => {
           </tbody>
         </table>
         <p className="text-center text-red-700 mt-6 text-sm md:text-md font-normal italic">
-          Rates are inclusive of GST 18%. <br /> One full author registration can register up to 2 papers.
+          Rates are inclusive of GST 18%.
         </p>
+        <div className="p-6 rounded-lg mt-10 bg-white shadow-lg">
+        <h2 className="text-3xl font-bold text-center mb-6 text-green-700">Registration Instructions</h2>
+        <ol className="list-decimal pl-6 space-y-3 text-gray-800">
+          <li>One full author registration (Indian author or Foreign author) is required for the inclusion of the paper(s) in the conference programme and IEEE UPCON 2025 proceedings.</li>
+          <li>One full author registration can register up to 2 papers.</li>
+          <li>Student registration is not entitled to UPCON 2025 paper publication.</li>
+          <li>Author / Non-Author / Students are entitled for Tutorials.</li>
+          <li>GST 18% is included. Payment gateway charges are extra.</li>
+          <li>Spot Registration for attending Tutorials is also available with Double the Standard Rates.</li>
+          <li>The registration fee is non-refundable.</li>
+          <li>Additional charges are applicable for final paper more than 6 pages. Maximum number of pages allowed is 8.</li>
+        </ol>
+        <p className="mt-6 font-semibold text-gray-900">
+          Full Author Registration &amp; Attendees: <span className="font-normal">Includes access to tutorials, keynote sessions, all the conference sessions, conference registration kit, lunch, High Tea, and Gala dinner.</span>
+        </p>
+      </div>
       </div>
     </div>
   );
