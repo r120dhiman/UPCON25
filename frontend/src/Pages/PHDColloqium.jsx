@@ -20,12 +20,12 @@ function PHDColloquium() {
         >
           <p className="text-4xl font-extrabold text-gray-900">PhD Colloquium</p>
           <motion.div 
-            whileHover={{ scale: 1.1 }} 
+            whileHover={{ scale: 1 }} 
             transition={{ type: "spring", stiffness: 300 }}
           >
             <Link 
               to="/" 
-              className="inline-block mt-3 text-lg font-bold text-white bg-gray-800 hover:bg-amber-400 hover:text-black rounded-2xl px-6 py-3 transition-all duration-300 ease-in-out shadow-md"
+              className="inline-block mt-3 text-lg font-bold text-white bg-gray-800 hover:bg-fuchsia-700 rounded-2xl px-6 py-3 transition-all duration-300 ease-in-out shadow-md"
             >
               Home
             </Link>
@@ -33,18 +33,18 @@ function PHDColloquium() {
           </motion.div>
           <a  href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
               target="_blank"
-            whileHover={{ scale: 1.1 }} 
+            whileHover={{ scale: 1 }} 
             transition={{ type: "spring", stiffness: 300 }}
           >
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-3 text-lg font-bold text-white bg-gray-800 hover:bg-amber-400 hover:text-black rounded-2xl px-6 py-3 transition-all duration-300 ease-in-out shadow-md"
+              className="inline-block mt-3 text-lg font-bold text-white bg-gray-800 hover:bg-fuchsia-700 rounded-2xl px-6 py-3 transition-all duration-300 ease-in-out shadow-md"
             >
               PhD Colloquium Submission
             </a>
-          <a>
+          </a>
           <span className="block mt-2 text-gray-700 text-sm">UPCON 2025 - PhD Colloquium</span>
         </motion.div>
       </motion.div>
@@ -64,11 +64,10 @@ function PHDColloquium() {
             UPCON 2025 will also provide a platform for budding PhD scholars who are pursuing cutting-edge research work at various Research Institutes or Universities within India and Abroad, in the broad area of Electrical, Electronics and Computer Engineering.
           </p>
            <div
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
-            target="_blank"
             className="bg-gradient-to-r  m-auto px-auto my-5 from-[#5e365b] w-fit to-blue-600 hover:from-black hover:to-blue-500 text-white font-bold py-3.5 px-7 rounded-full shadow-lg text-[1rem]"
           >
-            PhD Colloquium Submission
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
+            target="_blank">PHD Colloquium Submission</a>
           </div>
           <p className="mt-4">
             This scheme is open for PhD scholars from Institutes of National importance like IITs, IIITs, NITs, and other Research Institutes or Universities.

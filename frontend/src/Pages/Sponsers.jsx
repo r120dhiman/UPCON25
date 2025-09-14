@@ -85,6 +85,12 @@ function Sponsers() {
           <li>
             <span className="font-medium">📧 Dr. Anubrata Das</span> – <a href="mailto:anubrata.eee@iitbhu.ac.in" className="text-blue-600 underline">anubrata.eee@iitbhu.ac.in</a>
           </li>
+          <li>
+            <span className="font-medium">📧 Prof. Sandip Ghosh</span> – <a href="mailto:sghosh.eee@iitbhu.ac.in" className="text-blue-600 underline">sghosh.eee@iitbhu.ac.in</a>
+          </li>
+          <li>
+            <span className="font-medium">📧 Dr. Subho Pal</span> – <a href="mailto:subho.eee@itbhu.ac.in" className="text-blue-600 underline">subho.eee@itbhu.ac.in</a>
+          </li>
         </ul>
       </div>
     </div>
