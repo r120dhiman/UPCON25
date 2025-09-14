@@ -31,7 +31,8 @@ function PHDColloquium() {
             </Link>
             
           </motion.div>
-          <motion.div 
+          <a  href="https://docs.google.com/forms/d/e/1FAIpQLSeHFb6a_dOWY917QeKIeJo-FCTD7_Z0T49gEFKOAQxXEw5Ueg/viewform?usp=dialog"
+              target="_blank"
             whileHover={{ scale: 1.1 }} 
             transition={{ type: "spring", stiffness: 300 }}
           >
@@ -43,7 +44,7 @@ function PHDColloquium() {
             >
               PhD Colloquium Submission
             </a>
-          </motion.div>
+          <a>
           <span className="block mt-2 text-gray-700 text-sm">UPCON 2025 - PhD Colloquium</span>
         </motion.div>
       </motion.div>
