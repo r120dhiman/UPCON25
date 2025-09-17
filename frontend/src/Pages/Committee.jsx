@@ -164,6 +164,11 @@ const Committee = () => {
         image: "/committee/kishor.png",
       },
       {
+        name: "Dr. Om Jee Pandey",
+        title: "(IIT BHU)",
+        image: "/committee/Om_jee.jpg",
+      },
+      {
         name: "Dr. Shivam Verma",
         title: "(IIT BHU)",
         image: "/committee/shivamvm.png",
