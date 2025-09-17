@@ -27,7 +27,7 @@ function KeynoteSpeaker() {
     institution: "Texas A&M University, USA",
     talkTitle: "Will be updated soon...",
   },
-     {
+     { 
     imageUrl: "/Speakers/Kaushik.jpg",
     name: "Dr. Kasuhik Rajashekara",
     institution: "University of Houston, Texas",
