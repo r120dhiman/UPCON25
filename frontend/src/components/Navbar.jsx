@@ -34,7 +34,7 @@ function Navbar({ color, backdrop }) {
         // { title: "Guidelines", path: "/guidelines" },
         // { title: "Call For Tutorials", path: "/callfortutorials" },
         // { title: "Call For Workshops", path: "/callforworkshops" },
-        { title: "Camera Ready Person", path: "/callforspecialsessions" },
+        { title: "Camera Ready Version", path: "/camerareadyversion" },
         // { title: "Accepted Proposals", path: "/acceptedproposals" },
         // { title: "Accepted Papers", path: "/acceptedpapers" },
         // { title: "Registered Papers", path: "/registeredpapers" },
