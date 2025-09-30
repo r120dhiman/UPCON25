@@ -3,7 +3,7 @@ import React from "react";
 const AlertTicker = () => {
   const alerts = [
     "🚨 Conference will be held only in PHYSICAL MODE",
-    // "The paper submission link has been closed.",
+    "Acceptance notification will be intimated by 10 Oct, 2025",
     " Last date of submission for PhD Colloquium is 31st October."
   ];
 
