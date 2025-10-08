@@ -8,8 +8,8 @@ const Registration = () => {
     { category: "Tutorial only (Indian Student) (Rs)", earlyBird: ['INR 600', 'INR 850'], standard: ['INR 850', 'INR 1200'] },//not changed
     { category: "Foreign Author (Academia/Industry)", earlyBird: ["$375", "$435"], standard: ["$435", "$495"] },
     { category: "Foreign Student Attendee (Non-Author)", earlyBird: ["$195", "$225"], standard: ["$225", "$255"] },
-    { category: "Foreign Professional Attendee (Additional Page)", earlyBird: ["$25 / page", "$25 / page"], standard: ["$25 / page", "$25 / page"] },//not changed
-    { category: "Indian Professional Author/Attendee", earlyBird: ["INR 1000/page", "INR 1000/page"], standard: ["INR 1000/page", "INR 1000/page"] },//not changed
+    // { category: "Foreign Professional Attendee (Additional Page)", earlyBird: ["$25 / page", "$25 / page"], standard: ["$25 / page", "$25 / page"] },//not changed
+    // { category: "Indian Professional Author/Attendee", earlyBird: ["INR 1000/page", "INR 1000/page"], standard: ["INR 1000/page", "INR 1000/page"] },//not changed
     { category: "Foreign Author Attendee (Non-Author)", earlyBird: ["$255", "$315"], standard: ["$315", "$375"] },
     { category: "Tutorial only (Foreign Student)", earlyBird: ["$30", "$45"], standard: ["$45", "$60"] },//not changed
   ];
