@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, useLocation, Router } from "react-router";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router";
+import { Link } from "react-router";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Homepage from "./Pages/Homepage";
@@ -15,11 +16,12 @@ import ScrollToTop from "./components/ScrollToTop";
 import OurSuggestion from "./Pages/OurSuggestion";
 import { Analytics } from "@vercel/analytics/react"
 import Sponsers from "./Pages/Sponsers";
+import Registration_Details from "./Pages/Registration_Details";
 
 function Layout() {
   const location = useLocation();
   const showNavbar = location.pathname !== "/";
-
+//15 nov for regular
   return (
     <>
       {showNavbar && <div className="sticky top-0 z-50"><Navbar color={true} backdrop={false} /> </div>}
@@ -38,7 +40,17 @@ function Layout() {
         <Route path="/sponsors" element={<Sponsers />} />
         <Route path="/responses-closed" element={<ResponsesClosed />} />
         <Route path="/accomodation/our-suggestion" element={<OurSuggestion />} />
+        <Route path="/registration-details" element={<Registration_Details />} />
       </Routes>
+      <div className="fixed bottom-5 right-5 z-50">
+       <Link
+  to="/registration-details"
+>
+  <button className="bg-red-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-red-700 transition-all">
+    Register Now
+  </button>
+</Link>
+      </div>
       <Footer />
     </>
   );

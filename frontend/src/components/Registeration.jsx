@@ -1,4 +1,4 @@
-import React from "react";
+import {Link} from "react-router";
 
 const Registration = () => {
   const pricingData = [
@@ -43,14 +43,23 @@ const Registration = () => {
             </tr>
             <tr className="odd:bg-gray-100 even:bg-gray-50 hover:bg-gray-200 transition">
               <td className="border p-4 font-medium">Early Bird Closing</td>
-              <td className="border p-4">October 20, 2025</td>
+              <td className="border p-4">October 31, 2025</td>
             </tr>
-            {/* <tr className="odd:bg-gray-100 even:bg-gray-50 hover:bg-gray-200 transition">
+            <tr className="odd:bg-gray-100 even:bg-gray-50 hover:bg-gray-200 transition">
               <td className="border p-4 font-medium">Standard Registration Closing</td>
-              <td className="border p-4">15th April 2025</td>
-            </tr> */}
+              <td className="border p-4">November 15, 2025</td>
+            </tr>
           </tbody>
         </table>
+      </div>
+      <div className="z-50 m-auto text-center mt-6">
+       <Link
+  to="/registration-details"
+>
+  <button className="bg-red-600 text-white px-4 py-2 rounded-md shadow-md text-3xl hover:bg-red-700 transition-all">
+    Register Now
+  </button>
+</Link>
       </div>
       <div className="overflow-x-auto p-6 rounded-lg mt-8">
         <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Registration Pricing</h2>
@@ -89,7 +98,7 @@ const Registration = () => {
           <li>GST 18% is included. Payment gateway charges are extra.</li>
           <li>Spot Registration for attending Tutorials is also available with Double the Standard Rates.</li>
           <li>The registration fee is non-refundable.</li>
-          <li>Additional charges are applicable for final paper more than 6 pages. Maximum number of pages allowed is 8.</li>
+          {/* <li>Additional charges are applicable for final paper more than 6 pages. Maximum number of pages allowed is 8.</li> */}
         </ol>
         <p className="mt-6 font-semibold text-gray-900">
           Full Author Registration &amp; Attendees: <span className="font-normal">Includes access to tutorials, keynote sessions, all the conference sessions, conference registration kit, lunch, High Tea, and Gala dinner.</span>
