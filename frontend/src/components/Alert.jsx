@@ -6,6 +6,7 @@ const AlertTicker = () => {
     "Acceptance notification has been sent.",
     " Last date of submission for PhD Colloquium is 31st October.",
     "Registration is till 31st October for Early Bird and 15th November for Standard.",
+    "Early Bird registration is open now."
   ];
 
   return (
