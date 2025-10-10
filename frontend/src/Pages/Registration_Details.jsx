@@ -49,7 +49,7 @@ function Registration_Details() {
         <div className="mt-8 p-6 bg-white/80 shadow-md rounded-lg border border-gray-300 max-w-3xl mx-auto">
   <h2 className="text-2xl font-semibold mb-4 text-center text-blue-800">Bank Account Details</h2>
   <div className="space-y-2 text-gray-700">
-    <p><span className="font-semibold">Account Name:</span> Institute Development Fund</p>
+    <p><span className="font-semibold">Account Name:</span> IIT BHU FEE COLLECTION Ac</p>
     <p><span className="font-semibold">Account Number:</span> 32778803937</p>
     <p><span className="font-semibold">IFSC Code:</span> SBIN0011445</p>
     <p><span className="font-semibold">SWIFT Code:</span> SBININBB501</p>
