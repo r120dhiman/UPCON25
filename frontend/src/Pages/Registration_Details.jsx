@@ -52,19 +52,27 @@ function Registration_Details() {
     <p><span className="font-semibold">Account Name:</span> IIT BHU FEE COLLECTION Ac</p>
     <p><span className="font-semibold">Account Number:</span> 32778803937</p>
     <p><span className="font-semibold">IFSC Code:</span> SBIN0011445</p>
+    <p><span className="font-semibold">Bank Name:</span> State Bank of India</p>
+    <p><span className="font-semibold">Branch:</span> Institute of Technology (BHU) Branch, Varanasi</p>
+    {/* <p><span className="font-semibold">Branch Address:</span> Indian Institute of Technology (BHU) Varanasi, Varanasi - 221005, Uttar Pradesh, India</p> */}
     <p><span className="font-semibold">SWIFT Code:</span> SBININBB501</p>
     <p><span className="font-semibold">MICR Code:</span> 221002036</p>
   </div>
 </div>
-<div className="finalregistration text-center mt-8">
-  <a
-    href="https://forms.gle/jh3Uc5abHVkigHFw5"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block bg-green-600 text-white px-6 py-3 rounded-md shadow-md hover:bg-green-700 transition-all font-semibold"
-  >
-    Fill Registration Details
-  </a>
+<div className="mt-8 p-6 bg-green-50 border border-green-400 rounded-lg max-w-3xl mx-auto shadow-md">
+  <p className="text-center text-green-800 font-semibold mb-4">
+    To complete registration, filling the form is <span className="underline">mandatory</span>
+  </p>
+  <div className="text-center">
+    <a
+      href="https://forms.gle/jh3Uc5abHVkigHFw5"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-green-600 text-white px-6 py-3 rounded-md shadow-md hover:bg-green-700 transition-all font-semibold"
+    >
+      Fill Registration Details
+    </a>
+  </div>
 </div>
     </div>
   )
