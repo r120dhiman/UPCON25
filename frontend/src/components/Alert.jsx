@@ -7,7 +7,7 @@ const AlertTicker = () => {
     " Last date of submission for PhD Colloquium is 31st October.",
     "Registration is till 31st October for Early Bird and 15th November for Standard.",
     "Early Bird registration is open now.",
-    "Camera Ready version is open now (Deadline: 31st October 2025).",
+    "Camera Ready submission is open now (Deadline: 31st October 2025).",
   ];
 
   return (
