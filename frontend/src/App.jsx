@@ -16,6 +16,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import OurSuggestion from "./Pages/OurSuggestion";
 import { Analytics } from "@vercel/analytics/react"
 import Sponsers from "./Pages/Sponsers";
+import Camera_ready from "./Pages/Camera_ready";
 import Registration_Details from "./Pages/Registration_Details";
 
 function Layout() {
@@ -30,6 +31,7 @@ function Layout() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/camerareadyversion" element={<Camera_ready />} />
         <Route path="/committee" element={<Committee />} />
         <Route path="/speakers/keynote" element={<KeynoteSpeaker />} />
         <Route path="/speakers/tutorial" element={<TutorialSpeaker />} />
