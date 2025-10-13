@@ -94,15 +94,15 @@ function PHDColloquium() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="p-6 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-xl shadow-md">
                 <p className="text-xl font-bold">1st Prize</p>
-                <p className="text-3xl font-extrabold mt-2">₹10,000</p>
+                <p className="text-3xl font-extrabold mt-2">₹15,000</p>
               </div>
               <div className="p-6 bg-gradient-to-r from-gray-400 to-gray-600 text-white rounded-xl shadow-md">
                 <p className="text-xl font-bold">2nd Prize</p>
-                <p className="text-3xl font-extrabold mt-2">₹5,000</p>
+                <p className="text-3xl font-extrabold mt-2">₹12,000</p>
               </div>
               <div className="p-6 bg-gradient-to-r from-amber-600 to-amber-800 text-white rounded-xl shadow-md">
                 <p className="text-xl font-bold">3rd Prize</p>
-                <p className="text-3xl font-extrabold mt-2">₹3,000</p>
+                <p className="text-3xl font-extrabold mt-2">₹10,000</p>
               </div>
             </div>
           </motion.div>
