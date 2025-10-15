@@ -7,6 +7,7 @@ import Card from "../components/Brochure_Card";
 import SponsorsSection from "../components/Sponsers";
 import TourismGallery from "../components/TourismGallery";
 import Tech from "../components/Technical";
+import EntryModal from "../components/EntryModal";
 
 function Homepage() {
   const cardRef = useRef(null);
@@ -20,6 +21,7 @@ function Homepage() {
   }, []);
   return (
     <div className="flex flex-col min-h-screen relative">
+      <EntryModal />
       <div className="fixed inset-x-0 bottom-0 h-[80vh] -z-10 bg-gradient-to-b from-white to-blue-700/40 via-[#97148c]/40 mix-blend-multiply">
         <div
           className="absolute inset-0 bg-[url(/build.jpg)] opacity-20 bg-bottom bg-no-repeat bg-contain 
