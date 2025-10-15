@@ -17,6 +17,8 @@ import OurSuggestion from "./Pages/OurSuggestion";
 import { Analytics } from "@vercel/analytics/react"
 import Sponsers from "./Pages/Sponsers";
 import Camera_ready from "./Pages/Camera_ready";
+import StudentAward from "./Pages/StudentAward";
+import StudentAcc from "./Pages/StudentAcc";
 import Registration_Details from "./Pages/Registration_Details";
 
 function Layout() {
@@ -43,6 +45,8 @@ function Layout() {
         <Route path="/responses-closed" element={<ResponsesClosed />} />
         <Route path="/accomodation/our-suggestion" element={<OurSuggestion />} />
         <Route path="/registration-details" element={<Registration_Details />} />
+        <Route path="/awards/malviyaStudentTrouvel" element={<StudentAward />} />
+        <Route path="/accomodation/student" element={<StudentAcc />} />
       </Routes>
       <div className="fixed bottom-5 right-5 z-50">
        <Link
