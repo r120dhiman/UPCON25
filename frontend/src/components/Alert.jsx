@@ -5,7 +5,7 @@ const AlertTicker = () => {
     "🚨 Conference will be held only in PHYSICAL MODE.",
     "Acceptance notification has been sent.",
     " Last date of submission for PhD Colloquium is 31st October.",
-    "Registration is till 31st October for Early Bird and 15th November for Standard.",
+    "Registration is till 31st October for Early Bird and 15th November for Standard Registration.",
     "Early Bird registration is open now.",
     "Camera Ready submission is open now (Deadline: 31st October 2025).",
   ];

@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import { motion } from 'framer-motion';
 
 function PHDColloquium() {
+  //the organizing commetteee of the conferenc 
   return (
     <div className="flex flex-col w-screen bg-gray-100 min-h-screen">
       
@@ -70,7 +71,7 @@ function PHDColloquium() {
             target="_blank">PHD Colloquium Submission</a>
           </div>
           <p className="mt-4">
-            This scheme is open for PhD scholars from Institutes of National importance like IITs, IIITs, NITs, and other Research Institutes or Universities.
+            This scheme is open for All PhD scholars across all Research Institutes or Universities.
             The final selection will be based on the technical relevance of the PhD problem to the conference theme and the quality of the proposed working model.
           </p>
           
@@ -115,7 +116,7 @@ function PHDColloquium() {
           >
             <p className="text-2xl font-semibold text-gray-900">Few Points to be noted:</p>
             <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
-              <li>Selected candidates must register for the conference at a special rate and present a poster.</li>
+              <li>Selected candidates must register for the conference under Indian Student Attendee (Non-Author) \ Foreign Student-Attendee (Non-Author) category (Early bird).</li>
               <li>Registered candidates will receive free access to all UPCON2025 sessions, including dinner and cultural programs.</li>
             </ul>
           </motion.div>
