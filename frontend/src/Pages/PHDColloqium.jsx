@@ -71,9 +71,7 @@ function PHDColloquium() {
             target="_blank">PHD Colloquium Submission</a>
           </div>
           <p className="mt-4">
-            This scheme is open for All PhD scholars across all Research Institutes or Universities.
-            The final selection will be based on the technical relevance of the PhD problem to the conference theme and the quality of the proposed working model.
-          </p>
+           This scheme is open for All PhD scholars (Degree awarded/Thesis submitted) across all Research Institutes or Universities. The final selection will be based on the technical relevance of the PhD problem to the conference theme and the quality of the proposed working model.</p>
           
           {/* Prize Table Section */}
           {/* Submission Deadline Alert */}
