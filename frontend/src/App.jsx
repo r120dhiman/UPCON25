@@ -21,6 +21,7 @@ import StudentAward from "./Pages/StudentAward";
 import StudentAcc from "./Pages/StudentAcc";
 import Registration_Details from "./Pages/Registration_Details";
 import ComingSoon from "./components/ComingSoon";
+import EntryModal from "./components/EntryModal";
 import { ModalProvider } from "./context/ModalContext";
 
 function Layout() {
