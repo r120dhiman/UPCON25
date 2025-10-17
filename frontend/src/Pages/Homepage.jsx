@@ -6,8 +6,6 @@ import Navbar from "../components/Navbar";
 import Card from "../components/Brochure_Card";
 import SponsorsSection from "../components/Sponsers";
 import TourismGallery from "../components/TourismGallery";
-import Tech from "../components/Technical";
-import EntryModal from "../components/EntryModal";
 
 function Homepage() {
   const cardRef = useRef(null);
@@ -21,7 +19,6 @@ function Homepage() {
   }, []);
   return (
     <div className="flex flex-col min-h-screen relative">
-      <EntryModal />
       <div className="fixed inset-x-0 bottom-0 h-[80vh] -z-10 bg-gradient-to-b from-white to-blue-700/40 via-[#97148c]/40 mix-blend-multiply">
         <div
           className="absolute inset-0 bg-[url(/build.jpg)] opacity-20 bg-bottom bg-no-repeat bg-contain 
@@ -34,7 +31,6 @@ function Homepage() {
           src="/upcon-logo.png"
           alt="UPCON logo"
           className="w-28 sm:w-36 md:w-52 my-auto hover:scale-105 transition-transform duration-300 pt-4"
-          // style={{ clipPath: "inset(0 0 27% 0)" }}
         />
 
       <div className="IEEE_text flex flex-col gap-4">
@@ -115,8 +111,6 @@ function Homepage() {
               by IEEE Xplore.
             </article>
           </motion.div>
-
-          {/* Image Section */}
           <div className="relative w-80 sm:w-[28rem] lg:w-[500px] h-80 sm:h-[28rem] lg:h-[500px] flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-300 to-purple-400 rounded-full opacity-50 blur-3xl"></div>
             <div className="relative w-full h-full bg-[url(/About.jpg)] bg-cover bg-center rounded-full shadow-2xl border-4 border-white transform transition-all duration-500 hover:scale-105 hover:rotate-2 hover:shadow-[0_15px_30px_rgba(0,0,0,0.3)]">

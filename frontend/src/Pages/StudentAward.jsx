@@ -33,7 +33,16 @@ function StudentAward() {
               <ol className="list-decimal ml-6 mt-2 space-y-1">
                 <li>Cover letter mentioning the need for travel support.</li>
                 <li>Letter on institute/college/university letterhead endorsed by HoD or supervisor with official stamp.</li>
-                <li>Curriculum Vitae (max 2 pages).</li>
+<li>
+  Curriculum Vitae (max 2 pages).{' '}
+  <a
+    href="/Biodata_Format.docx"
+    download
+    className="inline text-xs text-blue-700 hover:underline"
+  >
+    Click here to download format
+  </a>
+</li>
                 <li>PDF of the final accepted paper in UPCON 2025.</li>
               </ol>
             </span>
@@ -50,7 +59,7 @@ function StudentAward() {
         <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
           <p className="text-yellow-800">
             <strong>Note:</strong> Awards will be granted based on the <strong>quality of work, student merit, need,</strong> and <strong>distance traveled</strong>.
-            Full author registration is required.
+            Full author registration is required for the student to avail the travel award.
           </p>
         </div>
 

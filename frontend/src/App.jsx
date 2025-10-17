@@ -20,6 +20,7 @@ import Camera_ready from "./Pages/Camera_ready";
 import StudentAward from "./Pages/StudentAward";
 import StudentAcc from "./Pages/StudentAcc";
 import Registration_Details from "./Pages/Registration_Details";
+import EntryModal from "./components/EntryModal";
 
 function Layout() {
   const location = useLocation();
@@ -29,6 +30,7 @@ function Layout() {
     <>
       {showNavbar && <div className="sticky top-0 z-50"><Navbar color={true} backdrop={false} /> </div>}
       <ScrollToTop />
+      <EntryModal/>
       <Analytics/>
       <Routes>
         <Route path="/" element={<Homepage />} />
