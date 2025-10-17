@@ -10,9 +10,9 @@ function StudentAcc() {
       brightness-100 mix-blend-multiply"
         />
       </div>
-      <div className="max-w-3xl w-full bg-white shadow-2xl rounded-2xl p-8 border border-green-200">
+      <div className="max-w-3xl w-full bg-white shadow-2xl rounded-2xl p-8 border border-fuchsia-200">
         <div className="flex items-center gap-3 mb-6">
-          <FaBed className="text-3xl text-green-600" />
+          <FaBed className="text-3xl text-fuchsia-800" />
           <h1 className="text-2xl font-bold text-gray-800">Student Accommodation for UPCON 2025</h1>
         </div>
 
@@ -20,8 +20,8 @@ function StudentAcc() {
           Students who are submitting papers for <strong>IEEE UPCON 2025</strong>  are eligible to request accommodation through the same form.
         </p>
 
-        <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-          <p className="text-green-800">
+        <div className="bg-purple-50 border border-fuchsia-200 rounded-lg p-4 mb-6">
+          <p className="text-fuchsia-900">
             🛏️ To avail accommodation, please ensure that:
           </p>
           <ul className="list-disc ml-6 mt-2 space-y-1 text-gray-700">
@@ -32,7 +32,7 @@ function StudentAcc() {
 
         <h2 className="text-lg font-semibold text-gray-800 mb-3">Important Dates</h2>
         <div className="flex items-center gap-2 text-gray-700 mb-6">
-          <FaCalendarAlt className="text-green-600" />
+          <FaCalendarAlt className="text-fuchsia-800" />
           <span><strong>Deadline:</strong> 31st October 2025</span>
         </div>
 
@@ -41,7 +41,7 @@ function StudentAcc() {
             href="https://forms.gle/jh3Uc5abHVkigHFw5"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 shadow-md"
+            className="inline-flex items-center gap-2 bg-purple-700 hover:bg-fuchsia-800 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 shadow-md"
           >
             <FaLink />
             Fill Form

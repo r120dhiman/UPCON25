@@ -20,7 +20,8 @@ import Camera_ready from "./Pages/Camera_ready";
 import StudentAward from "./Pages/StudentAward";
 import StudentAcc from "./Pages/StudentAcc";
 import Registration_Details from "./Pages/Registration_Details";
-import EntryModal from "./components/EntryModal";
+import ComingSoon from "./components/ComingSoon";
+import { ModalProvider } from "./context/ModalContext";
 
 function Layout() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function Layout() {
 //15 nov for regular
   return (
     <>
+      <ModalProvider>
       {showNavbar && <div className="sticky top-0 z-50"><Navbar color={true} backdrop={false} /> </div>}
       <ScrollToTop />
       <EntryModal/>
@@ -38,7 +40,7 @@ function Layout() {
         <Route path="/camerareadyversion" element={<Camera_ready />} />
         <Route path="/committee" element={<Committee />} />
         <Route path="/speakers/keynote" element={<KeynoteSpeaker />} />
-        <Route path="/speakers/tutorial" element={<TutorialSpeaker />} />
+        <Route path="/speakers/tutorial" element={<ComingSoon />} />
         <Route path="/phdcolloquium" element={<PHDColloqium />} />
         <Route path="/registration" element={<Registration/>} />
         <Route path="/callforpapers" element={<Callforpapers />} />
@@ -60,6 +62,7 @@ function Layout() {
 </Link>
       </div>
       <Footer />
+      </ModalProvider>
     </>
   );
 }

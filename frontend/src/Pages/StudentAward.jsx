@@ -10,24 +10,24 @@ function StudentAward() {
       brightness-100 mix-blend-multiply"
         />
       </div>
-      <div className="max-w-3xl w-full bg-white shadow-2xl rounded-2xl p-8 border border-blue-200">
+      <div className="max-w-3xl w-full bg-white shadow-2xl rounded-2xl p-8 border border-purple-200">
         <div className="flex items-center gap-3 mb-6">
-          <FaAward className="text-3xl text-blue-600" />
+          <FaAward className="text-3xl text-purple-600" />
           <h1 className="text-2xl font-bold text-gray-800">Malviya Student Travel Award 2025</h1>
         </div>
 
         <p className="text-gray-700 mb-4">
-          The organizing committee of <span className="font-semibold text-blue-700">IEEE UPCON 2025</span> invites nominations for the prestigious <strong>Malviya Student Travel Award</strong>.
+          The organizing committee of <span className="font-semibold text-fuchsia-700">IEEE UPCON 2025</span> invites nominations for the prestigious <strong>Malviya Student Travel Award</strong>.
         </p>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
-          <p className="text-blue-800 font-medium">🏆 <strong>5 Awards</strong> — ₹10,000 each</p>
+        <div className="bg-purple-50 border border-purple-200 rounded-lg p-4 mb-6">
+          <p className="text-purple-800 font-medium">🏆 <strong>5 Awards</strong> — ₹10,000 each</p>
         </div>
 
         <h2 className="text-lg font-semibold text-gray-800 mb-3">Submission Requirements</h2>
         <ul className="space-y-3 text-gray-700">
           <li className="flex items-start gap-2">
-            <FaFilePdf className="text-blue-600 mt-1" />
+            <FaFilePdf className="text-purple-600 mt-1" />
             <span>
               One single PDF containing the following documents <strong>in sequential order</strong>:
               <ol className="list-decimal ml-6 mt-2 space-y-1">
@@ -71,7 +71,7 @@ function StudentAward() {
           <button onClick={() => {
             alert("Opening soon...")
           }
-          } className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 shadow-md">
+          } className="bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 shadow-md cursor-pointer">
             Submit Nomination
           </button>
            {/* </a> */}
