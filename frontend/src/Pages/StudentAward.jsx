@@ -64,17 +64,14 @@ function StudentAward() {
         </div>
 
         <div className="mt-8 text-center">
-             {/* <a
-      href="https://forms.gle/jh3Uc5abHVkigHFw5"
+             <a
+      href="https://forms.gle/MeR3nJNQJysF6Y5M9"
       target="_blank"
-      rel="noopener noreferrer"> */}
-          <button onClick={() => {
-            alert("Opening soon...")
-          }
-          } className="bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 shadow-md cursor-pointer">
+      rel="noopener noreferrer">
+          <button className="bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 shadow-md cursor-pointer">
             Submit Nomination
           </button>
-           {/* </a> */}
+           </a>
         </div>
       </div>
     </div>
