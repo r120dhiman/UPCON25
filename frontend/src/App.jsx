@@ -41,12 +41,12 @@ function Layout() {
         <Route path="/camerareadyversion" element={<Camera_ready />} />
         <Route path="/committee" element={<Committee />} />
         <Route path="/speakers/keynote" element={<KeynoteSpeaker />} />
-        <Route path="/speakers/tutorial" element={<ComingSoon />} />
+        <Route path="/speakers/tutorial" element={<TutorialSpeaker />} />
         <Route path="/phdcolloquium" element={<PHDColloqium />} />
         <Route path="/registration" element={<Registration/>} />
         <Route path="/callforpapers" element={<Callforpapers />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/sponsors" element={<Sponsers />} />
+        <Route path="/sponsors/sponsorship-details" element={<Sponsers />} />
         <Route path="/responses-closed" element={<ResponsesClosed />} />
         <Route path="/accomodation/our-suggestion" element={<OurSuggestion />} />
         <Route path="/registration-details" element={<Registration_Details />} />

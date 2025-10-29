@@ -42,7 +42,14 @@ function Navbar({ color, backdrop }) {
       ]
     },
     { title: "PHD COLLOQUIUM", path: "/phdcolloquium", type: "direct" },
-    { title: "SPONSORS", path: "/sponsors", type: "direct" },
+    {
+      title: "SPONSORS",
+      type: "dropdown",
+      subLinks: [
+        { title: "Our Sponsors", path: "/sponsors/our-sponsors" },
+        { title: "Sponsorship Details", path: "/sponsors/sponsorship-details" },
+      ]
+    },
     {
       title: "ACCOMODATION",
       type: "dropdown",
