@@ -33,7 +33,7 @@ function StudentAcc() {
         <h2 className="text-lg font-semibold text-gray-800 mb-3">Important Dates</h2>
         <div className="flex items-center gap-2 text-gray-700 mb-6">
           <FaCalendarAlt className="text-fuchsia-800" />
-          <span><strong>Deadline:</strong> 31st October 2025</span>
+          <span><strong>Deadline:</strong> 5th November 2025</span>
         </div>
 
         <div className="mt-8 text-center">

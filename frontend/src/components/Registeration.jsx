@@ -43,7 +43,7 @@ const Registration = () => {
             </tr>
             <tr className="odd:bg-gray-100 even:bg-gray-50 hover:bg-gray-200 transition">
               <td className="border p-4 font-medium">Early Bird Closing</td>
-              <td className="border p-4">October 31, 2025</td>
+              <td className="border p-4">November 5, 2025</td>
             </tr>
             <tr className="odd:bg-gray-100 even:bg-gray-50 hover:bg-gray-200 transition">
               <td className="border p-4 font-medium">Standard Registration Closing</td>

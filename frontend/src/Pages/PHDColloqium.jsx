@@ -81,7 +81,7 @@ function PHDColloquium() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Last date of submission for PhD Colloquium is <span className="font-bold">31st October</span>.
+            Last date of submission for PhD Colloquium is <span className="font-bold">5th November</span>.
           </motion.div>
           <motion.div
             className="mt-10 p-6 rounded-xl bg-white shadow-lg"
