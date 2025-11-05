@@ -1,15 +1,17 @@
 import React from 'react';
 import { FaAward, FaFilePdf, FaUniversity, FaUserGraduate } from 'react-icons/fa';
+import SponsoredBy from '../components/SponsoredBy';
 
 function StudentAward() {
   return (
-    <div className="min-h-screen  flex items-center justify-center p-6">
+    <div className="min-h-screen  flex flex-col items-center justify-center p-6">
          <div className="fixed inset-x-0 bottom-0 h-[80vh] -z-10 bg-gradient-to-b from-white to-blue-700/15 mix-blend-multiply">
         <div
           className="absolute inset-0 bg-[url(/build.jpg)] opacity-10 bg-bottom bg-no-repeat bg-contain 
       brightness-100 mix-blend-multiply"
         />
       </div>
+        <SponsoredBy imageUrl="/studentaward.jpeg" />
       <div className="max-w-3xl w-full bg-white shadow-2xl rounded-2xl p-8 border border-purple-200">
         <div className="flex items-center gap-3 mb-6">
           <FaAward className="text-3xl text-purple-600" />

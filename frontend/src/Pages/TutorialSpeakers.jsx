@@ -16,13 +16,13 @@ function TutorialSpeaker() {
   };
   const speakerData3 = {
     imageUrl: "/Speakers/ak.jpeg",
-    name: "Dr. Arun Kumar Verma",
+    name: "Prof. Arun Kumar Verma",
     institution: "IIT Jammu",
     talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
   const speakerData4 = {
     imageUrl: "/Speakers/rk.jpg",
-    name: "Dr. Raghvendra K. Chaudhary",
+    name: "Prof. Raghvendra K. Chaudhary",
     institution: "IIT Kanpur",
     talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { motion } from 'framer-motion';
+import SponsoredBy from '../components/SponsoredBy';
 
 function PHDColloquium() {
   //the organizing commetteee of the conferenc 
@@ -60,6 +61,7 @@ function PHDColloquium() {
         <h1 className="text-4xl text-center font-bold my-10 text-gray-900">
           PhD Colloquium
         </h1>
+        <SponsoredBy imageUrl="/phd.jpeg" />
         <article className="my-5 text-justify text-gray-800 leading-relaxed bg-white p-6 rounded-xl shadow-lg">
           <p>
             UPCON 2025 will also provide a platform for budding PhD scholars who are pursuing cutting-edge research work at various Research Institutes or Universities within India and Abroad, in the broad area of Electrical, Electronics and Computer Engineering.
