@@ -14,7 +14,9 @@ function Navbar({ color, backdrop }) {
       type: "dropdown",
       subLinks: [
         { title: "Keynote Speakers", path: "/speakers/keynote" },
-        { title: "Tutorial speakers", path: "/speakers/tutorial" }
+        { title: "Tutorial speakers", path: "/speakers/tutorial" },
+        { title: "WIE speakers", path: "/speakers/wie" },
+        { title: "Young Professional speakers", path: "/speakers/young-professional" }
       ]
     },
     {

@@ -23,6 +23,8 @@ import Registration_Details from "./Pages/Registration_Details";
 import ComingSoon from "./components/ComingSoon";
 import EntryModal from "./components/EntryModal";
 import { ModalProvider } from "./context/ModalContext";
+import WIE from "./Pages/WIE";
+import YoungProffesional from "./Pages/YoungProffesional";
 
 function Layout() {
   const location = useLocation();
@@ -41,6 +43,8 @@ function Layout() {
         <Route path="/camerareadyversion" element={<Camera_ready />} />
         <Route path="/committee" element={<Committee />} />
         <Route path="/speakers/keynote" element={<KeynoteSpeaker />} />
+        <Route path="/speakers/wie" element={<WIE/>} />
+        <Route path="/speakers/young-professional" element={<YoungProffesional/>} />
         <Route path="/speakers/tutorial" element={<TutorialSpeaker />} />
         <Route path="/phdcolloquium" element={<PHDColloqium />} />
         <Route path="/registration" element={<Registration/>} />
