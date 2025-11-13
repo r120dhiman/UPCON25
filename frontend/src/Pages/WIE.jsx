@@ -1,6 +1,6 @@
 import React from 'react'
 import SpeakerCard from '../components/SpeakerCard'
-associate
+
 function WIE() {
   const speakerData1 = {
     imageUrl: "/Speakers/wie/kalpna.jpg",
