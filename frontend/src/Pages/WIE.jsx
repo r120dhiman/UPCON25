@@ -4,7 +4,7 @@ import SpeakerCard from '../components/SpeakerCard'
 function WIE() {
   const speakerData1 = {
     imageUrl: "/Speakers/wie/kalpna.jpg",
-    name: "Prof. Kalpana",
+    name: "Prof. Kalpana Chaudhary",
     institution: "IIT BHU",
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
@@ -17,7 +17,7 @@ function WIE() {
   const speakerData3 = {
     imageUrl: "/Speakers/wie/tripta.jpeg",
     name: "Prof. Tripta Thakur",
-    institution: "EX NPTI Director",
+    institution: "Former DG NPTI & present VC UTU",
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
   const speakerData4 = {
@@ -27,9 +27,9 @@ function WIE() {
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
   const speakerData5 = {
-    imageUrl: "/Speakers/Avatar.jpeg",
-    name: "Prof. H. Subdra",
-    institution: "CVR College of Engineering",
+    imageUrl: "/Speakers/wie/hsubhdra.jpeg",
+    name: " Prof. Harivardhagini Subhadra",
+    institution: "2025 IEEE WIE COMMITTEE - Voting Member,Prof and Head, CVR College of Engineering, Hyderabad, Telangana",
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
 
