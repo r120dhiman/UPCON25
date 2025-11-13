@@ -16,14 +16,14 @@ function YoungProffesional() {
   };
   const speakerData3 = {
     imageUrl: "/Speakers/young/subho.jpg",
-    name: "Prof. subho Paul",
-    institution: "IIT BHU",
+    name: "Prof. Subho Paul",
+    institution: "Professor, IIT BHU",
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
   const speakerData4 = {
     imageUrl: "/Speakers/young/mayank.jpg",
     name: "Prof. Mayank Swarnkar",
-    institution: "IIT BHU",
+    institution: "Professor, IIT BHU",
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
 
