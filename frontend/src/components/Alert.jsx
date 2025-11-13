@@ -4,10 +4,10 @@ const AlertTicker = () => {
   const alerts = [
     "🚨 Conference will be held only in PHYSICAL MODE.",
     "Acceptance notification has been sent.",
-    " Last date of submission for PhD Colloquium is 5th November.",
-    "Registration is till 5th November for Early Bird and 15th November for Standard Registration.",
-    "Early Bird registration is open now.",
-    "Camera Ready submission is open now (Deadline: 5th November 2025).",
+    "Registration is till 5th November for Early Bird and 20th November for Standard Registration.",
+    "Early Bird registration is closed.",
+    "Camera Ready submission is closed.",
+    "Tentative Schedule is now published.",
   ];
 
   return (
