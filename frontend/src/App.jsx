@@ -26,6 +26,7 @@ import EntryModal from "./components/EntryModal";
 import { ModalProvider } from "./context/ModalContext";
 import WIE from "./Pages/WIE";
 import YoungProffesional from "./Pages/YoungProffesional";
+import Schedule from "./Pages/Schedule";
 
 function Layout() {
   const location = useLocation();
@@ -53,6 +54,7 @@ function Layout() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/sponsors/sponsorship-details" element={<Sponsers />} />
         <Route path="/sponsors/our-sponsors" element={<Sponser />} />
+        <Route path="/schedule" element={<Schedule/>} />
         <Route path="/responses-closed" element={<ResponsesClosed />} />
         <Route path="/accomodation/our-suggestion" element={<OurSuggestion />} />
         <Route path="/registration-details" element={<Registration_Details />} />
