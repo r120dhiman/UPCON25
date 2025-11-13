@@ -1,29 +1,29 @@
 import React from 'react'
 import SpeakerCard from '../components/SpeakerCard'
-
+associate
 function WIE() {
   const speakerData1 = {
     imageUrl: "/Speakers/wie/kalpna.jpg",
     name: "Prof. Kalpana Chaudhary",
-    institution: "IIT BHU",
+    institution: "Professor, IIT BHU",
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
   const speakerData2 = {
     imageUrl: "/Speakers/wie/dipti.png",
-    name: "Prof. Dipti Saxena",
-    institution: "MNIT Jaipur",
+    name: "Dr. Dipti Saxena",
+    institution: "Associate Professor, MNIT Jaipur",
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
   const speakerData3 = {
     imageUrl: "/Speakers/wie/tripta.jpeg",
     name: "Prof. Tripta Thakur",
-    institution: "Former DG NPTI & present VC UTU",
+    institution: "Vice Chancellor UTU Dehradun and Ex Director General NPTI",
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
   const speakerData4 = {
     imageUrl: "/Speakers/wie/karabi.jpeg",
-    name: "Prof. Karabi Vishwas",
-    institution: "IIT Kharagpur",
+    name: "Prof. Karabi Biswas",
+    institution: "Professor, IIT Kharagpur",
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
   const speakerData5 = {
@@ -53,6 +53,7 @@ function WIE() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <SpeakerCard speakerData={speakerData3} />
           <SpeakerCard speakerData={speakerData1} />
+          <SpeakerCard speakerData={speakerData4} />
           <SpeakerCard speakerData={speakerData2} />
           <SpeakerCard speakerData={speakerData5} />
         </div>
