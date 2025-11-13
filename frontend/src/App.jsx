@@ -21,6 +21,7 @@ import StudentAward from "./Pages/StudentAward";
 import StudentAcc from "./Pages/StudentAcc";
 import Registration_Details from "./Pages/Registration_Details";
 import ComingSoon from "./components/ComingSoon";
+import Sponser from "./Pages/Sponsor";
 import EntryModal from "./components/EntryModal";
 import { ModalProvider } from "./context/ModalContext";
 import WIE from "./Pages/WIE";
@@ -51,6 +52,7 @@ function Layout() {
         <Route path="/callforpapers" element={<Callforpapers />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/sponsors/sponsorship-details" element={<Sponsers />} />
+        <Route path="/sponsors/our-sponsors" element={<Sponser />} />
         <Route path="/responses-closed" element={<ResponsesClosed />} />
         <Route path="/accomodation/our-suggestion" element={<OurSuggestion />} />
         <Route path="/registration-details" element={<Registration_Details />} />
