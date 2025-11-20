@@ -20,6 +20,12 @@ function YoungProffesional() {
     institution: "Assistant Professor, IIT BHU",
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
+  const speakerData5 = {
+    imageUrl: "/committee/anubrata.jpg",
+    name: "Dr. Anubrata Das",
+    institution: "Assistant Professor, IIT BHU",
+    // talkTitle: "Primary efforts in applying counter manipulation detection technology",
+  };
 
   return (
     <div className='min-h-screen relative'>
@@ -36,6 +42,7 @@ function YoungProffesional() {
           <SpeakerCard speakerData={speakerData2} />
           <SpeakerCard speakerData={speakerData3} />
           <SpeakerCard speakerData={speakerData4} />
+          <SpeakerCard speakerData={speakerData5} />
         </div>
       </div>
     </div>

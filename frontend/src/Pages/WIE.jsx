@@ -9,9 +9,9 @@ function WIE() {
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
   const speakerData2 = {
-    imageUrl: "/Speakers/wie/dipti.png",
-    name: "Dr. Dipti Saxena",
-    institution: "Associate Professor, MNIT Jaipur",
+    imageUrl: "/Speakers/wie/rashi_gupta.jpeg",
+    name: "Dr. Rashi Gupta",
+    institution: "MD Vision Mechatronics Pvt Ltd",
     // talkTitle: "Primary efforts in applying counter manipulation detection technology",
   };
   const speakerData3 = {
