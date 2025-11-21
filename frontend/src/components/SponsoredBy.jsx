@@ -4,7 +4,7 @@ function SponsoredBy({ imageUrl }) {
 
   return (
     <div>
-        <h1 className='text-center text-3xl text-purple-700/80'>Soponsored By</h1>
+        <h1 className='text-center text-3xl text-purple-700/80'>Sponsored By</h1>
       <img
         src={imageUrl}
         alt="Sponsored By"
