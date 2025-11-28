@@ -77,8 +77,8 @@ function Sponsor() {
 
   const goldSponsors = [
     { name: 'QUARBZ with Typhoon', logo1: '/sponsor-logo/quarbz.jpeg', logo2: '/sponsor-logo/typoon.png', size: 'md' },
-    { name: 'FLUKE ', logo: '/sponsor-logo/fluke.jpeg', size: 'md' },
-    { name: 'SPI ', logo: '/sponsor-logo/spi.png', size: 'md' },
+    // { name: 'FLUKE with SPI', logo1: '/sponsor-logo/fluke.jpeg', size: 'md',logo2: '/sponsor-logo/spi.png', size: 'md' },
+    // { name: 'SPI ',  },
     { name: 'SYNGIENT', logo: '/sponsor-logo/syngient.png', size: 'md' },
     { name: 'K n B Pvt. Ltd', logo: '/sponsor-logo/k&b.png', size: 'md' },
   ]
@@ -189,6 +189,29 @@ function Sponsor() {
             {goldSponsors.map((s) => (
               <SponsorCard key={s.name} name={s.name} logo={s.logo} logo1={s.logo1} logo2={s.logo2} size={s.size} />
             ))}
+             <div className={`flex items-center justify-center`}>
+      <div
+        className={`sponsor-card flex flex-col items-center justify-center rounded-3xl bg-white/40  backdrop-blur-md border border-white/30 shadow-lg px-6 py-5 text-center transition-transform duration-300 ease-in-out cursor-pointer `}
+        onMouseEnter={(e) => gsap.to(e.currentTarget, { scale: 1.05, duration: 0.3, ease: 'power1.out' })}
+        onMouseLeave={(e) => gsap.to(e.currentTarget, { scale: 1, duration: 0.3, ease: 'power1.out' })}
+      >
+<div className="flex flex-col items-center justify-center gap-8 bg-white shadow-lg w-full h-full p-6 rounded-2xl">
+
+  {/* First image — much bigger */}
+  <img
+    src="/sponsor-logo/fluke.jpeg"
+    className="object-contain w-[85%] sm:w-[80%]"
+  />
+
+  {/* Second image — smaller */}
+  <img
+    src="/sponsor-logo/spi.png"
+    className="object-contain w-[40%] sm:w-[35%] opacity-90"
+  />
+
+</div>
+      </div>
+    </div>
           </div>
         </section>
 

@@ -9,6 +9,28 @@ function Camera_ready() {
       brightness-100 mix-blend-multiply"
         />
       </div>
+     <a
+  href="/Camera_ready_paper_details_IEEE_UPCON_2025.xlsx"
+  download
+  className="flex flex-col items-center justify-center bg-white p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 group max-w-xl mx-auto"
+>
+  <h1 className="text-2xl sm:text-3xl font-extrabold text-center text-[#095e09] tracking-wide group-hover:text-[#a83225] transition-colors">
+    Camera Ready Submission Remarks
+  </h1>
+
+  <div className="mt-4 text-[#C0392B] font-semibold group-hover:underline text-lg flex items-center gap-2">
+    <span>Click to Download</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-6 w-6 group-hover:translate-y-1 transition-transform"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/>
+    </svg>
+  </div>
+</a>
       <div className="space-y-6">
         <p className="leading-relaxed md:leading-loose text-gray-700">
           Authors of the accepted papers are requested to follow the instructions below for final camera-ready paper submission and IEEE Copyright Transfer for inclusion of their article into conference proceeding:
