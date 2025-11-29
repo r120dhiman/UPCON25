@@ -5,18 +5,18 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 const SponsorCard = ({ name, logo, logo1, logo2, size = 'md', role, isTitle }) => {
   // Updated card sizes for better visual balance
   const sizeClasses = {
-    xl: 'h-72 w-[32rem]',   // Title Sponsor: slightly larger
-    lg: 'h-56 w-[28rem]',        // Diamond Sponsor: larger
-    md: 'h-48 w-96',        // Gold Sponsor: moderately larger
-    sm: 'h-40 w-80',        // Silver Sponsor: visibly larger
+    xl: 'min-h-72 min-w-[32rem]',   // Title Sponsor: slightly larger
+    lg: 'min-h-56 min-w-[28rem]',        // Diamond Sponsor: larger
+    md: 'min-h-48 min-w-96',        // Gold Sponsor: moderately larger
+    sm: 'min-h-40 min-w-80',        // Silver Sponsor: visibly larger
   }
 
   // Dual logo cards are about 20–25% larger than base
   const dualLogoSizeClasses = {
-    xl: 'h-72 w-[32rem]',
-    lg: 'h-56 w-[28rem]',
-    md: 'h-48 w-96',
-    sm: 'h-40 w-80',
+    xl: 'min-h-72 min-w-[32rem]',
+    lg: 'min-h-56 min-w-[28rem]',
+    md: 'min-h-48 min-w-96',
+    sm: 'min-h-40 min-w-80',
   }
 
   const cardSizeClass = logo1 && logo2 ? dualLogoSizeClasses[size] : sizeClasses[size]
@@ -85,7 +85,7 @@ function Sponsor() {
 
   const silverSponsors = [
     { name: 'dSPACE', logo: '/sponsor-logo/dspace.svg', size: 'sm' },
-    { name: 'REVINE (REGOL + ITECH)', logo: '/sponsor-logo/revine.jpeg',  size: 'sm' },
+    { name: 'Rigol X Revine Tech', logo: '/sponsor-logo/RigolXRevineTech.png',  size: 'sm' },
     { name: 'V INSTRUMENT', logo: '/sponsor-logo/vinstruments.png', size: 'sm' },
     { name: 'OPAL RT', logo: '/sponsor-logo/opal-rt.png', size: 'sm' },
   ]
@@ -173,7 +173,7 @@ function Sponsor() {
           <h3 className="sponsor-heading uppercase tracking-wide font-semibold text-sky-700 text-xl md:text-2xl border-l-4 pl-2 border-sky-500 mb-8">
             Diamond Sponsors
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 p-4">
             {diamondSponsors.map((s) => (
               <SponsorCard key={s.name} name={s.name} logo={s.logo} logo1={s.logo1} logo2={s.logo2} size={s.size} />
             ))}
@@ -185,7 +185,7 @@ function Sponsor() {
           <h3 className="sponsor-heading uppercase tracking-wide font-semibold text-sky-700 text-xl md:text-2xl border-l-4 pl-2 border-sky-500 mb-8">
             Gold Sponsors
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 p-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 p-4">
             {goldSponsors.map((s) => (
               <SponsorCard key={s.name} name={s.name} logo={s.logo} logo1={s.logo1} logo2={s.logo2} size={s.size} />
             ))}
