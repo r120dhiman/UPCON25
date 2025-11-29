@@ -70,7 +70,7 @@ function Sponsor() {
   const titleSponsor = [{ name: 'HIOKI', logo: '/sponsor-logo/hioki.jpeg', size: 'xl', role: 'Title Sponsor' }]
 
   const diamondSponsors = [
-    { name: 'Tektronix with Convergent', logo1: '/sponsor-logo/tektronix.svg', logo2: '/sponsor-logo/convergent.png', size: 'lg' },
+    { name: 'Tektronix with Convergent', logo1: '/sponsor-logo/tektronix.jpeg', logo2: '/sponsor-logo/convergent.jpeg', size: 'lg' },
     { name: 'KEYSIGHT with Agmatel', logo1: '/sponsor-logo/keysight.svg', logo2: '/sponsor-logo/agmatel.png', size: 'lg' },
     { name: 'SCIENTIFIC', logo: '/sponsor-logo/scientific.png', size: 'lg' },
   ]
