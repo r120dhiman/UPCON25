@@ -77,8 +77,6 @@ function Sponsor() {
 
   const goldSponsors = [
     { name: 'QUARBZ with Typhoon', logo1: '/sponsor-logo/quarbz.jpeg', logo2: '/sponsor-logo/typoon.png', size: 'md' },
-    // { name: 'FLUKE with SPI', logo1: '/sponsor-logo/fluke.jpeg', size: 'md',logo2: '/sponsor-logo/spi.png', size: 'md' },
-    // { name: 'SPI ',  },
     { name: 'SYNGIENT', logo: '/sponsor-logo/syngient.png', size: 'md' },
     { name: 'K n B Pvt. Ltd', logo: '/sponsor-logo/k&b.png', size: 'md' },
   ]
@@ -88,13 +86,13 @@ function Sponsor() {
     { name: 'Rigol X Revine Tech', logo: '/sponsor-logo/RigolXRevineTech.png',  size: 'sm' },
     { name: 'V INSTRUMENT', logo: '/sponsor-logo/vinstruments.png', size: 'sm' },
     { name: 'OPAL RT', logo: '/sponsor-logo/opal-rt.png', size: 'sm' },
+    { name: 'VVDN Technologies', logo: '/sponsor-logo/vvdn.jpeg', size: 'sm' },
   ]
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
 
     const ctx = gsap.context(() => {
-      // Animate headings
       gsap.from('.sponsor-heading', {
         y: 24,
         opacity: 0,
