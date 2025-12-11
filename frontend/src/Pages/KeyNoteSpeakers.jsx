@@ -30,7 +30,7 @@ talkTitle: "Will be updated soon...",
 {
 imageUrl: "/Speakers/Akshay.png",
 name: "Prof. Askhay Kumar Rathore",
-institution: "Singapore Institute of Technology, Singapore",
+institution: "National University of Singapore, Singapore",
 talkTitle: "Will be updated soon...",
 },
      {
